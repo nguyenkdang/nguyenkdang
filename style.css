@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 /* GENERAL */
-
-
 h1 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
@@ -11,7 +9,7 @@ h1 {
 h2 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
-    font-size: 2.2vw;;
+    font-size: 2vw;
 }
 
 br {
@@ -44,21 +42,22 @@ a {
     font-size: 2vw;
     font-weight: 500;
     padding: 6px;
+    transition: color 0.5s ease-out; 
 }
 
-.navItem .navLink:hover{
-    color: #4b658f;
-    font-weight: 550;
+.navLink:hover{
+    color: #3D6199;
 }
 
 .navItem {
     float: right;
+    
 }
 
 #navBar{
     list-style-type: none;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 3vw;
+    margin-top: 3vw;
 }
 
 /* IntroPage */
@@ -67,8 +66,8 @@ a {
 }
 
 .my_name{
-    font-size: 6vw;
-    margin: 1px;
+    font-size: 5vw;
+    margin: 0vw;
 }
 
 .centered {
@@ -76,13 +75,13 @@ a {
 }
 
 .title_box {
-    border-radius: 2vw;
+    border-radius: 4vw;
     padding: 2vw;
-    width: 65vw; 
-    height: 20vw;
+    width: 61vw; 
+    height: 219w;
 
     transform: translate(-50%, -50%);
-    box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
     background: #E1EBF9;
     position: absolute;
     top: 22vw;
@@ -93,58 +92,62 @@ a {
 
 .paint_drip{
     border-radius: 20vw;
-    width: 13.5vw;
+    width: 13vw;
     height: 34vw;
     background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 50%, #d349ff 100%);
+
+    z-index: -1;
 }
 
 .left_paint{
     position: absolute;
-    top: 1.25vw;
-    left: 8.5vw;
-    z-index: -1;
+    top: 1.5vw;
+    left: 11vw;
+    
+    animation: floater 4s ease infinite;
 }
 
 .top_left_drip{
     position: absolute;
-    top: 11vw;
-    left: 14vw;
+    top: 11.25vw;
+    left: 16.25vw;
     width: 6.5vw;
-    height: 23vw;
+    height: 22vw;
     
     border-top-left-radius: 20vw;
-    border-top-right-radius: 7vw;
-    border-bottom-left-radius: 7vw;
+    border-top-right-radius: 8vw;
+    border-bottom-left-radius: 8vw;
     border-bottom-right-radius: 25vw;
     
-    background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 70%, #E7A64C 100%);
+    z-index: 1;
+    background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 70%, #E7A64C 90%, #D9838E 100%);
+
+    animation: floater-slow 4s ease infinite;
 }
 
 .middle_paint{
     position: absolute;
     top: 7vw;
-    left: 50vw;
+    left: 43.4vw;
 
-    transform: translate(-50%);
-    z-index: -1;
+    animation: floater 3.5s ease infinite;
 }
-
 
 .right_paint{
     position: absolute;
     top: 19vw;
-    left: 77.5vw;
-    height: 45vw;
+    left: 76vw;
+    height: 44vw;
 
-    z-index: -1;
+    animation: floater 5s ease infinite;
 }
 
 .top_right_drip{
     position: absolute;
     top: 20vw;
-    left: 79vw;
+    left: 77.5vw;
     width: 6.5vw;
-    height: 17vw;
+    height: 16.25vw;
 
     border-top-left-radius: 25vw;
     border-top-right-radius: 6vw;
@@ -152,14 +155,98 @@ a {
     border-bottom-right-radius: 16vw;
 
     background: linear-gradient(20deg, #f1cf00 00%, #d349ff 100%);
+
+    animation: floater-slow 5s ease infinite;
 }
 
 .paint_drop{
     position: absolute;
     top: 43vw;
-    left: 13vw;
+    left: 15vw;
     border-radius: 25vw;
     width: 6vw;
     height: 6vw;
     background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 100%);
+
+    animation: floater-slow 4s ease infinite;
 }
+
+#logo{
+    position: absolute;
+    top: 2.5vw;
+    left: 6.75vw;
+    z-index: 2;
+}
+
+
+/* projects */
+#project-label{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    top: 48vw;
+}
+
+#middle-badge{
+    position: absolute;
+    top: 55vw;
+    left: 29vw;
+    
+}
+
+#bases{
+    transition: fill 7s ease-out;
+}
+
+/*
+svg:hover #base{
+    animation: open 2s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    
+}
+*/
+/*  
+svg:hover #info-icon{
+    animation: open 2s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-play-state: running;
+}
+*/
+
+
+
+/* Animation */
+
+@keyframes open {
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform:  scaleX(2);
+    }
+    
+}
+
+@keyframes floater{
+    from{ transform: translate(0vw, 0vw);}
+    
+    50%{ transform: translate(0vw, 0.55vw);}
+
+    to{transform: translate(0vw, 0vw);}
+}
+
+@keyframes floater-slow{
+    from{ transform: translate(0vw, 0vw);}
+    
+    50%{ transform: translate(0vw, 0.3vw);}
+
+    to{transform: translate(0vw, 0vw);}
+}
+
+@keyframes nav-highlight{
+    from{ color: #96B0EA;}
+    to{ color:#3D6199;}
+}
+
