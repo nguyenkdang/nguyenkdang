@@ -63,6 +63,7 @@ a {
 /* IntroPage */
 .hidden_link{
     font-weight: 600;
+    animation: glow 3.5s ease infinite;
 }
 
 .my_name{
@@ -186,7 +187,6 @@ a {
     left: 50vw;
     top: 48vw;
 }
-
 #middle-badge{
     position: absolute;
     top: 55vw;
@@ -194,11 +194,29 @@ a {
     
 }
 
+svg:hover #base-back{
+    d: path("M1099.23,270.9 H810.13 v313 a3.57,3.57,0,0,0,2,3.2 l178.19,48.84 a10.67,10.67,0,0,0,5.44,0 l178.19-48.84 a3.56,3.56,0,0,0,2-3.2 Z");
+    
+    /*
+    "M1179,270.9 H810.13v313 c0,1.36,1.38,2.6,3.53,3.2 l178.19,48.84 a10.67,10.67,0,0,0,5.44,0 l178.19-48.84 c2.16-.6,3.53-1.84,3.53-3.2 Z"
+    */
+    transition: d 2s ease;
+}
+
+/*
+svg:hover #right-rect{
+    width: 50px;
+    
+    transition: width 2s ease;
+}
+
+
+
 #bases{
     transition: fill 7s ease-out;
 }
 
-/*
+
 svg:hover #base{
     animation: open 2s ease infinite;
     transform-origin: center;
@@ -219,34 +237,30 @@ svg:hover #info-icon{
 
 /* Animation */
 
+
+
 @keyframes open {
     from{
-        transform: scaleX(1);
+        width:20px;
     }
     to{
-        transform:  scaleX(2);
+        width:40px;
     }
     
 }
 
 @keyframes floater{
-    from{ transform: translate(0vw, 0vw);}
-    
+    0%, 100%{ transform: translate(0vw, 0vw);}
     50%{ transform: translate(0vw, 0.55vw);}
-
-    to{transform: translate(0vw, 0vw);}
 }
 
 @keyframes floater-slow{
-    from{ transform: translate(0vw, 0vw);}
-    
+    0%, 100%{ transform: translate(0vw, 0vw);}
     50%{ transform: translate(0vw, 0.3vw);}
-
-    to{transform: translate(0vw, 0vw);}
 }
 
-@keyframes nav-highlight{
-    from{ color: #96B0EA;}
-    to{ color:#3D6199;}
+@keyframes glow{
+    0%, 100%{ color: #96B0EA;}
+    50%{ color: #abc4f8;}
 }
 
