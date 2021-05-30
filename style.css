@@ -334,21 +334,20 @@ svg:hover #left-b-curve{
     d: path("M927.86,617.56s14.9.77,25.82-4.33l-15.45,8.37Z");
 }
 
-
 #aboutMe-label{
     position: absolute;
-    transform: translate(-50%, -50%);
-    left: 70vw;
-    top: 95vw;
+    
+    left: 61vw;
+    top: 92.5vw;
     color: var(--sideColor)
 }
 
 #me-left{
     position: absolute;
     top: 95vw;
-    left: 20vw;
-    height: 25vw;
-    width: 40vw;
+    left: 15vw;
+    height: 28vw;
+    width: 45vw;
     background: linear-gradient(320deg, #00ffc9 0%, #d349ff 80%);
     z-index: 1;
 
@@ -370,17 +369,152 @@ svg:hover #left-b-curve{
     position: absolute;
     top: 100vw;
     left: 40vw;
-    height: 25vw;
-    width: 40vw;
+    height: 28vw;
+    width: 45vw;
     background: var(--mainColor);
     z-index: -1;
+    transition: transform 0.4s ease-out;
 }
 
 #me-right:hover{
-    z-index: 2;
-    transform: scale(1.01,1.01);
-    transition: all 0.7s ease-out; ;
+    transform: scale(1.05, 1.05);
+    transition: all 0.3s ease-out;
 }
+
+#me-right:hover #mr-circle{
+    transform: translate(1vw, -0.5vw) 
+               scale(1.1, 1.1);
+    transition: all 0.4s ease-out;
+}
+
+#me-right:hover #mr-square{
+    transform: translate(0vw, -0.7vw) 
+               scale(1.05, 1.05)
+               rotate(35deg);
+    transition: all 0.4s ease-out;
+}
+
+#me-right:hover #mr-triangle{
+    transform: translate(-0.5vw, 0.5vw) 
+               scale(1.07, 1.07)
+               rotate(-38deg);
+    transition: all 0.4s ease-out;
+}
+
+#me-right:hover #mrt{
+    transform: scale(1.02, 1.02);
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.4s ease-out;
+}
+
+#me-right:hover #mr-shadow{
+    opacity: 70%;
+    filter: blur(0.45vw);
+    width: 21vw;
+    height: 23.75vw;
+    transition: all 0.4s ease-out;
+}
+
+#mrt{
+    position: absolute;
+    top: 14vw;
+    right: 4vw;
+    transition: all 0.4s ease-out;
+}
+
+.mright-title{
+    position: relative;
+    margin-left: 25vw;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    bottom: 10vw;
+    font-size: 5vw;
+    color: var(--sideColor);
+}
+
+#mright-para{
+    position: relative;
+    bottom: 6vw;
+    font-size: 1vw;
+    color: transparent
+}
+
+#mr-shadow-container{
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 25vw;
+    height: 28vw;
+    background: transparent;
+    overflow: hidden;
+}
+
+#mr-shadow{
+    filter: blur(0.5vw);
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 21.25vw;
+    height: 24.5vw;
+    background: var(--sideColor);
+    opacity: 60%;
+    transition: transform 0.4s ease-out;  
+
+    transition: all 0.4s ease-out;
+}
+
+#mr-square{
+    position: relative;
+    left: 35vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    transform: rotate(30deg);
+    background: var(--mainColor);
+    border:0.60vw solid var(--sideColor);
+
+    transition: transform 0.4s ease-out;  
+}
+
+#mr-circle {
+    position: relative;
+    left: 38.5vw;
+    top: 6vw;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+   
+    background: var(--mainColor);
+    border:0.70vw solid var(--sideColor);
+    transition: all 0.4s ease-out;  
+}
+
+#mr-triangle {
+    position: absolute;
+    left: 22vw;
+    top: 23vw;
+    width: 0;
+    height: 0;
+    border-left: 2.5vw solid transparent;
+    border-right: 2.5vw solid transparent;
+    border-bottom: 5vw solid var(--sideColor);
+    
+    transform: rotate(-35deg);
+    transition: all 0.4s ease-out;  
+}
+
+#mr-itriangle {
+    position: relative;
+    top: 1.3vw;
+    right: 1.5vw;
+    width: 0;
+    height: 0;
+    border-left: 1.5vw solid transparent;
+    border-right: 1.5vw solid transparent;
+    border-bottom: 3vw solid var(--mainColor);
+}
+
+
 
 footer{
     position: absolute;
