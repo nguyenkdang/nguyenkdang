@@ -25,6 +25,7 @@ $(document).ready(function() {
       $('.mlt1-B').toggleClass('mlt1-F');
       $('.mlt2-B').toggleClass('mlt2-F');
       $('.mleft-para-B').toggleClass('mleft-para-F');
+      $('.ml-shadow-B').toggleClass('ml-shadow-F');
     }
     
   });
@@ -53,6 +54,8 @@ $(document).ready(function() {
       $('.mlt1-B').toggleClass('mlt1-F');
       $('.mlt2-B').toggleClass('mlt2-F');
       $('.mleft-para-B').toggleClass('mleft-para-F');
+      $('.ml-shadow-B').toggleClass('ml-shadow-F');
+
     }
   });
 
