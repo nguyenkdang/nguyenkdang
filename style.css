@@ -909,9 +909,10 @@ svg:hover #left-b-curve{
 footer{
     position: absolute;
     top: 150vw;
-    width: 100vw;
-    margin: 0px;
-    background-color: red;
+    left: -2vw;
+    width: 120vw;
+    height: 8vw;
+    background-color: var(--mainColor);
 }
 
 /* ------- Animation  -------*/
