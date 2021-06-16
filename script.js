@@ -21,11 +21,18 @@ $(document).ready(function() {
       $('.mright-para-B').toggleClass('mright-para-F');
 
       //Left
+      $('.circuit-B').toggleClass('circuit-F');
       $('.mlBack-B').toggleClass('mlBack-F');
       $('.mlt1-B').toggleClass('mlt1-F');
       $('.mlt2-B').toggleClass('mlt2-F');
       $('.mleft-para-B').toggleClass('mleft-para-F');
       $('.ml-shadow-B').toggleClass('ml-shadow-F');
+      $('.mlCrc1-B').toggleClass('mlCrc1-F');
+      $('.mlCrc2-B').toggleClass('mlCrc2-F');
+      $('.mlCrc3-B').toggleClass('mlCrc3-F');
+      $('.mlBar1-B').toggleClass('mlBar1-F');
+      $('.mlBar2-B').toggleClass('mlBar2-F');
+      
     }
     
   });
@@ -50,12 +57,17 @@ $(document).ready(function() {
       $('.mright-para-B').toggleClass('mright-para-F');
 
       //Left
+      $('.circuit-B').toggleClass('circuit-F');
       $('.mlBack-B').toggleClass('mlBack-F');
       $('.mlt1-B').toggleClass('mlt1-F');
       $('.mlt2-B').toggleClass('mlt2-F');
       $('.mleft-para-B').toggleClass('mleft-para-F');
       $('.ml-shadow-B').toggleClass('ml-shadow-F');
-
+      $('.mlCrc1-B').toggleClass('mlCrc1-F');
+      $('.mlCrc2-B').toggleClass('mlCrc2-F');
+      $('.mlCrc3-B').toggleClass('mlCrc3-F');
+      $('.mlBar1-B').toggleClass('mlBar1-F');
+      $('.mlBar2-B').toggleClass('mlBar2-F');
     }
   });
 
