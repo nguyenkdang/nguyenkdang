@@ -496,7 +496,7 @@ svg:hover #left-b-curve{
 
 .circuit-F{
     animation: flip-circuit 1s ease;
-    top: 25vw;
+    top: 25.1vw;
     left: 2vw;
 }
 
@@ -519,6 +519,7 @@ svg:hover #left-b-curve{
 
     background: var(--mainColor);
     border:0.60vw solid var(--sideColor);
+    z-index: 1;
 }
 
 .mlCrc1-F{
@@ -545,20 +546,21 @@ svg:hover #left-b-curve{
     height: 3.5vw;
     border-radius: 50%;
     border-top-right-radius: 0%;
-    transition: all 0.4s ease-out;  
-
+    transition: all 0.4s ease-out, border-color 0.4s ease-out;
+    transition-delay: 0.0s, 0.26s;
     background: var(--mainColor);
     border:0.80vw solid var(--sideColor);
+    z-index: 1;
 }
 
 .mlCrc2-F{
     animation: flip-LCir2 1s ease;
     right:-1vw;
     top: -0.2vw;
-    width: 5vw;
-    height: 5vw;
+    width: 3.5vw;
+    height: 3.5vw;
     background: transparent;
-    border:1vw solid white; 
+    border:1vw solid white;
 }
 
 
@@ -580,6 +582,7 @@ svg:hover #left-b-curve{
 
     background: var(--mainColor);
     border:0.60vw solid var(--sideColor);
+    z-index: 1;
 }
 
 .mlCrc3-F{
@@ -603,13 +606,17 @@ svg:hover #left-b-curve{
     left: 0vw; 
     width: 0.8vw;
     height: 20vw;
+    /*
     background: var(--sideColor);
+    */
+    background: linear-gradient(to bottom, var(--sideColor) 50%, white 50%) top;
+    background-size: 200% 200%;
     transition: all 0.4s ease-out;
 }
 
 .mlBar1-F{
     animation: flip-LBar1 1s ease;
-    background: white;
+    background-position: bottom;    
     width: 1vw;
     height: 27vw;
 }
@@ -624,16 +631,20 @@ svg:hover #left-b-curve{
     width: 38.5vw;
     height: 0.8vw;
     bottom: -0.8vw;
-    left: 0.5vw; 
+    left: 0.5vw;
+    /*
     background: var(--sideColor);
+    */
+    background: linear-gradient(to left, var(--sideColor) 50%, white 50%) right;
+    background-size: 200%;
     transition: all 0.4s ease-out;
 }
 
 .mlBar2-F{
-    animation: flip-LBar2 1s ease;
+    background-position: left;
+    animation: flip-LBar2 1s ease; 
     height: 1vw;
-    width: 42vw;
-    background: white;
+    width: 42.1vw;
 }
 
 /* ----- right -----*/
@@ -909,8 +920,8 @@ svg:hover #left-b-curve{
 footer{
     position: absolute;
     top: 150vw;
-    left: -2vw;
-    width: 120vw;
+    left: -1vw;
+    width: 99.7vw;
     height: 8vw;
     background-color: var(--mainColor);
 }
@@ -981,7 +992,7 @@ footer{
         left: 4vw;
     }
     100%{
-        top: 25vw;
+        top: 25.1vw;
         left: 2vw;
     }
 }
@@ -993,17 +1004,13 @@ footer{
         width: 2.2vw;
         height: 2.2vw;
         background: var(--mainColor);
+        border:0.60vw solid var(--sideColor);
     }
     50%{
         background: transparent;
-        border:0.60vw solid var(--sideColor);
     }
-    60%{
-        top: -34.50vw;
-        left: -1.8vw;
-        width: 3.5vw;
-        height: 3.5vw;
-
+    75%{
+        border:0.70vw solid var(--sideColor);
     }
     100%{
         top: -30.50vw;
@@ -1020,20 +1027,21 @@ footer{
         height: 4.5vw;
         right:-0.7vw;
         background: var(--mainColor);
+        border:0.80vw solid var(--sideColor);
+
     }
     50%{
         background: transparent;
         border:1vw solid var(--sideColor);
     }
     60%{
-        width: 6vw;
-        height: 6vw;
+        border:1vw solid white;
     }
     100%{
         right:-1vw;
         top: -0.2vw;
-        width: 5vw;
-        height: 5vw;
+        width: 3.5vw;
+        height: 3.5vw;
         border:1vw solid white;
     }
 }
@@ -1044,17 +1052,13 @@ footer{
         right: -43vw;
         width: 2.2vw;
         height: 2.2vw;
+        border:0.60vw solid var(--sideColor);
     }
     50%{
         background: var(--mainColor);
-        border:0.60vw solid var(--sideColor);
     }
-    60%{
-        bottom: -2.6vw;
-        right: -48.3vw;
-        width: 3.5vw;
-        height: 3.5vw;
-
+    75%{
+        border:0.60vw solid var(--sideColor);
     }
     100%{
         bottom: -2.1vw;
@@ -1064,23 +1068,21 @@ footer{
         background: transparent;
         border:0.75vw solid white;
     }
-
 }
 
 @keyframes flip-LBar1{
     0%{
         height: 21vw;
         width: 0.8vw;
+        background-position: top;
     }
     50%{
-        background: var(--sideColor); 
-
+        background-position: top;
     }
-    60%{
-        height: 30vw;
+    80%{
+        background-position: bottom;
     }
     100%{
-        background: white;
         height: 27vw;
         width: 1vw;
 
@@ -1091,21 +1093,20 @@ footer{
     0%{
         height: 0.8vw;
         width: 39.5vw;
+        background-position: right;
     }
     50%{
-        background: var(--sideColor); 
+        background-position: right;
     }
-    60%{
-        width: 43.5vw;
+    80%{
+        background-position: left;
     }
     100%{
-        background: white;
         height: 1vw;
-        width: 42vw;
-
+        width: 42.1vw;
     }
-
 }
+
 /* Me-Right*/
 @keyframes flip-triangle{
     0%{
