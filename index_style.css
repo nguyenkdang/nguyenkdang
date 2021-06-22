@@ -210,6 +210,7 @@ svg{
 #project-label{
     position: absolute;
     transform: translate(-50%, -50%);
+    font-size: 3vw;
     left: 50vw;
     top: 48vw;
     color: var(--sideColor)
@@ -351,11 +352,9 @@ svg:hover #left-b-curve{
     color: var(--sideColor)
 }
 
-/* ----- Left -----*/
-#me-left{
+/* ----- Left & Right -----*/
+#me-left, #me-right{
     position: absolute;
-    top: 95vw;
-    left: 15vw;
     width: 45vw;
     height: 28vw;
     background: transparent;
@@ -363,14 +362,13 @@ svg:hover #left-b-curve{
     transition: transform 0.4s ease-out;
 }
 
-
-/* left-background */
-.back:hover .mlBack-B{
+/* l&r-background */
+.back:hover .mlBack-B, .back:hover .mrBack-B{
     transform: scale(1, 1);
     transition: all 0.3s ease-out;
 }
 
-.mlBack-B{
+.mlBack-B, .mrBack-B{
     position: absolute;
     width: 45vw;
     height: 28vw;
@@ -381,40 +379,38 @@ svg:hover #left-b-curve{
     transition: transform 0.4s ease-out;
 }
 
-.mlBack-F{
+.mlBack-F, .mrBack-F{
     animation: flip-bg 1s ease;
     animation-fill-mode: forwards; 
     transform: scale(1,1);
     cursor: default;
 }
 
-/* left-title */
-.back:hover .mlt1-B{
+/* l&r-title */
+.back:hover .mlt1-B, .back:hover .mrt1-B{
     transform: scale(1.02, 1.02);
     transform-origin: center;
     transform-box: fill-box;
     transition: all 0.4s ease-out;
 }
 
-.mlt1-B{
+.mlt1-B, .mrt1-B{
     position: absolute;
     font-weight: 700;
     font-size: 5vw;
     opacity: 100%;
     width: 10vw;
-    top: -2.5vw;
-    left: 6.5vw;
     color: var(--sideColor);
-    transition: all 0.4s ease-out, opacity 1.5s;
+    transition: transform 0.4s ease-out, opacity 1.5s;
 }
 
-.mlt1-F{
+.mlt1-F, .mrt1-F{
     animation: flip-title1 1s ease;
     color: transparent;
     opacity: 0%;
 }
 
-.mlt2-B{
+.mlt2-B, .mrt2-B {
     position: absolute;
     font-weight: 700;
     font-size: 3vw;
@@ -422,16 +418,16 @@ svg:hover #left-b-curve{
     width: 40vw;
     left: 5vw;
     color: white;
-    transition: all 0.4s ease-out, opacity 0s;
+    transition: transform 0.4s ease-out, opacity 0s;
 }
 
-.mlt2-F{
+.mlt2-F, .mrt2-F{
     animation: flip-title2 1s ease;
     opacity: 100%;
 }
 
-/* left-paragraph */
-.mleft-para-B{
+/* l&r-paragraph */
+.mleft-para-B, .mright-para-B{
     position: relative;
     font-size: 0vw;
     top: 6vw;
@@ -440,20 +436,13 @@ svg:hover #left-b-curve{
     color: white;
 }
 
-.mleft-para-F{
+.mleft-para-F, .mright-para-F{
     animation: flip-para 1s ease;
     font-size: 1.5vw; 
 }
 
-/* left-shadow */
-.back:hover .ml-shadow-B{
-    opacity: 70%;
-    filter: blur(0.45vw);
-    transition: all 0.4s ease-out;
-    transform: scale(0.95, 0.92);
-}
-
-#ml-shadow-container{
+/* l&r-shadow */
+#shadow-container{
     position: absolute;
     left: 0vw;
     top: 0vw;
@@ -463,26 +452,49 @@ svg:hover #left-b-curve{
     overflow: hidden;
 }
 
-.ml-shadow-B{
-    filter: blur(0.5vw);
+.back:hover .ml-shadow-B, .back:hover .mr-shadow-B{
+    filter: blur(0.45vw);
+    opacity: 70%;
+    transition: all 0.4s ease-out;
+    transform: scale(0.95, 0.92);
+}
+
+.ml-shadow-B, .mr-shadow-B{
     position: absolute;
-    right: -1vw;
-    bottom: -1vw;
+    filter: blur(0.5vw);
     width: 22.25vw;
-    height: 25vw;
+    height: 24.8vw;
     background: var(--sideColor);
     opacity: 60%;
     
-    transition: all 0.4s ease-out, opacity 0.4s, transform 0.4s;
-    transition-delay: 0.5s, 0s, 0s;
+    transition: all 0.4s ease-out, opacity 0.4s, transform 0.4s, filter 0.4s;
+    transition-delay: 0.5s, 0s, 0s, 0s;
 }
 
-.ml-shadow-F{
+.ml-shadow-F, .mr-shadow-F {
     opacity: 0%;
     width: 0vw;
     height: 24vw;
     transition: all 0s ease-out;
     transition-delay: 0s;
+}
+
+/* ----- Left -----*/
+#me-left{
+    top: 95vw;
+    left: 15vw;
+}
+
+/* left-title */
+.mlt1-B{
+    top: -2.5vw;
+    left: 6.5vw;
+}
+
+/* left-shadow */
+.ml-shadow-B{
+    right: -1vw;
+    bottom: -1vw;
 }
 
 /* left-circuit */
@@ -649,137 +661,20 @@ svg:hover #left-b-curve{
 
 /* ----- right -----*/
 #me-right{
-    position: absolute;
     top: 101vw;
     left: 40vw; 
-    width: 45vw;
-    height: 28vw;
-    background: transparent;
-    
-    transition: transform 0.4s ease-out;
-}
-
-/* right-background */
-.back:hover .mrBack-B{
-    transform: scale(1, 1);
-    transition: all 0.3s ease-out;
-}
-
-.mrBack-B{
-    position: absolute;
-    width: 45vw;
-    height: 28vw;
-    background: var(--mainColor);
-    transform: scale(0.95, 0.95);
-    cursor: pointer;
-    
-    transition: transform 0.4s ease-out;
-}
-
-.mrBack-F{
-    animation: flip-bg 1s ease;
-    animation-fill-mode: forwards;  
-    transform: scale(1,1);
-    cursor: default;
 }
 
 /* right-title */
-.back:hover .mrt1-B{
-    transform: scale(1.02, 1.02);
-    transform-origin: center;
-    transform-box: fill-box;
-    transition: all 0.4s ease-out;
-}
-
 .mrt1-B{
-    position: absolute;
-    font-weight: 700;
-    font-size: 5vw;
-    opacity: 100%;
-    width: 10vw;
     top: -1vw;
     left: 25vw;
-    color: var(--sideColor);
-    transition: all 0.4s ease-out, opacity 1.5s;
-}
-
-.mrt1-F{
-    animation: flip-title1 1s ease;
-    color: transparent;
-    opacity: 0%;
-}
-
-.mrt2-B{
-    position: absolute;
-    font-weight: 700;
-    font-size: 3vw;
-    opacity: 0%;
-    width: 40vw;
-    top: -1vw;
-    left: 3vw;
-    color: white; 
-    transition: all 0.4s ease-out, opacity 0s;
-}
-
-.mrt2-F{
-    animation: flip-title2 1s ease;
-    opacity: 100%;
-}
-
-
-/* right-paragraph */
-.mright-para-B{
-    position: relative;
-    font-size: 0vw;
-    top: 6vw;
-    left: 6vw;
-    width: 30vw;
-    color: white;
-}   
-
-.mright-para-F{
-    animation: flip-para 1s ease;
-    font-size: 1.5vw; 
 }
 
 /* right-shadow */
-.back:hover .mr-shadow-B{
-    opacity: 70%;
-    filter: blur(0.45vw);
-    transition: all 0.4s ease-out;
-    transform: scale(0.95, 0.92);
-}
-
-#mr-shadow-container{
-    position: absolute;
-    left: 0vw;
-    top: 0vw;
-    width: 25vw;
-    height: 28vw;
-    background: transparent;
-    overflow: hidden;
-}
-
 .mr-shadow-B{
-    filter: blur(0.5vw);
-    position: absolute;
     left: -1vw;
     top: -1vw;
-    width: 22.25vw;
-    height: 24.90vw;
-    background: var(--sideColor);
-    opacity: 60%;
-    
-    transition: all 0.4s ease-out, opacity 0.4s, transform 0.4s;
-    transition-delay: 0.5s, 0s, 0s;
-}
-
-.mr-shadow-F{
-    opacity: 0%;
-    width: 0vw;
-    height: 24vw;
-    transition: all 0s ease-out;
-    transition-delay: 0s;
 }
 
 /* right-square */
@@ -942,6 +837,8 @@ footer{
     50%{ color: #abc4f8;}
 }
 
+
+/* Me-both*/
 @keyframes flip-bg{
     0%{ transform: scale(1,1);
         background: var(--mainColor);
