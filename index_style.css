@@ -10,20 +10,21 @@
     transition: none !important;
 }
 
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
 /* GENERAL */
 h1 {
-    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
 }
 
 h2 {
-    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 2vw;
 }
 
 p{
-    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 1.5vw;
 }
@@ -38,7 +39,6 @@ body {
 }
 
 a {
-    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     text-decoration: none;
     color: white;
@@ -59,7 +59,6 @@ svg{
 
 /* Nav Bar */
 .navLink{
-    font-family: 'DM Sans', sans-serif;
     font-size: 2vw;
     font-weight: 500;
     padding: 6px;
@@ -82,7 +81,6 @@ svg{
 }
 
 /* IntroPage */
-
 .sc{
     color: var(--sideColor);
 }
@@ -813,27 +811,27 @@ svg:hover #left-b-curve{
 /* ------- Footer -------*/
 footer{
     position: absolute;
-    top: 150vw;
-    left: -1vw;
-    width: 99.7vw;
+    top: 140vw;
+    left: 0vw;
+    width: 100vw;
     height: 10vw;
     background-color: var(--mainColor);
 }
 
-
 #foot-logo{
     position: absolute;
-    left: 48.85vw;
+    left: 51.25vw;
     transform: translate(-50%, -50%);
 }
 
 #foot-links{
     position: absolute;
     top: 4.5vw;
-    left: 51vw;
+    left: 49.25vw;
     white-space: nowrap;
     transform: translate(-50%, -50%);
 }
+
 
 .foot-link{
     font-size: 1.5vw;
@@ -843,8 +841,8 @@ footer{
 #foot-copyright{
     position: absolute;
     transform: translate(-50%, -50%);
+    left: 49.25vw;
     top: 8vw;
-    left: 51vw;
 }
 
 #copyright{
