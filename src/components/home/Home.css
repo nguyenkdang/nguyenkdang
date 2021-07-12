@@ -1,0 +1,83 @@
+.home{
+    height: 130vw;
+    z-index: -1;
+}
+
+/* ----- Intro Page -----*/
+#head_logo{
+    width: 8.5vw;
+    position: absolute;
+    top: 4vw;
+    left: 6.8vw;
+    z-index: 1;
+}
+
+.sc{
+    color: var(--sideColor);
+}
+
+.mc{
+    color: var(--sideColor);
+}
+
+.hidden_link{
+    font-weight: 600;
+    color: var(--mainColor);
+    animation: glow 3.5s ease infinite;
+}
+
+#my_name{
+    font-size: 5vw;
+    margin: 0vw;
+    color: var(--mainColor);
+}
+
+#title_box {
+    position: relative;
+    
+    width: 61vw; 
+    height: 219w;
+    top: 21vw;
+    left: 49.5vw;
+    
+    border-radius: 4vw;
+    background: #E1EBF9;
+    box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
+    padding: 2vw;
+    transform: translate(-50%, -50%);
+    margin-top: 2vw;
+    
+    text-align: center;
+}
+
+/* ------- Projects -------*/
+#project-label{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    left: 50vw;
+    top: 48vw;
+    color: var(--sideColor)
+}
+
+
+/* ------- About Me -------*/
+#aboutMe{
+    position: relative;
+    top: 65vw;
+}
+
+#aboutMe-label{
+    position: absolute;
+    font-size: 3vw;
+    left: 61vw;
+    top: 0vw;
+    color: var(--sideColor)
+}
+
+
+/* ------- Animation  -------*/
+@keyframes glow{
+    0%, 100%{ color: #96B0EA;}
+    50%{ color: #abc4f8;}
+}

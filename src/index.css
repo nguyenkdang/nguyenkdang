@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --mainColor: #96B0EA;
+    --sideColor: #3D6199;
+    --badgeTrans: all 0.7s ease-out;
+}
+
+.resize-transition-stopper * {
+    transition: none !important;
+}
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* GENERAL */
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+p{
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+br {
+    line-height: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #E1EBF9;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
