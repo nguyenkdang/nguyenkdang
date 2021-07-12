@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --mainColor: #96B0EA;
+    --sideColor: #3D6199;
+    --badgeTrans: all 0.7s ease-out;
+}
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* GENERAL */
+h1 {
+    font-weight: 700;
+    font-size: 3.5vw;
+}
+
+
+h2 {
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 1.3vw;
+}
+
+p{
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+br {
+    line-height: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #E1EBF9;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+/* Nav Bar */
+.navLink{
+    font-size: 2vw;
+    font-weight: 500;
+    padding: 6px;
+    color: var(--mainColor);
+    transition: color 0.5s ease-out; 
+}
+
+.navLink:hover{
+    color: var(--sideColor);
+}
+
+.navItem {
+    float: right;
+}
+
+#navBar{
+    list-style-type: none;
+    margin-right: 3vw;
+    margin-top: 3vw;
+}
+
+.highlight{
+    color: var(--sideColor);
+    cursor: default;
+}
+
+/* ------- Footer -------*/
+footer{
+    position: absolute;
+    top: 150vw;
+    left: 0vw;
+    width: 100vw;
+    height: 10vw;
+    background-color: var(--mainColor);
+}
+
+#foot-logo{
+    position: absolute;
+    left: 47.25vw;
+    transform: translate(-50%, -50%);
+}
+
+#foot-links{
+    position: absolute;
+    top: 4.5vw;
+    left: 49.25vw;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+}
+
+.foot-link{
+    font-size: 1.5vw;
+    margin: 2vw;
+}
+
+#foot-copyright{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 49.25vw;
+    top: 8vw;
+}
+
+#copyright{
+    font-size: 1.2vw;
+    color: var(--sideColor);
+}
