@@ -1,0 +1,89 @@
+/* -- Paint Drops --*/
+.paint_drip{
+    position: absolute;
+    border-radius: 20vw;
+    width: 13vw;
+    height: 34vw;
+    background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 50%, #d349ff 100%);
+
+    z-index: -1;
+}
+
+.left_paint{
+    top: 1.5vw;
+    left: 11vw;
+    
+    animation: floater 4s ease infinite;
+}
+
+.top_left_drip{
+    position: absolute;
+    top: 11.25vw;
+    left: 16.25vw;
+    width: 6.5vw;
+    height: 22vw;
+    
+    border-top-left-radius: 20vw;
+    border-top-right-radius: 8vw;
+    border-bottom-left-radius: 8vw;
+    border-bottom-right-radius: 25vw;
+    
+    z-index: 1;
+    background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 70%, #E7A64C 90%, #D9838E 100%);
+
+    animation: floater-slow 4s ease infinite;
+}
+
+.middle_paint{
+    top: 7vw;
+    left: 43.4vw;
+    
+    animation: floater 3.5s ease infinite;
+}
+
+.right_paint{
+    top: 19vw;
+    left: 76vw;
+    height: 44vw;
+
+    animation: floater 5s ease infinite;
+}
+
+.top_right_drip{
+    position: absolute;
+    top: 20vw;
+    left: 77.5vw;
+    width: 6.5vw;
+    height: 16.25vw;
+
+    border-top-left-radius: 25vw;
+    border-top-right-radius: 6vw;
+    border-bottom-left-radius: 6vw;
+    border-bottom-right-radius: 16vw;
+
+    background: linear-gradient(20deg, #f1cf00 00%, #d349ff 100%);
+
+    animation: floater-slow 5s ease infinite;
+}
+
+.paint_drop{
+    position: absolute;
+    top: 43vw;
+    left: 15vw;
+    border-radius: 25vw;
+    width: 6vw;
+    height: 6vw;
+    background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 100%);
+    animation: floater-slow 4s ease infinite;
+}
+
+/* ------- Animation  -------*/
+@keyframes floater{
+    0%, 100%{ transform: translate(0vw, 0vw);}
+    50%{ transform: translate(0vw, 0.55vw);}
+}
+
+@keyframes floater-slow{
+    0%, 100%{ transform: translate(0vw, 0vw);}
+    50%{ transform: translate(0vw, 0.3vw);}
+}

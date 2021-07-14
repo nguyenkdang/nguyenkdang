@@ -1,0 +1,43 @@
+#contact_box2{
+    position: absolute;
+    width: 21vw;
+    height: 10vw;
+    top: 11vw;
+    left: 33vw;
+    border-radius: 2vw;
+    transform: translate(-50%, -50%);
+    background-color: var(--mainColor);
+    z-index: 0;
+}
+
+.logo{
+    position: relative;
+    top: 1.5vw;
+
+}
+
+#ln_logo{
+    float: left;
+    left: 3vw;
+}
+
+#git_logo{
+
+    float: left;
+    padding-left: 2vw;
+    left: 3vw;
+}
+
+#be_logo{
+    position: relative;
+    padding-left: 2vw;
+    float: left;
+    left: 3vw;
+}
+
+#in_logo{
+    position: relative;
+    padding-left: 2vw;
+    float: left;
+    left: 3vw;
+}

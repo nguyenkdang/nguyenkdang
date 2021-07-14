@@ -1,0 +1,16 @@
+.contact{
+    height: 50vw;
+}
+
+/* ------- Contact Form -------*/
+#contact_box{
+    position: absolute;
+    width: 50vw;
+    height: 30vw;
+    top: 26vw;
+    left: 50vw;
+    border-radius: 2vw;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1;
+}
