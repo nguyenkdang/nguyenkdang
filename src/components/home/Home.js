@@ -3,13 +3,13 @@ import About_code from './about/About_code'
 import About_dsgn from './about/About_dsgn'
 import Paint from './intro/Paint'
 import Badge from './projects/Badge'
-import logo from '../../logo.svg'
+import Mylogo from '../../svg/Mylogo'
 
 const Home = () => {
     return (
         <div className="home">
             <div id="head_logo">
-                <img src={logo}></img>
+                <Mylogo width="16vw"/>
             </div>
             <div id="intro">
                 <div id="title_box"> 

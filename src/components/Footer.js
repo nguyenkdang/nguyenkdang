@@ -1,11 +1,11 @@
 import './Footer.css'
-import logo from '../logo.svg'
+import Mylogo from '../svg/Mylogo'
 
 const Footer = () => {
     return (
         <div className="foot">
             <div id="foot_logo">
-                <img src={logo}></img>
+                <Mylogo width="14vw"/>
             </div>
             <div id="foot-links">
                 <a class="foot-link" href="/"> home</a>

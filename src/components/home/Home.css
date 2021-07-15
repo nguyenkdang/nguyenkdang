@@ -5,10 +5,9 @@
 
 /* ----- Intro Page -----*/
 #head_logo{
-    width: 8.5vw;
     position: absolute;
-    top: 4vw;
-    left: 6.8vw;
+    top: 3vw;
+    left: -12.1vw;
     z-index: 1;
 }
 
