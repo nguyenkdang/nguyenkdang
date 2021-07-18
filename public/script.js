@@ -71,6 +71,19 @@ $(document).ready(function() {
     }
   });
 
+  $("#em_logo").click(function() {
+    
+    $('#contact_box3').toggleClass('cb3_unext');
+    $('#contact_box3').toggleClass('cb3_ext');
+
+    $('#my_email').toggleClass('mye_unext');
+    $('#my_email').toggleClass('mye_ext');
+    
+    $('#em_logo').toggleClass('elg_unext');
+    $('#em_logo').toggleClass('elg_ext');
+    
+  });
+
   
 
 

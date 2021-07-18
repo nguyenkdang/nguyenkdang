@@ -1,31 +1,43 @@
 import "./Socials.css"
-import logo_behance from '../../svg/logo_behance.svg'
-import logo_github from '../../svg/logo_github.svg'
-import logo_instagram from '../../svg/logo_instagram.svg'
-import logo_linkedin from '../../svg/logo_linkedin.svg'
+
+
+import Logo_linkedin from "../../svg/Logo_linkedin"
+import Logo_behance from "../../svg/Logo_behance"
+import Logo_instagram from "../../svg/Logo_instagram"
+import Logo_github from "../../svg/Logo_github"
+import Logo_email from "../../svg/Logo_email"
+
+
+const size = "2.2vw"
 
 const Socials = () => {
     return (
-        <div id="contact_box2">
-            <div id="ln_logo" class="logo">
-                <a href="https://www.linkedin.com/in/nguyenkdang/" target="_blank">
-                    <img src={logo_linkedin} alt="linkedIn logo"/>
-                </a>
+        <div className="socials">
+            <div id="contact_box2">
+                <div id="ln_logo" class="logo">
+                    <a href="https://www.linkedin.com/in/nguyenkdang/" target="_blank">
+                        <Logo_linkedin width={size} height={size}/>
+                    </a>
+                </div>
+                <div id="git_logo" class="logo">
+                    <a href="https://github.com/nguyenkdang" target="_blank">
+                        <Logo_github width={size} height={size}/>
+                    </a>
+                </div>
+                <div id="be_logo" class="logo">
+                    <a href="https://www.behance.net/nguyenkdang" target="_blank">
+                        <Logo_behance width={size} height={size}/>
+                    </a>
+                </div>
+                <div id="in_logo" class="logo">
+                    <a href="https://www.instagram.com/nguwaynedang/" target="_blank">
+                        <Logo_instagram width={size} height={size}/>
+                    </a>
+                </div>
             </div>
-            <div id="git_logo" class="logo">
-                <a href="https://github.com/nguyenkdang" target="_blank">
-                    <img src={logo_github} alt="Github logo"/>
-                </a>
-            </div>
-            <div id="be_logo" class="logo">
-                <a href="https://www.behance.net/nguyenkdang" target="_blank">
-                    <img src={logo_behance} alt="Behance logo"/>
-                </a>
-            </div>
-            <div id="in_logo" class="logo">
-                <a href="https://www.instagram.com/nguwaynedang/" target="_blank">
-                    <img src={logo_instagram} alt="Instagram logo"/>
-                </a>
+            <div id="contact_box3" class="cb3_unext">
+                    <h2 id="my_email" class="mye_unext">nguyenkhdang@gmail.com </h2>
+                    <span id="em_logo" class="elg_unext"><Logo_email width={size} height={size}/></span>
             </div>
         </div>
     )

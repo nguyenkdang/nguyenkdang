@@ -1,5 +1,7 @@
 .contact{
+    position: relative;
     height: 50vw;
+    top: -1vw;
 }
 
 /* ------- Contact Form -------*/
@@ -7,10 +9,81 @@
     position: absolute;
     width: 50vw;
     height: 30vw;
-    top: 26vw;
+    top: 27vw;
     left: 50vw;
     border-radius: 2vw;
     transform: translate(-50%, -50%);
     background-color: white;
     z-index: 1;
+    padding: 2vw;
+    padding-top: 0.5vw;
 }
+
+textarea{
+    width: 46.3vw;
+    height: 17vw;
+    padding: 0.75vw 1vw;
+    border-radius: 0.5vw;
+    border-width: 0.2vw;
+    border-style: solid;
+    font-size: 1.2vw;
+    border-color: var(--mainColor);
+    resize: none;
+}
+
+input{
+    width: 21vw;
+    padding: 0.75vw 1vw;
+    font-size: 1.2vw;
+    border-radius: 0.5vw;
+    border-width: 0.2vw;
+    border-style: solid;
+    border-color: var(--mainColor);
+}
+
+#name_field{
+    float: left;
+}
+
+#email_field{
+    position: relative;
+    float: left;
+    left: 2vw;
+}
+
+#message_field{
+    float:left;
+}
+
+.inp_label{
+    font-size: 1.5vw;
+    margin-bottom: 0.1vw;
+    margin-left: 0.4vw;
+    color: var(--sideColor);
+}
+
+#fcf-button{
+   position: absolute;
+   top: 31vw;
+   left: 43vw;
+   font-size: 1.5vw;
+   background-color: var(--mainColor);
+   color: white;
+   border: none;
+   border-radius: 2vw;
+   cursor: pointer;
+   width: 8vw;
+   height: 3vw;
+   transition: all 0.4s linear;
+}
+
+#fcf-button:hover{
+    background-color: var(--sideColor);
+}
+
+.LA{
+    color:red;
+    background-color: red;
+}
+
+

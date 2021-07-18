@@ -18,7 +18,7 @@ const Home = () => {
                         di<a class="hidden_link" href="https://github.com/nguyenkdang" target="_blank">git</a>al
                         des<a class="hidden_link" href="https://www.instagram.com/nguwaynedang/" target="_blank">ig</a>n</h2>
                     <h1 id="my_name"> Nguyen K Dang </h1>
-                    <h2 class='mc'> Software Developer & Visual Designer </h2>
+                    <h2 class='sc'> Software Developer & Visual Designer </h2>
                 </div>
                 <Paint/>
             </div>

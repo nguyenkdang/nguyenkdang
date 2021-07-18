@@ -37,6 +37,7 @@ svg:hover #more-info-tag{
 #more-info-back{
     transition: var(--badgeTrans);
 }
+
 svg:hover #more-info-back{
     d: path("M241.56,0H350.94a16.25,16.25,0,0,1,16.25,16.25V41.87a0,0,0,0,1,0,0H241.56a20.94,20.94,0,0,1-20.94-20.94v0A20.94,20.94,0,0,1,241.56,0Z");    
     transform: translate(-133px, 0);
