@@ -2,7 +2,7 @@
     position: absolute;
     width: 18vw;
     height: 10vw;
-    top: 11vw;
+    top: 12vw;
     left: 31vw;
     border-radius: 1.7vw;
     transform: translate(-50%, -50%);
@@ -44,7 +44,7 @@
 #contact_box3{
     position: absolute;
     border-top-right-radius: 1.7vw;
-    top: 6vw;
+    top: 7vw;
     left: 38vw;
     
     height: 8vw;
