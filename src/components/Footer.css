@@ -1,8 +1,6 @@
 .foot{
     position: relative;
-    bottom: -0.5vw;
-    left: -0.5vw;
-    width: 98.6vw;
+    width: 100vw;
     height: 10vw;
     background-color: var(--mainColor);
 }

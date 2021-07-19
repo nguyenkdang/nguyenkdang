@@ -13,12 +13,12 @@ const Home = () => {
             </div>
             <div id="intro">
                 <div id="title_box"> 
-                    <h2 class='sc'> <a class="hidden_link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank">in</a>tuitive 
-                        <a class="hidden_link" href="https://www.behance.net/nguyenkdang" target="_blank"> be</a>autiful 
-                        di<a class="hidden_link" href="https://github.com/nguyenkdang" target="_blank">git</a>al
-                        des<a class="hidden_link" href="https://www.instagram.com/nguwaynedang/" target="_blank">ig</a>n</h2>
+                    <h2 className='sc'> <a className="hidden_link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank">in</a>tuitive 
+                        <a className="hidden_link" href="https://www.behance.net/nguyenkdang" target="_blank"> be</a>autiful 
+                        di<a className="hidden_link" href="https://github.com/nguyenkdang" target="_blank">git</a>al
+                        des<a className="hidden_link" href="https://www.instagram.com/nguwaynedang/" target="_blank">ig</a>n</h2>
                     <h1 id="my_name"> Nguyen K Dang </h1>
-                    <h2 class='sc'> Software Developer & Visual Designer </h2>
+                    <h2 className='sc'> Software Developer & Visual Designer </h2>
                 </div>
                 <Paint/>
             </div>

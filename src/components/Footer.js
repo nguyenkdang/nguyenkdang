@@ -1,5 +1,6 @@
 import './Footer.css'
 import Mylogo from '../svg/Mylogo'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -8,14 +9,14 @@ const Footer = () => {
                 <Mylogo width="14vw"/>
             </div>
             <div id="foot-links">
-                <a class="foot-link" href="/"> home</a>
-                <a class="foot-link" href="resume"> resume</a>
-                <a class="foot-link" href="projects"> projects</a>
-                <a class="foot-link" href="contact"> contact</a>
-                <a class="foot-link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank"> linkedIn</a>
-                <a class="foot-link" href="https://github.com/nguyenkdang" target="_blank"> github</a>
-                <a class="foot-link" href="https://www.behance.net/nguyenkdang" target="_blank"> behance</a>
-                <a class="foot-link" href="https://www.instagram.com/nguwaynedang/" target="_blank"> instagram</a>
+                <Link className="foot-link" to="/"> home</Link>
+                <Link className="foot-link" to="resume"> resume</Link>
+                <Link className="foot-link" to="projects"> projects</Link>
+                <Link className="foot-link" to="contact"> contact</Link>
+                <a className="foot-link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank"> linkedIn</a>
+                <a className="foot-link" href="https://github.com/nguyenkdang" target="_blank"> github</a>
+                <a className="foot-link" href="https://www.behance.net/nguyenkdang" target="_blank"> behance</a>
+                <a className="foot-link" href="https://www.instagram.com/nguwaynedang/" target="_blank"> instagram</a>
             </div>
             <div id="foot-copyright">
                 <h2 id="copyright"> © Nguyen K. Dang 2021</h2>
