@@ -1,0 +1,455 @@
+/* ----- Left -----*/
+#me-left{
+    position: relative;
+    top: 2.5vw;
+    left: 15vw;
+    width: 45vw;
+    height: 28vw;
+    background: transparent;
+
+    transition: transform 0.4s ease-out;
+
+    &.back{
+        z-index: 0;
+        &:hover{
+            #mlBack{
+                transform: scale(1, 1);
+                transition: all 0.3s ease-out;
+               #shadow-container{
+                   #ml-shadow{
+                    filter: blur(0.45vw);
+                    opacity: 0.7;
+                    transition: all 0.4s ease-out;
+                    transform: scale(0.95, 0.92);
+                   }
+               }
+               
+               #mlt1{
+                transform: scale(1.02, 1.02);
+                transform-origin: center;
+                transform-box: fill-box;
+                transition: all 0.4s ease-out;
+               }
+            }
+
+            #circuit{
+                #mlCrc1{
+                    top: -24.25vw;
+                    left: -1.3vw;
+                    width: 2.2vw;
+                    height: 2.2vw;
+                }
+
+                #mlCrc2{
+                    width: 4.5vw;
+                    height: 4.5vw;
+                }
+
+                #mlCrc3{
+                    right: -43vw;
+                    width: 2.2vw;
+                    height: 2.2vw;
+                }
+                
+                #mlBar1{
+                    height: 21vw;
+                }
+
+                #mlBar2{
+                    width: 39.5vw;
+                }
+            }
+        }
+        
+        #mlBack{
+            transform: scale(0.95, 0.95);
+            cursor: pointer;
+            #shadow-container{
+                #ml-shadow{
+                    opacity: 0.6;
+                    width: 22.25vw;
+                    height: 24.8vw;
+                    transition: all 0.4s ease-out, opacity 0.4s, transform 0.4s, filter 0.4s;
+                    transition-delay: 0.5s, 0s, 0s, 0s;
+                }
+            }
+            
+            #mlt1{
+                color: var(--sideColor);
+                opacity: 1;
+            }
+
+            #mlt2{
+                opacity: 0;
+            }
+         
+            #mleft-para{
+                font-size: 0vw;
+            }
+         }
+
+        #circuit{
+            top: 23vw;
+            left: 4vw;
+            cursor: pointer;
+
+            #mlCrc1{
+                top: -23vw;
+                left: -1.2vw;
+                width: 2vw;
+                height: 2vw;
+                
+                background: var(--mainColor);
+                border:0.60vw solid var(--sideColor);
+            }
+
+            #mlCrc2{
+                top: 0vw;
+                right:-0.8vw;
+                width: 3.5vw;
+                height: 3.5vw;
+                
+                background: var(--mainColor);
+                border:0.80vw solid var(--sideColor);
+            }
+
+            #mlCrc3{
+                bottom: -2vw;
+                right: -42vw;
+                width: 2vw;
+                height: 2vw;
+                
+                background: var(--mainColor);
+                border:0.60vw solid var(--sideColor);
+            }
+
+            #mlBar1{
+                width: 0.8vw;
+                height: 20vw;
+            }
+
+            #mlBar2{
+                height: 0.8vw;
+                width: 38.5vw;  
+            }
+        }
+    }
+
+    &.front{
+        z-index: 1;
+
+        #mlBack{
+            animation: flip-bg 1s ease;
+            animation-fill-mode: forwards; 
+            transform: scale(1,1);
+            cursor: default;
+            #shadow-container{
+                #ml-shadow{
+                    opacity: 0;
+                    width: 0vw;
+                    height: 24vw;
+                    transition: all 0s ease-out;
+                    transition-delay: 0s;
+                }
+            }
+            
+            #mlt1{
+                color: transparent;
+                opacity: 0;
+
+                animation: flip-title1 1s ease;
+            }
+
+            #mlt2{
+                opacity: 1;
+                animation: flip-title2 1s ease;
+            }
+         
+            #mleft-para{
+                animation: flip-para 1s ease;
+                font-size: 1.5vw; 
+            }
+         }
+
+        #circuit{
+            top: 25.1vw;
+            left: 2vw;
+            cursor: default;
+            animation: flip-circuit 1s ease;
+
+            #mlCrc1{
+                top: -30.50vw;
+                left: -1.5vw;
+                width: 2.4vw;
+                height: 2.4vw;
+
+                background: transparent;
+                border:0.75vw solid white;
+
+                animation: flip-LCir1 1s ease;
+            }
+
+            #mlCrc2{
+                top: -0.2vw;
+                right:-1vw;
+                width: 3.5vw;
+                height: 3.5vw;
+                
+                background: transparent;
+                border:1vw solid white;
+                
+                animation: flip-LCir2 1s ease;
+            }
+
+            #mlCrc3{
+                bottom: -2.1vw;
+                right: -46.2vw;
+                width: 2.4vw;
+                height: 2.4vw;
+                
+                background: transparent;
+                border:0.75vw solid white;
+                
+                animation: flip-LCir3 1s ease;
+            }
+
+            #mlBar1{
+                width: 1vw;
+                height: 27vw;
+                animation: flip-LBar1 1s ease;
+                background-position: bottom;
+            }
+
+            #mlBar2{
+                height: 1vw;
+                width: 42.1vw;
+                background-position: left;
+                
+                animation: flip-LBar2 1s ease; 
+            }
+        }
+    }
+
+    #mlBack{
+        position: absolute;
+        width: 45vw;
+        height: 28vw;
+        background: var(--mainColor);
+
+        transition: transform 0.4s ease-out;
+        #shadow-container{
+            #ml-shadow{
+                position: absolute;
+                filter: blur(0.5vw);
+                background: var(--sideColor);
+                right: -1vw;
+                bottom: -1vw;
+            }
+        }
+        
+        #mlt1{
+            top: -2.5vw;
+            left: 6.5vw;
+
+            position: absolute;
+            font-weight: 700;
+            font-size: 5vw;
+            width: 10vw;
+            transition: transform 0.4s ease-out, opacity 1.5s;
+        }
+
+        #mlt2{
+            position: absolute;
+            font-weight: 700;
+            font-size: 3vw;
+            width: 40vw;
+            left: 5vw;
+            color: white;
+            transition: transform 0.4s ease-out, opacity 0s;
+        }
+     
+        #mleft-para{
+            position: relative;
+            top: 6vw;
+            left: 8vw;
+            width: 30vw;
+            color: white;
+        }
+    }
+
+    #circuit{
+        position: absolute;
+        transition: all 0.4s ease-out; 
+
+        #mlCrc1{
+            position: absolute;
+            border-radius: 50%;
+            z-index: 1; 
+
+            transition: all 0.4s ease-out;
+        }
+
+        #mlCrc2{
+            position: absolute;
+            border-radius: 50%;
+            border-top-right-radius: 0%;
+            transition: all 0.4s ease-out, border-color 0.4s ease-out;
+            z-index: 1;
+
+            transition-delay: 0.0s, 0.26s;
+        }
+
+        #mlCrc3{
+            position: absolute;
+            border-radius: 50%;
+            z-index: 1;
+
+            transition: all 0.4s ease-out;  
+        }
+
+        #mlBar1{
+            position: absolute;
+            bottom: 0vw;
+            left: 0vw; 
+            background: linear-gradient(to bottom, var(--sideColor) 50%, white 50%) top;
+            background-size: 200% 200%;
+            
+            transition: all 0.4s ease-out;
+        }
+
+        #mlBar2{
+            position: absolute;
+            bottom: -0.8vw;
+            left: 0.5vw;
+
+            background: linear-gradient(to left, var(--sideColor) 50%, white 50%) right;
+            background-size: 200%;
+
+            transition: all 0.4s ease-out;
+        }
+    }
+}
+
+
+/* ------- Animation  -------*/
+/* Me-left*/
+@keyframes flip-circuit{
+    0%{
+        top: 23vw;
+        left: 4vw;
+    }
+    100%{
+        top: 25.1vw;
+        left: 2vw;
+    }
+}
+
+@keyframes flip-LCir1{
+    0%{
+        top: -24.25vw;
+        left: -1.3vw;
+        width: 2.2vw;
+        height: 2.2vw;
+        background: var(--mainColor);
+        border:0.60vw solid var(--sideColor);
+    }
+    50%{
+        background: transparent;
+    }
+    75%{
+        border:0.70vw solid var(--sideColor);
+    }
+    100%{
+        top: -30.50vw;
+        left: -1.5vw;
+        width: 2.4vw;
+        height: 2.4vw;
+        border:0.75vw solid white;
+    }
+}
+
+@keyframes flip-LCir2{
+    0%{
+        width: 4.5vw;
+        height: 4.5vw;
+        right:-0.7vw;
+        background: var(--mainColor);
+        border:0.80vw solid var(--sideColor);
+
+    }
+    50%{
+        background: transparent;
+        border:1vw solid var(--sideColor);
+    }
+    60%{
+        border:1vw solid white;
+    }
+    100%{
+        right:-1vw;
+        top: -0.2vw;
+        width: 3.5vw;
+        height: 3.5vw;
+        border:1vw solid white;
+    }
+}
+
+@keyframes flip-LCir3{
+    0%{
+        bottom: -2vw;
+        right: -43vw;
+        width: 2.2vw;
+        height: 2.2vw;
+        border:0.60vw solid var(--sideColor);
+    }
+    50%{
+        background: var(--mainColor);
+    }
+    75%{
+        border:0.60vw solid var(--sideColor);
+    }
+    100%{
+        bottom: -2.1vw;
+        right: -46.2vw;
+        width: 2.4vw;
+        height: 2.4vw;
+        background: transparent;
+        border:0.75vw solid white;
+    }
+}
+
+@keyframes flip-LBar1{
+    0%{
+        height: 21vw;
+        width: 0.8vw;
+        background-position: top;
+    }
+    50%{
+        background-position: top;
+    }
+    80%{
+        background-position: bottom;
+    }
+    100%{
+        height: 27vw;
+        width: 1vw;
+
+    }
+}
+
+@keyframes flip-LBar2{
+    0%{
+        height: 0.8vw;
+        width: 39.5vw;
+        background-position: right;
+    }
+    50%{
+        background-position: right;
+    }
+    80%{
+        background-position: left;
+    }
+    100%{
+        height: 1vw;
+        width: 42.1vw;
+    }
+}

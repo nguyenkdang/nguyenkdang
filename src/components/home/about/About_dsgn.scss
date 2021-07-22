@@ -1,0 +1,412 @@
+/* ----- right -----*/
+#me-right{
+    position: absolute;
+    top: 8.5vw;
+    left: 40vw;
+    width: 45vw;
+    height: 28vw;
+    background: transparent;
+
+    transition: transform 0.4s ease-out;
+
+    &.back{
+        z-index: 0;
+        &:hover{
+            #mrBack{
+                transform: scale(1, 1);
+                transition: all 0.3s ease-out;
+                
+                #shadow-container{
+                    #mr-shadow{
+                        filter: blur(0.45vw);
+                        opacity: 0.7;
+                        transition: all 0.4s ease-out;
+                        transform: scale(0.95, 0.92);
+                    }
+                }
+
+                #mrt1{
+                    transform: scale(1.02, 1.02);
+                    transform-origin: center;
+                    transform-box: fill-box;
+                    transition: all 0.4s ease-out;
+                }
+            }
+
+            #mrSqr{
+                transform: translate(0vw, -0.7vw) 
+                scale(1.05, 1.05)
+                rotate(35deg);
+            }
+
+            #mr-CrcBr{
+                #mrCrc{
+                    transform: translate(1vw, -0.5vw) 
+                    scale(1.1, 1.1);
+                }  
+            }
+
+            #mrTrg{
+                transform: translate(-0.5vw, 0.5vw) 
+                scale(1.07, 1.07)
+                rotate(-38deg);
+            }
+        }
+
+        #mrBack{
+            transform: scale(0.95, 0.95);
+            cursor: pointer;
+            #shadow-container{
+                #mr-shadow{
+                    opacity: 0.6;
+                    width: 22.25vw;
+                    height: 24.8vw;
+                    transition: all 0.4s ease-out, opacity 0.4s, transform 0.4s, filter 0.4s;
+                    transition-delay: 0.5s, 0s, 0s, 0s;
+                }
+            }
+
+            #mrt1{
+                color: var(--sideColor);
+                opacity: 1;
+            }
+
+            #mrt2{
+                opacity: 0;
+            }
+
+            #mright-para{
+                font-size: 0vw;
+            }
+        }
+
+        #mrSqr{
+            transform: rotate(30deg);
+            background: var(--mainColor);
+            border:0.60vw solid var(--sideColor);
+            cursor: pointer;
+        }
+
+        #mr-CrcBr{
+            #mrBar{
+                top: 10vw;
+                height: 5vw;
+                background: var(--sideColor);
+            }
+
+            #mrCrc{
+                background: var(--mainColor);
+                border:0.60vw solid var(--sideColor);
+                cursor: pointer;
+            }
+        }
+
+        #mrTrg{
+            transform: rotate(-35deg);
+            border-bottom: 5vw solid var(--sideColor);
+            cursor: pointer;
+
+            #mriTrg{
+                border-bottom: 3vw solid var(--mainColor);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &.front{
+        z-index: 1;
+
+        #mrBack{
+            animation: flip-bg 1s ease;
+            animation-fill-mode: forwards; 
+            transform: scale(1,1);
+            cursor: default;
+            #shadow-container{
+                #mr-shadow{
+                    opacity: 0;
+                    width: 0vw;
+                    height: 24vw;
+                    transition: all 0s ease-out;
+                    transition-delay: 0s;
+                }
+            }
+
+            #mrt1{
+                color: transparent;
+                opacity: 0;
+
+                animation: flip-title1 1s ease;
+            }
+
+            #mrt2{
+                animation: flip-title2 1s ease;
+                opacity: 1; 
+            }
+
+            #mright-para{
+                animation: flip-para 1s ease;
+                font-size: 1.5vw; 
+            }
+        }
+        
+        #mrSqr{
+            transform: translate(-5vw, -1vw) 
+            scale(1.4, 1.4)
+            rotate(220deg);
+            background: #9282EE;
+            border:0.60vw solid white;
+            cursor: default;
+            
+            animation: flip-square 1s ease;
+        }
+
+        #mr-CrcBr{
+            transform-origin: right;
+            transform: translate(3.2vw, 1.5vw);
+
+            animation: flip-cirbar 1s ease;
+            #mrBar{
+                top: 1.5vw;
+                height: 16vw;
+                background: white;
+                
+                animation: flip-bar 1s ease;
+            
+            }
+
+            #mrCrc{
+                transform: scale(1.3, 1.3);
+                background: #30D7D6;
+                border:0.60vw solid white;
+                cursor: default;
+                
+                animation: flip-circle 1s ease;
+            }
+            
+        }
+
+        #mrTrg{
+            transform: translate(-10vw, 3vw) 
+                scale(1.3, 1.3)
+                rotate(-200deg);
+            border-bottom: 5vw solid white;
+            cursor: default;
+            
+            animation: flip-triangle 1s ease;
+
+            #mriTrg{
+                border-bottom: 3vw solid #50BADE;
+                cursor: default;
+
+                animation: flip-itriangle 1s ease;
+            }
+        }
+    }
+
+    #mrSqr{
+        position: relative;
+        left: 35vw;
+        width: 2.5vw;
+        height: 2.5vw;
+        transition: all 0.4s ease-out;      
+    }
+
+    #mr-CrcBr{
+        #mrBar{
+            position: absolute;
+            left: 41.2vw; 
+            width: 1.3vw;
+            border-radius: 10vw;
+            transition: all 0.4s ease-out;
+        }
+
+        #mrCrc{
+            position: relative;
+            left: 38.5vw;
+            top: 6vw;
+            width: 6vw;
+            height: 6vw;
+            border-radius: 50%;
+            transition: all 0.4s ease-out;  
+        }
+    }
+
+    #mrTrg{
+        position: absolute;
+        left: 22vw;
+        top: 23vw;
+        width: 0;
+        height: 0;
+        border-left: 2.5vw solid transparent;
+        border-right: 2.5vw solid transparent;
+        transition: all 0.4s ease-out;
+        
+        #mriTrg{
+            position: relative;
+            top: 1.3vw;
+            right: 1.5vw;
+            width: 0;
+            height: 0;
+            border-left: 1.5vw solid transparent;
+            border-right: 1.5vw solid transparent;
+        }
+    }
+
+    #mrBack{
+        position: absolute;
+        width: 45vw;
+        height: 28vw;
+        background: var(--mainColor);
+        
+        transition: transform 0.4s ease-out;
+        #shadow-container{
+            #mr-shadow{
+                position: absolute;
+                filter: blur(0.5vw);
+                left: -1vw;
+                top: -1vw;
+                background: var(--sideColor);
+            }
+        }
+
+        #mrt1{
+            position: absolute;
+            font-weight: 700;
+            font-size: 5vw;
+            top: -1vw;
+            left: 25vw;
+            width: 10vw;
+            transition: transform 0.4s ease-out, opacity 1.5s;
+        }
+
+        #mrt2{
+            position: absolute;
+            font-weight: 700;
+            font-size: 3vw;
+            width: 40vw;
+            left: 5vw;
+            color: white;
+            transition: transform 0.4s ease-out, opacity 0s;
+        }
+
+        #mright-para{
+            position: relative;
+            top: 6vw;
+            left: 8vw;
+            width: 30vw;
+            color: white;
+        }
+    }
+}
+
+/* ------- Animation  -------*/
+/* Me-Right*/
+@keyframes flip-square{
+    0%{ 
+        transform: translate(0vw, -0.7vw) 
+        scale(1.05, 1.05)
+        rotate(35deg);
+        background: var(--mainColor);
+        border:0.60vw solid var(--sideColor);
+    }
+    50%{
+        background: var(--mainColor);
+        border:0.60vw solid var(--sideColor);
+    }
+    60%{
+        transform: translate(2vw, -10vw)
+        scale(0.6, 0.6)
+        rotate(55deg); 
+    }
+
+    100%{
+        transform: translate(-5vw, -1vw) 
+        scale(1.4, 1.4)
+        rotate(220deg);
+        background: #9282EE;
+        border:0.60vw solid white;
+    }
+}
+
+@keyframes flip-circle{
+    0%{
+        transform: scale(1.1, 1.1);
+        background: var(--mainColor);
+        border:0.60vw solid var(--sideColor);
+    }
+    50%{
+        background: var(--mainColor);
+        border:0.60vw solid var(--sideColor);
+    }
+    60%{
+        transform: scale(1.55, 1.55); 
+    }
+    100%{
+        transform: scale(1.3, 1.3);
+        background: #30D7D6;
+        border:0.60vw solid white;
+    }
+}
+
+@keyframes flip-bar{
+    0%{
+        height: 5vw;
+        top: 10vw;
+    }
+    0%, 50%{ 
+        background: var(--sideColor); 
+    }
+    60%{
+        height: 14vw;
+        top: 1.65vw;
+    }
+    100%{
+        background: white;
+        height: 16vw;
+        top: 1.5vw;
+    }
+}
+
+@keyframes flip-cirbar{
+    0%{
+        transform: translate(1vw, -0.5vw) 
+    }
+    60%{
+        transform: translate(1vw, -0.5vw)
+            rotate(40deg)
+    }
+    100%{
+        transform: translate(3.2vw, 1.5vw)
+            rotate(0deg)
+    }
+}
+
+
+@keyframes flip-triangle{
+    0%{
+        transform: translate(-0.5vw, 0.5vw) 
+            scale(1.07, 1.07)
+            rotate(-38deg);
+        border-bottom: 5vw solid var(--sideColor);
+
+    }
+    50%{
+        border-bottom: 5vw solid var(--sideColor);
+    }
+    60%{
+        transform: translate(-12vw, 6vw) 
+            scale(0.7, 0.7)
+            rotate(-100deg);
+    }
+    100%{
+        transform: translate(-10vw, 3vw) 
+            scale(1.3, 1.3)
+            rotate(-200deg);
+        border-bottom: 5vw solid white;
+    }
+}
+
+@keyframes flip-itriangle{
+    0%, 50%{ border-bottom: 3vw solid var(--mainColor);}
+    100%{ border-bottom: 3vw solid #50BADE;}
+}

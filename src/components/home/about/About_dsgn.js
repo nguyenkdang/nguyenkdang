@@ -1,26 +1,24 @@
-import './About_dsgn.css'
-import './About_both.css';
+import './About_dsgn.scss'
+import './About_both.scss';
 
 const About_dsgn = () => {
     return (
-        <div className="about_dsgn">
-            <div id="me-right" className="back">
-                <div className="mrBack-B">
-                    <div id="shadow-container"> <div className="mr-shadow-B"></div> </div>
-                    <p className="mrt1-B"> Let's Talk Design  </p>
-                    <p className="mrt2-B"> Let's Talk Design  </p>
-                    <p className="mright-para-B"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                    sed diam nonummy nibh euis ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    </p>
-                    
-                </div>
-                <div id="mr-square" className="mrSqr-B"></div>
-                    <div className="mr-CrcBr-B">
-                        <div className="mrBar-B"></div>
-                        <div className="mrCrc-B"></div>
-                    </div>
-                <div className="mrTrg-B"> <div className="mriTrg-B"> </div> </div>
+        <div id="me-right" className="back">
+            <div id="mrBack">
+                <div id="shadow-container"> <div id="mr-shadow"></div> </div>
+                <p id="mrt1"> Let's Talk Design  </p>
+                <p id="mrt2"> Let's Talk Design  </p>
+                <p id="mright-para"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euis ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                </p>
             </div>
+
+            <div id="mrSqr"></div>
+            <div id="mr-CrcBr">
+                <div id="mrBar"></div>
+                <div id="mrCrc"></div>
+            </div>
+            <div id="mrTrg"> <div id="mriTrg"> </div> </div>
         </div>
     )
 }

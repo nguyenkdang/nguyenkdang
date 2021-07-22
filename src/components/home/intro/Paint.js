@@ -1,4 +1,4 @@
-import './Paint.css'
+import './Paint.scss'
 
 const Paint = () => {
     return (

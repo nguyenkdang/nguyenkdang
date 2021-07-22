@@ -1,0 +1,60 @@
+/* l&r-background */
+
+/* l&r-title */
+
+/* l&r-paragraph */
+
+/* l&r-shadow */
+#shadow-container{
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 45vw;
+    height: 28vw;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* ------- Animation  -------*/
+/* Me-both*/
+@keyframes flip-bg{
+    0%{ transform: scale(1,1);
+        background: var(--mainColor);
+    }
+    50%{ 
+        transform: scale(0,1);
+        background: #7a95ce;
+    }
+    51%{ 
+        transform: scale(0,1);
+        background: linear-gradient(320deg, #00ffc9 0%, #d349ff 80%); 
+    }
+    100%{ 
+        transform: scale(1,1);
+        background: linear-gradient(320deg, #00ffc9 0%, #d349ff 80%);
+    }
+}
+
+@keyframes flip-title1{
+    0%, 50%{
+        opacity: 1;   
+    }
+    51%, 100%{
+        opacity: 0;   
+    }
+}
+
+@keyframes flip-title2{
+    0%, 50%{
+        opacity: 0;   
+    }
+    51%, 100%{
+        opacity: 1;   
+    }
+    
+}
+
+@keyframes flip-para{
+    0%, 50%{ font-size: 0vw;}
+    51%, 100%{ font-size: 1.5vw;}
+}

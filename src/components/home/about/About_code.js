@@ -1,27 +1,25 @@
-import './About_code.css';
-import './About_both.css';
+import './About_code.scss';
+import './About_both.scss';
 
 
 const About_code = () => {
     return (
-        <div className='about_code'>
-            <div id="me-left" className="front">
-                <div className="mlBack-B mlBack-F">
-                    <div id="shadow-container"> <div className="ml-shadow-B ml-shadow-F"></div> </div>
-                    <p className="mlt1-B mlt1-F"> Let's  Talk Code</p>
-                    <p className="mlt2-B mlt2-F"> Let's  Talk Software</p>
-                    <p className="mleft-para-B mleft-para-F">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                    sed diam nonummy nibh euis ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    </p>
-                </div>
+        <div id="me-left" className="front">
+            <div id="mlBack">
+                <div id="shadow-container"> <div id="ml-shadow"></div> </div>
+                <p id="mlt1"> Let's  Talk Code</p>
+                <p id="mlt2"> Let's  Talk Software</p>
+                <p id="mleft-para">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euis ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                </p>
+            </div>
 
-                <div className="circuit-B circuit-F">
-                    <div className="mlCrc1-B mlCrc1-F"></div>
-                    <div className="mlCrc2-B mlCrc2-F"></div>
-                    <div className="mlCrc3-B mlCrc3-F"></div>
-                    <div className="mlBar1-B mlBar1-F"></div>
-                    <div className="mlBar2-B mlBar2-F"></div>
-                </div>
+            <div id="circuit">
+                <div id="mlCrc1"></div>
+                <div id="mlCrc2"></div>
+                <div id="mlCrc3"></div>
+                <div id="mlBar1"></div>
+                <div id="mlBar2"></div>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import "./Socials.css"
+import "./Socials.scss"
 
 
 import Logo_linkedin from "../../svg/Logo_linkedin"
@@ -13,7 +13,7 @@ const size = "2.2vw"
 const Socials = () => {
     return (
         <div className="socials">
-            <div id="contact_box2">
+            <div id="social_box">
                 <div id="ln_logo" className="logo">
                     <a href="https://www.linkedin.com/in/nguyenkdang/" target="_blank">
                         <Logo_linkedin width={size} height={size}/>
@@ -35,9 +35,9 @@ const Socials = () => {
                     </a>
                 </div>
             </div>
-            <div id="contact_box3" className="cb3_unext">
-                    <h2 id="my_email" className="mye_unext">nguyenkhdang@gmail.com </h2>
-                    <span id="em_logo" className="elg_unext"><Logo_email width={size} height={size}/></span>
+            <div id="email_box" className="unext">
+                    <h2 id="my_email">nguyenkhdang@gmail.com </h2>
+                    <span id="em_logo"><Logo_email width={size} height={size}/></span>
             </div>
         </div>
     )

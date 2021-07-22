@@ -1,92 +1,38 @@
-$(document).ready(function() {
+var ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+}
 
-  $("#me-right").click(function() {
-    if($("#me-right").hasClass("back")){
-      $('#me-right').toggleClass('front');
-      $('#me-right').toggleClass('back');
-      $('#me-left').toggleClass('front');
-      $('#me-left').toggleClass('back');
-      //Right
-      $('.mrBack-B').toggleClass('mrBack-F');
-      $('.mrSqr-B').toggleClass('mrSqr-F');
-      $('.mrCrc-B').toggleClass('mrCrc-F');
-      $('.mrBar-B').toggleClass('mrBar-F');
-      $('.mr-CrcBr-B').toggleClass('mr-CrcBr-F');
-      $('.mrTrg-B').toggleClass('mrTrg-F');
-      $('.mriTrg-B').toggleClass('mriTrg-F');
-      $('.mrt1-B').toggleClass('mrt1-F');
-      $('.mrt2-B').toggleClass('mrt2-F');
+ready(() => {
+  document.querySelector("#me-right").addEventListener("click", (e) => {
+    if (document.querySelector("#me-right").classList.contains("back")) {
+      var me_right = document.querySelector("#me-right");
+      var me_left = document.querySelector("#me-left");
 
-      $('.mr-shadow-B').toggleClass('mr-shadow-F');
-      $('.mright-para-B').toggleClass('mright-para-F');
-
-      //Left
-      $('.circuit-B').toggleClass('circuit-F');
-      $('.mlBack-B').toggleClass('mlBack-F');
-      $('.mlt1-B').toggleClass('mlt1-F');
-      $('.mlt2-B').toggleClass('mlt2-F');
-      $('.mleft-para-B').toggleClass('mleft-para-F');
-      $('.ml-shadow-B').toggleClass('ml-shadow-F');
-      $('.mlCrc1-B').toggleClass('mlCrc1-F');
-      $('.mlCrc2-B').toggleClass('mlCrc2-F');
-      $('.mlCrc3-B').toggleClass('mlCrc3-F');
-      $('.mlBar1-B').toggleClass('mlBar1-F');
-      $('.mlBar2-B').toggleClass('mlBar2-F');
-      
-    }
-    
-  });
-
-  $("#me-left").click(function() {
-    if($("#me-left").hasClass("back")){
-      $('#me-right').toggleClass('front');
-      $('#me-right').toggleClass('back');
-      $('#me-left').toggleClass('front');
-      $('#me-left').toggleClass('back');
-      //Right
-      $('.mrBack-B').toggleClass('mrBack-F');
-      $('.mrSqr-B').toggleClass('mrSqr-F');
-      $('.mrCrc-B').toggleClass('mrCrc-F');
-      $('.mrBar-B').toggleClass('mrBar-F');
-      $('.mr-CrcBr-B').toggleClass('mr-CrcBr-F');
-      $('.mrTrg-B').toggleClass('mrTrg-F');
-      $('.mriTrg-B').toggleClass('mriTrg-F');
-      $('.mrt1-B').toggleClass('mrt1-F');
-      $('.mrt2-B').toggleClass('mrt2-F');
-      $('.mr-shadow-B').toggleClass('mr-shadow-F');
-      $('.mright-para-B').toggleClass('mright-para-F');
-
-      //Left
-      $('.circuit-B').toggleClass('circuit-F');
-      $('.mlBack-B').toggleClass('mlBack-F');
-      $('.mlt1-B').toggleClass('mlt1-F');
-      $('.mlt2-B').toggleClass('mlt2-F');
-      $('.mleft-para-B').toggleClass('mleft-para-F');
-      $('.ml-shadow-B').toggleClass('ml-shadow-F');
-      $('.mlCrc1-B').toggleClass('mlCrc1-F');
-      $('.mlCrc2-B').toggleClass('mlCrc2-F');
-      $('.mlCrc3-B').toggleClass('mlCrc3-F');
-      $('.mlBar1-B').toggleClass('mlBar1-F');
-      $('.mlBar2-B').toggleClass('mlBar2-F');
+      me_right.classList.toggle("front");
+      me_right.classList.toggle("back");
+      me_left.classList.toggle("front");
+      me_left.classList.toggle("back");
     }
   });
-
-  $("#em_logo").click(function() {
-    
-    $('#contact_box3').toggleClass('cb3_unext');
-    $('#contact_box3').toggleClass('cb3_ext');
-
-    $('#my_email').toggleClass('mye_unext');
-    $('#my_email').toggleClass('mye_ext');
-    
-    $('#em_logo').toggleClass('elg_unext');
-    $('#em_logo').toggleClass('elg_ext');
-    
-  });
-
   
+  document.querySelector("#me-left").addEventListener("click", (e) => {
+    if (document.querySelector("#me-left").classList.contains("back")) {
+      var me_right = document.querySelector("#me-right");
+      var me_left = document.querySelector("#me-left");
 
+      me_right.classList.toggle("front");
+      me_right.classList.toggle("back");
+      me_left.classList.toggle("front");
+      me_left.classList.toggle("back");
+    }
+  });
 
+  document.querySelector("#em_logo").addEventListener("click", (e) => {
+    var email_box = document.querySelector("#email_box");
+    email_box.classList.toggle("unext");
+    email_box.classList.toggle("ext");
+  });
 });
 
 let resizeTimer;

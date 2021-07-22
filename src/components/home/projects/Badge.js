@@ -1,4 +1,4 @@
-import './Badge.css'
+import './Badge.scss'
 
 const Badge = () => {
     return (

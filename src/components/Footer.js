@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Footer.scss'
 import Mylogo from '../svg/Mylogo'
 import { Link } from 'react-router-dom';
 

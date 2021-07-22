@@ -1,4 +1,4 @@
-import './Contact.css'
+import './Contact.scss'
 import Socials from './Socials'
 
 const Contact = () => {

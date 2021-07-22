@@ -1,9 +1,10 @@
 import Home from './components/home/Home'
 import Resume from './components/resume/Resume'
 import Contact from './components/contact/Contact'
+import Projects from './components/projects/Projects'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import './App.css'
+import './App.scss'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
             </Route>
             <Route path="/resume">
               <Resume/>
+            </Route>
+            <Route path="/projects">
+              <Projects/>
             </Route>
             <Route path="/contact">
               <Contact/>
