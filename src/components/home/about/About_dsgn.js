@@ -1,9 +1,9 @@
 import './About_dsgn.scss'
 import './About_both.scss';
 
-const About_dsgn = () => {
+const About_dsgn = ({handleFlip, isFront}) => {
     return (
-        <div id="me-right" className="back">
+        <div id="me-right" className={isFront.right ? "front" : "back"} onClick= {() => handleFlip("right")}>
             <div id="mrBack">
                 <div id="shadow-container"> <div id="mr-shadow"></div> </div>
                 <p id="mrt1"> Let's Talk Design  </p>

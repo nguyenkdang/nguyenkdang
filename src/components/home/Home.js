@@ -4,8 +4,17 @@ import About_dsgn from './about/About_dsgn'
 import Paint from './intro/Paint'
 import Badge from './projects/Badge'
 import Mylogo from '../../svg/Mylogo'
+import { useState } from "react";
+
 
 const Home = () => {
+    const [isFront, setFront] = useState({left: true, right: false});
+    const handleFlip = (lr) => {
+        if(isFront[lr] === false){
+            setFront({left: !isFront["left"], right: !isFront["right"]});
+        }
+        
+    };
     return (
         <div className="home">
             <div id="head_logo">
@@ -28,8 +37,8 @@ const Home = () => {
             </div>
             <div id="aboutMe">
                 <h1 id="aboutMe-label"> more about me </h1>
-                <About_code/>
-                <About_dsgn/>
+                <About_code handleFlip={handleFlip} isFront={isFront}/>
+                <About_dsgn handleFlip={handleFlip} isFront={isFront}/>
             </div>
         </div>
     )

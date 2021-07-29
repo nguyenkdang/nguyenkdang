@@ -20,7 +20,7 @@ const Contact = () => {
                 
                 <div id="message_field">
                     <h2 className="inp_label">message</h2>
-                    <textarea id="Message" name="Message" className="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    <textarea id="Message" name="Message" className="fcf-form-control" rows="6" maxLength="3000" required></textarea>
                 </div>
                 
                 <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>

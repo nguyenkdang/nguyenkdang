@@ -6,11 +6,17 @@ import Logo_behance from "../../svg/Logo_behance"
 import Logo_instagram from "../../svg/Logo_instagram"
 import Logo_github from "../../svg/Logo_github"
 import Logo_email from "../../svg/Logo_email"
-
+import { useState } from "react";
 
 const size = "2.2vw"
 
 const Socials = () => {
+    const [isActive, setActive] = useState("false")
+
+    const handleToggle= () => {
+        setActive(!isActive);
+    };
+
     return (
         <div className="socials">
             <div id="social_box">
@@ -35,9 +41,9 @@ const Socials = () => {
                     </a>
                 </div>
             </div>
-            <div id="email_box" className="unext">
+            <div id="email_box" className={isActive ? "unext" : "ext"}>
                     <h2 id="my_email">nguyenkhdang@gmail.com </h2>
-                    <span id="em_logo"><Logo_email width={size} height={size}/></span>
+                    <span id="em_logo" onClick={handleToggle}><Logo_email width={size} height={size}/></span>
             </div>
         </div>
     )

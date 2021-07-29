@@ -2,13 +2,13 @@ import './About_code.scss';
 import './About_both.scss';
 
 
-const About_code = () => {
+const About_code = ({handleFlip, isFront}) => {
     return (
-        <div id="me-left" className="front">
+        <div id="me-left" className={isFront.left ? "front" : "back"}  onClick= {() => handleFlip("left")} >
             <div id="mlBack">
                 <div id="shadow-container"> <div id="ml-shadow"></div> </div>
-                <p id="mlt1"> Let's  Talk Code</p>
-                <p id="mlt2"> Let's  Talk Software</p>
+                <p id="mlt1"> Let's Talk Code</p>
+                <p id="mlt2"> Let's Talk Software</p>
                 <p id="mleft-para">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                 sed diam nonummy nibh euis ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                 </p>

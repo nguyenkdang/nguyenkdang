@@ -24,8 +24,8 @@ const Badge = () => {
                 {'.cls-15 { fill: url(#linear-gradient-12);}'}
                 </style>
                 <linearGradient id="linear-gradient" x1="1108.12" y1="563.94" x2="1039.06" y2="582.96" gradientTransform="translate(343.12 -399.61) rotate(25.01)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#57f"/>
-                <stop offset="1" stop-color="#2edd92"/>
+                <stop offset="0" stopColor="#57f"/>
+                <stop offset="1" stopColor="#2edd92"/>
                 </linearGradient>
                 <linearGradient id="linear-gradient-2" x1="1093.53" y1="564.72" x2="1108.17" y2="496.63" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlinkHref="#linear-gradient"/>
                 <linearGradient id="linear-gradient-3" x1="1107.59" y1="303.62" x2="1101.73" y2="331.27" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlinkHref="#linear-gradient"/>
