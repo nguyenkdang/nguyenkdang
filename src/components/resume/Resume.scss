@@ -26,6 +26,12 @@
     padding: 1vw;
 }
 
+@media screen and (max-width: 460px) {
+    #page{
+        width: 85vw;
+    }
+}
+
 .indent{
     text-indent: 2.5vw;
 }

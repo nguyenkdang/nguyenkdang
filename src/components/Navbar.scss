@@ -1,21 +1,29 @@
-.navLink{
-    font-size: 2vw;
-    font-weight: 500;
-    padding: 6px;
-    color: var(--mainColor);
-    transition: color 0.5s ease-out; 
-}
 
-.navLink:hover{
-    color: var(--sideColor);
-}
 
-.navItem {
-    float: right;
-}
 
-#navBar{
-    list-style-type: none;
+
+
+.navBar{
+    position: relative;
     margin-right: 3vw;
     margin-top: 3vw;
+    z-index: 99;
+    
+    
+    .navItem {
+        float: right;
+        
+        .navLink{
+            font-size: 2vw;
+            font-weight: 500;
+            padding: 0.5vw;
+            color: var(--mainColor);
+            transition: color 0.5s ease-out; 
+            
+            &:hover{
+                color: var(--sideColor);
+            }
+        }
+        
+    }
 }

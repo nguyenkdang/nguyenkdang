@@ -36,8 +36,8 @@ const Socials = () => {
                     </a>
                 </div>
                 <div id="in_logo" className="logo">
+                    <Logo_instagram width={size} height={size}/>
                     <a href="https://www.instagram.com/nguwaynedang/" target="_blank">
-                        <Logo_instagram width={size} height={size}/>
                     </a>
                 </div>
             </div>

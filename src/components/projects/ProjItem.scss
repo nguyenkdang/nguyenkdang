@@ -1,0 +1,144 @@
+.ProjItem{
+    position: relative;
+    margin-bottom: 12vw;
+    transition: filter 0.2s ease-in;
+    &.blur{
+        filter: blur(0.25vw) brightness(0.9);
+        .proj_body{
+            .proj_more{
+                cursor: default;
+            }
+        }
+    }
+
+    .proj_iconBack{
+        position: absolute;
+        border-radius: 1vw;
+        height: 18vw;
+        width: 16vw;
+        left: 6vw;
+        top:-5vw;
+        background-color: var(--mainColor);
+        box-shadow: -0vw -0vw 1.2vw 0.5vw #E1EBF9;
+        z-index: 2;
+    }
+    
+    .proj_body{
+        
+        position: relative;
+        left: 14vw;
+        top: 0vw;
+        border-radius: 1vw;
+        
+        background-color: white;
+        width: 70vw;
+        
+        z-index: 1;
+        box-shadow: 1vw 1vw 2vw 0.2vw rgba(41, 43, 65, 0.1);
+        transition: height 0.5s ease-in-out;
+
+        &.close{
+            height: 20vw;
+            .proj_more{
+                top: 18vw;
+            }
+
+            .proj_descExt{
+                visibility: hidden;
+                color: transparent;
+            }
+
+            .down_icon{
+                top: 1.2vw;
+            }
+        }
+
+        &.open{
+            height: 37vw;
+            .proj_more{
+                top: 35vw;
+            }
+
+            .proj_descExt{
+                visibility: visible;
+                color: black;
+            }
+
+            .down_icon{
+                top: 0.90vw;
+                transform: rotate(180deg);
+            }
+        }
+
+        .ptags{
+            position: absolute;
+            left: 10vw;
+            .ptag{
+                font-size: 1.5vw;
+                float: left;
+                color: white;
+                border-radius: 2vw;
+                background-color: var(--mainColor);
+                margin-left: 1.1vw;
+                padding: 0.1vw;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                margin-top: 1.7vw;
+                border-style: solid;
+                border-color: var(--mainColor);
+                border-width: 0.3vw;
+
+            }
+
+            .pgittag{
+                color: var(--mainColor);
+                font-weight: 700;
+                background-color: transparent;
+            }
+        }
+        .pinfo{
+            position: relative;
+            top: 7vw;
+            .proj_title{
+                text-align: center;
+                font-weight: 700;
+                font-size: 2.2vw;
+                color: var(--mainColor);
+                margin-bottom: 0;
+
+            }
+
+            .proj_desc{
+                position: relative;
+                margin-top: 1vw;
+                left: 11vw;
+                width: 50vw;
+            }
+
+            .proj_descExt{
+                transition: color 0.7s ease-in-out;
+                transition-delay: 0.2s;
+            }
+            
+        }
+
+        .proj_more{
+            position: absolute;
+            border-radius: 4vw;
+            width: 4vw;
+            height: 4vw;
+            left: 35vw;
+            transform: translate(-50%);
+            background-color: var(--mainColor);
+            cursor: pointer;
+            transition: top 0.5s ease-in-out;
+            
+
+            .down_icon{
+                position: absolute;
+                left: 1vw;
+                transition: all 0.4s ease-in-out;
+            }
+        }       
+    }
+}

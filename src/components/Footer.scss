@@ -3,36 +3,35 @@
     width: 100vw;
     height: 10vw;
     background-color: var(--mainColor);
-}
 
-#foot_logo{
-    position: relative;
-    width: 8vw;
-    top: -5vw;
-    left: 28.2vw;
-}
+    #foot_logo{
+        position: relative;
+        width: 8vw;
+        top: -5vw;
+        left: 28.2vw;
+    }
 
-#foot-links{
-    position: absolute;
-    top: 4.5vw;
-    left: 49.25vw;
-    white-space: nowrap;
-    transform: translate(-50%, -50%);
-}
-
-.foot-link{
-    font-size: 1.5vw;
-    margin: 2vw;
-}
-
-#foot-copyright{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 49.25vw;
-    top: 8vw;
-}
-
-#copyright{
-    font-size: 1.2vw;
-    color: var(--sideColor);
+    #foot-links{
+        position: absolute;
+        top: 4.5vw;
+        left: 49.25vw;
+        white-space: nowrap;
+        transform: translate(-50%, -50%);
+        .foot-link{
+            font-size: 1.5vw;
+            margin: 2vw;
+        }
+    }
+    
+    #foot-copyright{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 49.25vw;
+        top: 8vw;
+        
+        #copyright{
+            font-size: 1.2vw;
+            color: var(--sideColor);
+        }
+    }
 }
