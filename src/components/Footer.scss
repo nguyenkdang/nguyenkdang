@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     height: 10vw;
+    max-width: 100%;
     background-color: var(--mainColor);
 
     #foot_logo{
@@ -14,7 +15,7 @@
     #foot-links{
         position: absolute;
         top: 4.5vw;
-        left: 49.25vw;
+        left: 50vw;
         white-space: nowrap;
         transform: translate(-50%, -50%);
         .foot-link{
@@ -26,12 +27,41 @@
     #foot-copyright{
         position: absolute;
         transform: translate(-50%, -50%);
-        left: 49.25vw;
+        left: 50vw;
         top: 8vw;
         
         #copyright{
             font-size: 1.2vw;
             color: var(--sideColor);
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .foot{
+        height: 14vw;
+    
+        #foot_logo{
+            position: relative;
+            top: -5vw;
+            left: 28.2vw;
+        }
+    
+        #foot-links{
+            position: absolute;
+            top: 6vw;
+            .foot-link{
+                font-size: 2vw;
+                margin: 1.5vw;
+            }
+        }
+        
+        #foot-copyright{
+            top: 9vw;
+            #copyright{
+                font-size: 1.5vw;
+            }
         }
     }
 }

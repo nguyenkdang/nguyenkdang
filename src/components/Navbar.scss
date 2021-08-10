@@ -4,15 +4,11 @@
 
 
 .navBar{
-    position: relative;
-    margin-right: 3vw;
-    margin-top: 3vw;
-    z-index: 99;
-    
-    
+    position: absolute;
+    right: 3vw;
+    top: 3vw;
+    z-index: 99;    
     .navItem {
-        float: right;
-        
         .navLink{
             font-size: 2vw;
             font-weight: 500;
@@ -26,4 +22,19 @@
         }
         
     }
+}
+
+@media screen and (max-width: 640px) {
+    .navBar{
+        right: 3vw;
+        top: 3vw;
+        .navItem {
+            .navLink{
+                font-size: 3vw;
+            }
+            
+        }
+    }
+    
+
 }

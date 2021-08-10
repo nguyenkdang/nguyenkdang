@@ -5,7 +5,7 @@ const Resume = () => {
     return (
         <div className="resume">
           <div id="page" className="indent">
-            <div id="title">
+            <div>
               <h1 id="name">Nguyen K. Dang</h1>
               <h3 id="school">University of California Irvine Graduate</h3>
             </div>
@@ -37,33 +37,33 @@ const Resume = () => {
               <div className="project_desc">
                 <h3 className="project_title">“Reddit Term Ranker”, Popular Reddit Topics Visualizer</h3>
                 <h3 className="project_tool">Tool used - Python, Reddit API, Matplotlib</h3>
-                <div className="project_bullets">
-                  <h3 className="info_row">• Used official Reddit API to make request to server to retrieve post data</h3>
-                  <h3 className="info_row">• Built a database from post data and used reverse indexing to rank term frequency</h3>
-                  <h3 className="info_row">• Used Matplotlib to graph term ranks by multiple criteria, like count, score & density</h3>
-                </div>  
+                <ul className>
+                  <li> <span>Used official Reddit API to make request to server to retrieve post data </span></li>
+                  <li> <span>Built a database from post data and used reverse indexing to rank term frequency</span></li>
+                  <li> <span>Used Matplotlib to graph term ranks by multiple criteria, like count, score & density </span></li>
+                </ul>  
               </div>
 
               <h3>2021</h3>
               <div className="project_desc">
                 <h3 className="project_title">“Market Simulator”, Determines Best Investment Strategy</h3>
                 <h3 className="project_tool">Tool used - Python, Yahoo Finance API, Pandas API</h3>
-                <div className="project_bullets">
-                  <h3 className="info_row">• Used official Yahoo Finance API to retrieve historical stock market data</h3>
-                  <h3 className="info_row">• Implement multiple investing strategies modularly to allow for ease of testing</h3>
-                  <h3 className="info_row">• Ran short and long term simulation to verify investing strategy effectiveness</h3>
-                </div>
+                <ul>
+                  <li><span>Used official Yahoo Finance API to retrieve historical stock market data</span></li>
+                  <li><span>Implement multiple investing strategies modularly to allow for ease of testing</span></li>
+                  <li><span>Ran short and long term simulation to verify investing strategy effectiveness</span></li>
+                </ul>
               </div>
 
               <h3 >2019</h3>
               <div className="project_desc">
                 <h3 className="project_title">“Spotify Set”, A Spotify UI Proposal</h3>
                 <h3 className="project_tool">Tool used - Adobe XD, Adobe Illustrator, Adobe Photoshop</h3>
-                <div className="project_bullets">
-                  <h3 className="info_row">• Conducted relevant market research on Spotify and its competitor</h3>
-                  <h3 className="info_row">• Built wireframes, mockups and interactive prototypes while adhering to Spotify’s brand</h3>
-                  <h3 className="info_row">• Presented proposal to stakeholders, using prototypes to reinforce understanding</h3>
-                </div>
+                <ul>
+                  <li><span>Conducted relevant market research on Spotify and its competitor</span></li>
+                  <li><span>Built wireframes, mockups and interactive prototypes while adhering to Spotify’s brand</span></li>
+                  <li><span>Presented proposal to stakeholders, using prototypes to reinforce understanding</span></li>
+                </ul>
               </div>
     
               <h3 >2018</h3>
@@ -93,13 +93,16 @@ const Resume = () => {
                 <h3 className="info_row"> 
                   <span className="sw">Artificial Intelligence</span> 
                   <span className="sw">Data Management</span>
-                  <span className="sw">Machine Learning</span></h3>
+                  <span className="sw">Machine Learning</span>
+                </h3>
                 <h3 className="info_row"> 
                   <span className="sw">Data Structure Implementation & Analysis</span> 
-                  <span className="sw">Information Retrieval</span></h3>
+                  <span className="sw">Information Retrieval</span>
+                </h3>
                 <h3 className="info_row"> 
                   <span className="sw">Project in Databases & Web Applications</span> 
-                  <span className="sw">Computer Vision</span></h3>
+                  <span className="sw">Computer Vision</span>
+                </h3>
               </div>
             </div>
           </div>

@@ -55,3 +55,22 @@ a {
     text-decoration: none;
     color: white;
 }
+
+ul{
+    padding-left: 6vw;
+}
+
+li {
+    font-weight: 500;
+    font-size: 1.3vw;
+    margin-top: 0.3vw;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -2.5vw;
+    padding-left: 1vw;
+    span{
+        position: relative;
+        left: -0.5vw;
+    }
+}
+
