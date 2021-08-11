@@ -92,7 +92,7 @@ $inpFontS: 2.7vw;
         z-index: 0;
         #contact_box{
             width: 77vw;
-            height: 120vw;
+            height: 140vw;
             top: 25vw;
             border-radius: 2vw;
             padding: 5vw;
@@ -125,7 +125,7 @@ $inpFontS: 2.7vw;
             #message_field{        
                 textarea{
                     width: 73vw;
-                    height: 78vw;
+                    height: 96vw;
                     padding: 1.5vw 2vw;
                     border-radius: 0.5vw;
                     border-width: 0.3vw;
@@ -135,7 +135,7 @@ $inpFontS: 2.7vw;
             }
         
             .submit_button{
-                top: 123vw;
+                top: 143vw;
                 left: 65vw;
                 font-size: $inpFontS;
                 border-radius: 5vw;
