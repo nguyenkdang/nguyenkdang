@@ -1,10 +1,5 @@
-/* l&r-background */
+@import '../../../Variables.scss';
 
-/* l&r-title */
-
-/* l&r-paragraph */
-
-/* l&r-shadow */
 #shadow-container{
     position: absolute;
     left: 0vw;
@@ -19,7 +14,7 @@
 /* Me-both*/
 @keyframes flip-bg{
     0%{ transform: scale(1,1);
-        background: var(--mainColor);
+        background: $mainColor;
     }
     50%{ 
         transform: scale(0,1);

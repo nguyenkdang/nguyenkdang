@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-:root {
-    --mainColor: #96B0EA;
-    --sideColor: #3D6199;
-    --badgeTrans: all 0.7s ease-out;
-}
-
 .resize-transition-stopper * {
     transition: none !important;
 }

@@ -1,88 +1,151 @@
+@import '../../Variables.scss';
+$inpFontS: 1.2vw;
+
 .contact{
-    height: 50vw;
     z-index: 0;
-}
+    #contact_box{
+        position: relative;
+        width: 50vw;
+        height: 30vw;
+        top: 11.75vw;
+        left: 50vw;
+        border-radius: 2vw;
+        transform: translate(-50%);
+        background-color: white;
+        padding: 2vw;
+        padding-top: 0.5vw;
+        z-index: 1;
+        margin-bottom: 20vw;
 
-/* ------- Contact Form -------*/
-#contact_box{
-    position: absolute;
-    width: 50vw;
-    height: 30vw;
-    top: 28vw;
-    left: 50vw;
-    border-radius: 2vw;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    z-index: 1;
-    padding: 2vw;
-    padding-top: 0.5vw;
-}
-
-textarea{
-    width: 46.3vw;
-    height: 17vw;
-    padding: 0.75vw 1vw;
-    border-radius: 0.5vw;
-    border-width: 0.2vw;
-    border-style: solid;
-    font-size: 1.2vw;
-    border-color: var(--mainColor);
-    resize: none;
-}
-
-input{
-    width: 21vw;
-    padding: 0.75vw 1vw;
-    font-size: 1.2vw;
-    border-radius: 0.5vw;
-    border-width: 0.2vw;
-    border-style: solid;
-    border-color: var(--mainColor);
-}
-
-#name_field{
-    float: left;
-}
-
-#email_field{
-    position: relative;
-    float: left;
-    left: 2vw;
-}
-
-#message_field{
-    float:left;
-}
-
-.inp_label{
-    font-size: 1.5vw;
-    margin-bottom: 0.1vw;
-    margin-left: 0.4vw;
-    color: var(--sideColor);
-}
-
-#fcf-button{
-   position: absolute;
-   top: 31vw;
-   left: 43vw;
-   font-size: 1.5vw;
-   background-color: var(--mainColor);
-   color: white;
-   border: none;
-   border-radius: 2vw;
-   cursor: pointer;
-   width: 8vw;
-   height: 3vw;
-   transition: all 0.4s linear;
-}
-
-#fcf-button:hover{
-    background-color: var(--sideColor);
-}
-
-.LA{
-    color:red;
-    background-color: red;
+        input{
+            width: 21vw;
+            padding: 0.75vw 1vw;
+            font-size: $inpFontS;
+            border-radius: 0.5vw;
+            border-width: 0.2vw;
+            border-style: solid;
+            border-color: $mainColor;
+        }
+    
+        .inp_label{
+            font-size: 1.5vw;
+            margin-bottom: 0.1vw;
+            margin-left: 0.4vw;
+            color: $sideColor;
+        }
+    
+        #name_field{
+            float: left;
+        }
+        
+        #email_field{
+            position: relative;
+            float: left;
+            left: 2vw;
+        }
+    
+        
+        
+        #message_field{
+            float:left;
+    
+            textarea{
+                width: 46.3vw;
+                height: 17vw;
+                padding: 0.75vw 1vw;
+                border-radius: 0.5vw;
+                border-width: 0.2vw;
+                border-style: solid;
+                font-size: $inpFontS;
+                border-color: $mainColor;
+                resize: none;
+            }
+        }
+    
+        .submit_button{
+            position: absolute;
+            top: 31vw;
+            left: 43vw;
+            font-size: 1.5vw;
+            background-color: $mainColor;
+            color: white;
+            border: none;
+            border-radius: 2vw;
+            cursor: pointer;
+            width: 8vw;
+            height: 3vw;
+            transition: all 0.4s linear;
+             
+            &:hover{
+                 background-color: $sideColor;
+            }
+         }
+    }
 }
 
 
+
+$inpFontS: 2.7vw;
+
+@media screen and (max-width: $phoneWidth) {
+    .contact{
+        z-index: 0;
+        #contact_box{
+            width: 77vw;
+            height: 120vw;
+            top: 25vw;
+            border-radius: 2vw;
+            padding: 5vw;
+            padding-top: 2vw;
+            margin-bottom: 40vw;
+    
+            input{
+                width: 72vw;
+                padding: 1.5vw 2vw;
+                font-size: $inpFontS;
+                border-radius: 0.7vw;
+                border-width: 0.3vw;
+            }
+        
+            .inp_label{
+                font-size: 3vw;
+                margin-bottom: 0.5vw;
+                margin-left: 0.4vw;
+                color: $sideColor;
+            }
+        
+            #name_field{
+                float: none;
+            }
+            
+            #email_field{
+                left: 0vw;
+            }
+            
+            #message_field{        
+                textarea{
+                    width: 73vw;
+                    height: 78vw;
+                    padding: 1.5vw 2vw;
+                    border-radius: 0.5vw;
+                    border-width: 0.3vw;
+                    font-size: $inpFontS;
+                    border-color: $mainColor;
+                }
+            }
+        
+            .submit_button{
+                top: 123vw;
+                left: 65vw;
+                font-size: $inpFontS;
+                border-radius: 5vw;
+                width: 18vw;
+                height: 8vw;
+                 
+                &:hover{
+                     background-color: $sideColor;
+                }
+             }
+        }
+    }
+}

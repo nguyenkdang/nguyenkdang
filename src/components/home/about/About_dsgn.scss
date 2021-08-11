@@ -1,4 +1,5 @@
-/* ----- right -----*/
+@import '../../../Variables.scss';
+
 #me-right{
     position: absolute;
     top: 8.5vw;
@@ -67,7 +68,7 @@
             }
 
             #mrt1{
-                color: var(--sideColor);
+                color: $sideColor;
                 opacity: 1;
             }
 
@@ -82,8 +83,8 @@
 
         #mrSqr{
             transform: rotate(30deg);
-            background: var(--mainColor);
-            border:0.60vw solid var(--sideColor);
+            background: $mainColor;
+            border:0.60vw solid $sideColor;
             cursor: pointer;
         }
 
@@ -91,23 +92,23 @@
             #mrBar{
                 top: 10vw;
                 height: 5vw;
-                background: var(--sideColor);
+                background: $sideColor;
             }
 
             #mrCrc{
-                background: var(--mainColor);
-                border:0.60vw solid var(--sideColor);
+                background: $mainColor;
+                border:0.60vw solid $sideColor;
                 cursor: pointer;
             }
         }
 
         #mrTrg{
             transform: rotate(-35deg);
-            border-bottom: 5vw solid var(--sideColor);
+            border-bottom: 5vw solid $sideColor;
             cursor: pointer;
 
             #mriTrg{
-                border-bottom: 3vw solid var(--mainColor);
+                border-bottom: 3vw solid $mainColor;
                 cursor: pointer;
             }
         }
@@ -256,7 +257,7 @@
         position: absolute;
         width: 45vw;
         height: 28vw;
-        background: var(--mainColor);
+        background: $mainColor;
         
         transition: transform 0.4s ease-out;
         #shadow-container{
@@ -265,7 +266,7 @@
                 filter: blur(0.5vw);
                 left: -1vw;
                 top: -1vw;
-                background: var(--sideColor);
+                background: $sideColor;
             }
         }
 
@@ -306,12 +307,12 @@
         transform: translate(0vw, -0.7vw) 
         scale(1.05, 1.05)
         rotate(35deg);
-        background: var(--mainColor);
-        border:0.60vw solid var(--sideColor);
+        background: $mainColor;
+        border:0.60vw solid $sideColor;
     }
     50%{
-        background: var(--mainColor);
-        border:0.60vw solid var(--sideColor);
+        background: $mainColor;
+        border:0.60vw solid $sideColor;
     }
     60%{
         transform: translate(2vw, -10vw)
@@ -331,12 +332,12 @@
 @keyframes flip-circle{
     0%{
         transform: scale(1.1, 1.1);
-        background: var(--mainColor);
-        border:0.60vw solid var(--sideColor);
+        background: $mainColor;
+        border:0.60vw solid $sideColor;
     }
     50%{
-        background: var(--mainColor);
-        border:0.60vw solid var(--sideColor);
+        background: $mainColor;
+        border:0.60vw solid $sideColor;
     }
     60%{
         transform: scale(1.55, 1.55); 
@@ -354,7 +355,7 @@
         top: 10vw;
     }
     0%, 50%{ 
-        background: var(--sideColor); 
+        background: $sideColor; 
     }
     60%{
         height: 14vw;
@@ -387,11 +388,11 @@
         transform: translate(-0.5vw, 0.5vw) 
             scale(1.07, 1.07)
             rotate(-38deg);
-        border-bottom: 5vw solid var(--sideColor);
+        border-bottom: 5vw solid $sideColor;
 
     }
     50%{
-        border-bottom: 5vw solid var(--sideColor);
+        border-bottom: 5vw solid $sideColor;
     }
     60%{
         transform: translate(-12vw, 6vw) 
@@ -407,6 +408,6 @@
 }
 
 @keyframes flip-itriangle{
-    0%, 50%{ border-bottom: 3vw solid var(--mainColor);}
+    0%, 50%{ border-bottom: 3vw solid $mainColor;}
     100%{ border-bottom: 3vw solid #50BADE;}
 }

@@ -1,5 +1,6 @@
-.resume{
+@import '../../Variables.scss';
 
+.resume{
     .indent{
         text-indent: 2.5vw;
     }
@@ -14,6 +15,7 @@
         transform: translate(-50%);
         padding: 1vw;
         margin-bottom: 15vw;
+        
         .same_ln{
             float: left;
         }
@@ -27,7 +29,6 @@
             top: -1.5vw;
             left: 2vw
         }
-        
 
         #name{
             margin-bottom: 0vw;
@@ -105,16 +106,12 @@
             word-spacing: 2vw;
             margin-left:10vw;
             margin-bottom: 2vw;
-                
         }
-        
     }
 }
 
 
-@media screen and (max-width: 640px) {
-    
-
+@media screen and (max-width: $phoneWidth) {
     .resume{
         h2{
             margin-top:  5vw;
@@ -195,9 +192,7 @@
 
             #courses{
                 margin-bottom: 4vw;
-                    
             }
-
         }
     }
 }

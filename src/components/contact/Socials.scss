@@ -1,12 +1,13 @@
+@import '../../Variables.scss';
+
 #social_box{
     position: absolute;
     width: 18vw;
     height: 10vw;
-    top: 12vw;
-    left: 31vw;
+    top: 7vw;
+    left: 22vw;
     border-radius: 1.7vw;
-    transform: translate(-50%, -50%);
-    background-color: var(--mainColor);
+    background-color: $mainColor;
     z-index: 1;
 
     .logo{
@@ -27,7 +28,7 @@
     top: 7vw;
     left: 38vw;
     height: 8vw;
-    background-color: var(--sideColor);
+    background-color: $sideColor;
     z-index: 0;
     transition: all 0.4s ease-in-out;
     &.unext{
@@ -58,7 +59,7 @@
 
     #my_email{
         position: absolute;
-        color: var(--mainColor);
+        color: $mainColor;
         top: 0.3vw;
         transition: all 0.4s ease-in-out;
     }
@@ -72,24 +73,80 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cls-2{
-    fill: var(--mainColor);
+    fill: $mainColor;
 }
 
 .cls-1{
     fill: white;
+}
+
+@media screen and (max-width: $phoneWidth) {
+    #social_box{
+        width: 35vw;
+        height: 20vw;
+        top: 15vw;
+        left: 3vw;
+        border-radius: 1.7vw;
+    
+        .logo{
+            top: 3vw;
+            left: 4vw;
+            .contact_logo{
+                width: 4vw;
+                height: 4vw;
+            }
+            
+        }
+        
+        #git_logo, #be_logo, #in_logo{
+            margin-left: 4vw;
+        }
+    }
+    
+    #email_box{
+        top: 15vw;
+        left: 36vw;
+        height: 15vw;
+
+        .contact_logo{
+            width: 4vw;
+            height: 4vw;
+        }
+
+        &.unext{
+            width: 12vw;
+    
+            #my_email{
+                left: -33vw;
+                font-size: 2.7vw;
+            }
+    
+            #em_logo{
+                left: 5vw;
+            }
+        }
+    
+        &.ext{
+            width: 49vw;
+    
+            #my_email{
+                left: 4.5vw;
+                font-size: 2.7vw;
+            }
+    
+            #em_logo{
+                left: 42vw;
+            }
+        }
+    
+        #my_email{
+            top: 1vw;
+        }
+    
+        #em_logo{
+            top: 3vw;
+        }
+    }
+
 }

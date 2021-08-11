@@ -1,3 +1,5 @@
+@import '../../../Variables.scss';
+
 /* ----- Left -----*/
 #me-left{
     position: relative;
@@ -75,7 +77,7 @@
             }
             
             #mlt1{
-                color: var(--sideColor);
+                color: $sideColor;
                 opacity: 1;
             }
 
@@ -99,8 +101,8 @@
                 width: 2vw;
                 height: 2vw;
                 
-                background: var(--mainColor);
-                border:0.60vw solid var(--sideColor);
+                background: $mainColor;
+                border:0.60vw solid $sideColor;
             }
 
             #mlCrc2{
@@ -109,8 +111,8 @@
                 width: 3.5vw;
                 height: 3.5vw;
                 
-                background: var(--mainColor);
-                border:0.80vw solid var(--sideColor);
+                background: $mainColor;
+                border:0.80vw solid $sideColor;
             }
 
             #mlCrc3{
@@ -119,8 +121,8 @@
                 width: 2vw;
                 height: 2vw;
                 
-                background: var(--mainColor);
-                border:0.60vw solid var(--sideColor);
+                background: $mainColor;
+                border:0.60vw solid $sideColor;
             }
 
             #mlBar1{
@@ -234,14 +236,14 @@
         position: absolute;
         width: 45vw;
         height: 28vw;
-        background: var(--mainColor);
+        background: $mainColor;
 
         transition: transform 0.4s ease-out;
         #shadow-container{
             #ml-shadow{
                 position: absolute;
                 filter: blur(0.5vw);
-                background: var(--sideColor);
+                background: $sideColor;
                 right: -1vw;
                 bottom: -1vw;
             }
@@ -311,7 +313,7 @@
             position: absolute;
             bottom: 0vw;
             left: 0vw; 
-            background: linear-gradient(to bottom, var(--sideColor) 50%, white 50%) top;
+            background: linear-gradient(to bottom, $sideColor 50%, white 50%) top;
             background-size: 200% 200%;
             
             transition: all 0.4s ease-out;
@@ -322,7 +324,7 @@
             bottom: -0.8vw;
             left: 0.5vw;
 
-            background: linear-gradient(to left, var(--sideColor) 50%, white 50%) right;
+            background: linear-gradient(to left, $sideColor 50%, white 50%) right;
             background-size: 200%;
 
             transition: all 0.4s ease-out;
@@ -350,14 +352,14 @@
         left: -1.3vw;
         width: 2.2vw;
         height: 2.2vw;
-        background: var(--mainColor);
-        border:0.60vw solid var(--sideColor);
+        background: $mainColor;
+        border:0.60vw solid $sideColor;
     }
     50%{
         background: transparent;
     }
     75%{
-        border:0.70vw solid var(--sideColor);
+        border:0.70vw solid $sideColor;
     }
     100%{
         top: -30.50vw;
@@ -373,13 +375,13 @@
         width: 4.5vw;
         height: 4.5vw;
         right:-0.7vw;
-        background: var(--mainColor);
-        border:0.80vw solid var(--sideColor);
+        background: $mainColor;
+        border:0.80vw solid $sideColor;
 
     }
     50%{
         background: transparent;
-        border:1vw solid var(--sideColor);
+        border:1vw solid $sideColor;
     }
     60%{
         border:1vw solid white;
@@ -399,13 +401,13 @@
         right: -43vw;
         width: 2.2vw;
         height: 2.2vw;
-        border:0.60vw solid var(--sideColor);
+        border:0.60vw solid $sideColor;
     }
     50%{
-        background: var(--mainColor);
+        background: $mainColor;
     }
     75%{
-        border:0.60vw solid var(--sideColor);
+        border:0.60vw solid $sideColor;
     }
     100%{
         bottom: -2.1vw;

@@ -1,9 +1,10 @@
+$badgeTrans: all 0.7s ease-out;
+
 svg{
     overflow: visible;
 }
 
 /* projects */
-
 .middle-badge{
     position: absolute;
     top: 53vw;
@@ -11,7 +12,7 @@ svg{
 }
 
 #base-back{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #base-back{
@@ -19,7 +20,7 @@ svg:hover #base-back{
 }
 
 #base-ridge{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #base-ridge{
@@ -27,7 +28,7 @@ svg:hover #base-ridge{
 }
 
 #more-info-tag{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #more-info-tag{
@@ -35,7 +36,7 @@ svg:hover #more-info-tag{
 }
 
 #more-info-back{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #more-info-back{
@@ -44,7 +45,7 @@ svg:hover #more-info-back{
 }
 
 #info-symb{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #info-symb{
@@ -52,7 +53,7 @@ svg:hover #info-symb{
 }
 
 #lang-badge{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #lang-badge{
@@ -60,7 +61,7 @@ svg:hover #lang-badge{
 }
 
 #right-edge{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #right-edge{
@@ -68,7 +69,7 @@ svg:hover #right-edge{
 }
 
 #right-b-edge{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #right-b-edge{
@@ -76,7 +77,7 @@ svg:hover #right-b-edge{
 }
 
 #right-edge-curve{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #right-edge-curve{
@@ -84,7 +85,7 @@ svg:hover #right-edge-curve{
 }
 
 #right-b-curve{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #right-b-curve{
@@ -92,7 +93,7 @@ svg:hover #right-b-curve{
 }
 
 #left-edge{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #left-edge{
@@ -100,7 +101,7 @@ svg:hover #left-edge{
 }
 
 #left-b-edge{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #left-b-edge{
@@ -108,7 +109,7 @@ svg:hover #left-b-edge{
 }
 
 #left-edge-curve{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #left-edge-curve{
@@ -116,7 +117,7 @@ svg:hover #left-edge-curve{
 }
 
 #left-b-curve{
-    transition: var(--badgeTrans);
+    transition: $badgeTrans;
 }
 
 svg:hover #left-b-curve{

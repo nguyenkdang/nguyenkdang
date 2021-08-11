@@ -1,9 +1,11 @@
+@import '../Variables.scss';
+
 .foot{
     position: relative;
     width: 100vw;
     height: 10vw;
     max-width: 100%;
-    background-color: var(--mainColor);
+    background-color: $mainColor;
 
     #foot_logo{
         position: relative;
@@ -32,12 +34,12 @@
         
         #copyright{
             font-size: 1.2vw;
-            color: var(--sideColor);
+            color: $sideColor;
         }
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: $phoneWidth) {
 
     .foot{
         height: 17vw;

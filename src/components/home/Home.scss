@@ -1,9 +1,10 @@
+@import '../../Variables.scss';
+
 .home{
     height: 130vw;
     z-index: -1;
 }
 
-/* ----- Intro Page -----*/
 #head_logo{
     position: absolute;
     top: 3vw;
@@ -12,23 +13,23 @@
 }
 
 .sc{
-    color: var(--sideColor);
+    color: $sideColor;
 }
 
 .mc{
-    color: var(--mainColor);
+    color: $mainColor;
 }
 
 .hidden_link{
     font-weight: 600;
-    color: var(--mainColor);
+    color: $mainColor;
     animation: glow 3.5s ease infinite;
 }
 
 #my_name{
     font-size: 5vw;
     margin: 0vw;
-    color: var(--mainColor);
+    color: $mainColor;
 }
 
 #title_box {
@@ -56,7 +57,7 @@
     font-size: 3vw;
     left: 50vw;
     top: 48vw;
-    color: var(--sideColor)
+    color: $sideColor
 }
 
 
@@ -71,12 +72,12 @@
     font-size: 3vw;
     left: 61vw;
     top: 0vw;
-    color: var(--sideColor)
+    color: $sideColor
 }
 
 
 /* ------- Animation  -------*/
 @keyframes glow{
-    0%, 100%{ color: #96B0EA;}
+    0%, 100%{ color: $mainColor;}
     50%{ color: #abc4f8;}
 }

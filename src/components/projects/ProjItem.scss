@@ -1,3 +1,5 @@
+@import '../../Variables.scss';
+
 .ProjItem{
     position: relative;
     margin-bottom: 12vw;
@@ -18,7 +20,7 @@
         width: 16vw;
         left: 6vw;
         top:-5vw;
-        background-color: var(--mainColor);
+        background-color: $mainColor;
         box-shadow: -0vw -0vw 1.2vw 0.5vw #E1EBF9;
         z-index: 2;
     }
@@ -78,20 +80,20 @@
                 float: left;
                 color: white;
                 border-radius: 2vw;
-                background-color: var(--mainColor);
+                background-color: $mainColor;
                 margin-left: 1.1vw;
                 padding: 0.1vw;
                 padding-left: 1vw;
                 padding-right: 1vw;
                 margin-top: 1.7vw;
                 border-style: solid;
-                border-color: var(--mainColor);
+                border-color: $mainColor;
                 border-width: 0.3vw;
 
             }
 
             .pgittag{
-                color: var(--mainColor);
+                color: $mainColor;
                 font-weight: 700;
                 background-color: transparent;
             }
@@ -103,7 +105,7 @@
                 text-align: center;
                 font-weight: 700;
                 font-size: 2.2vw;
-                color: var(--mainColor);
+                color: $mainColor;
                 margin-bottom: 0;
 
             }
@@ -129,7 +131,7 @@
             height: 4vw;
             left: 35vw;
             transform: translate(-50%);
-            background-color: var(--mainColor);
+            background-color: $mainColor;
             cursor: pointer;
             transition: top 0.5s ease-in-out;
             
