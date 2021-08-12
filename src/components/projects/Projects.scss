@@ -20,3 +20,10 @@
         opacity: 20%;
     }
 }
+
+@media screen and (max-width: $phoneWidth) {
+    .badge_container{
+        top: 18vw;
+        margin-bottom: 33vw;
+    }
+}

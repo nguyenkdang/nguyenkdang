@@ -85,16 +85,15 @@ $inpFontS: 1.2vw;
 
 
 
-$inpFontS: 2.7vw;
+$inpFontS: 3vw;
 
 @media screen and (max-width: $phoneWidth) {
     .contact{
-        z-index: 0;
         #contact_box{
             width: 77vw;
             height: 140vw;
             top: 25vw;
-            border-radius: 2vw;
+            border-radius: 3vw;
             padding: 5vw;
             padding-top: 2vw;
             margin-bottom: 40vw;
@@ -102,8 +101,9 @@ $inpFontS: 2.7vw;
             input{
                 width: 72vw;
                 padding: 1.5vw 2vw;
-                font-size: $inpFontS;
                 border-radius: 0.7vw;
+
+                font-size: $inpFontS;
                 border-width: 0.3vw;
             }
         
@@ -127,24 +127,20 @@ $inpFontS: 2.7vw;
                     width: 73vw;
                     height: 96vw;
                     padding: 1.5vw 2vw;
-                    border-radius: 0.5vw;
+                    border-radius: 0.7vw;
+
                     border-width: 0.3vw;
                     font-size: $inpFontS;
-                    border-color: $mainColor;
                 }
             }
         
             .submit_button{
                 top: 143vw;
-                left: 65vw;
+                left: 64vw;
                 font-size: $inpFontS;
                 border-radius: 5vw;
                 width: 18vw;
                 height: 8vw;
-                 
-                &:hover{
-                     background-color: $sideColor;
-                }
              }
         }
     }
