@@ -93,7 +93,7 @@
     .paint_drip{
         position: absolute;
         border-radius: 20vw;
-        width: 13vw;
+        width: 16vw;
         height: 34vw;
         background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 50%, #d349ff 100%);
     
@@ -101,63 +101,59 @@
     }
     
     .left_paint{
+        height: 43vw;
         top: 1.5vw;
-        left: 3vw;
-        
-        animation: floater 4s ease infinite;
+        left: 3vw;        
     }
     
     .top_left_drip{
         position: absolute;
-        top: 15vw;
+        top: 17vw;
         left: 7vw;
-        width: 6.5vw;
-        height: 22vw;
+        width: 10vw;
+        height: 25vw;
         
         border-top-left-radius: 20vw;
-        border-top-right-radius: 8vw;
-        border-bottom-left-radius: 8vw;
+        border-top-right-radius: 6vw;
+        border-bottom-left-radius: 6vw;
         border-bottom-right-radius: 25vw;
         
-        background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 70%, #E7A64C 90%, #D9838E 100%);    
+        background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 70%, #E7A64C 90%, #E49471 100%);    
     }
     
     .middle_paint{
-        top: 10vw;
+        height: 50vw;
+        top: 12vw;
         left: 43.4vw;        
     }
     
     .right_paint{
-        top: 25vw;
-        left: 83vw;
+        top: 26vw;
+        left: 81vw;
         height: 44vw;    
     }
     
     .top_right_drip{
-        position: absolute;
-        top: 33vw;
-        left: 86vw;
-        width: 6.5vw;
-        height: 16.25vw;
+        top: 25vw;
+        left: 82.5vw;
+        width: 9vw;
+        height: 31vw;
     
         border-top-left-radius: 25vw;
         border-top-right-radius: 6vw;
         border-bottom-left-radius: 6vw;
         border-bottom-right-radius: 16vw;
     
-        background: linear-gradient(20deg, #f1cf00 00%, #d349ff 100%);
-    
-        animation: floater-slow 5s ease infinite;
+        background: linear-gradient(20deg, #88E357 00%, #f1cf00 20%, #d349ff 100%);
     }
     
     .paint_drop{
         position: absolute;
-        top: 43vw;
-        left: 15vw;
+        top: 60vw;
+        left: 13vw;
         border-radius: 25vw;
         width: 6vw;
         height: 6vw;
         background: linear-gradient(20deg, #00ffc9 0%, #f1cf00 100%);
-        animation: floater-slow 4s ease infinite;
     }
 }

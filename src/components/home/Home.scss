@@ -1,7 +1,6 @@
 @import '../../Variables.scss';
 
 .home{
-    height: 130vw;
     z-index: -1;
 }
 
@@ -53,11 +52,10 @@
 
 /* ------- Projects -------*/
 #project-label{
-    position: absolute;
-    transform: translate(-50%, -50%);
+    position: relative;
+    text-align: center;
     font-size: 3vw;
-    left: 50vw;
-    top: 48vw;
+    top: 23vw;
     color: $sideColor
 }
 
@@ -65,8 +63,8 @@
 /* ------- About Me -------*/
 #aboutMe{
     position: relative;
-    top: 65vw;
-
+    margin-top: 30vw;
+    margin-bottom: 20vw;
     #aboutMe-label{
         position: absolute;
         font-size: 3vw;
@@ -86,32 +84,62 @@
 @media screen and (max-width: $phoneWidth) {
     #head_logo{
         position: absolute;
-        top: 3vw;
-        left: -12.1vw;
+        top: -4vw;
+        left: -21.25vw;
         z-index: 1;
+        .my_logo{
+            width: 22vw;
+            height: 22vw;
+            animation: floater 4s ease infinite;
+        }
     }
     
     
     #title_box {        
-        width: 79vw; 
-        height: 25vw;
-        top: 30vw;
+        width: 77vw; 
+        height: 30vw;
+        top: 35vw;
         left: 49.5vw;
         
         border-radius: 5vw;
         box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
         padding: 3vw;    
         
-        h2{
-            font-size: 2.2vw;
+        .my_slogan{
+            margin-top:5vw;;
+            margin-bottom: 1vw;
         }
+        .my_title{
+            margin-top: 1vw;
+        }
+
+        h2{
+            font-size: 2.8vw;
+        }
+
         .hidden_link{
             font-weight: 600;
         }
         
         #my_name{
-            font-size: 8vw;
+            font-size: 8.5vw;
             margin: 0vw;
+        }
+    }
+
+    #project-label{
+        font-size: 4vw;
+        top: 29vw;
+    }
+    
+    /* ------- About Me -------*/
+    #aboutMe{
+        margin-top: 40vw;
+        margin-bottom: 20vw;
+        #aboutMe-label{
+            font-size: 3vw;
+            left: 61vw;
+            top: 0vw;
         }
     }
 }

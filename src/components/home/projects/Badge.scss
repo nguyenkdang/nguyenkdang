@@ -1,3 +1,5 @@
+@import '../../../Variables.scss';
+
 $badgeTrans: all 0.7s ease-out;
 
 svg{
@@ -6,67 +8,68 @@ svg{
 
 /* projects */
 .middle-badge{
-    position: absolute;
-    top: 53vw;
-    left: 40vw;
+    position: relative;
+    top: 24vw;
+    margin-left: 40vw;
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .middle-badge{
+        top: 30vw;
+    }
 }
 
 #base-back{
     transition: $badgeTrans;
-}
-
-svg:hover #base-back{
-    d: path("M1171.34,283.51a12.62,12.62,0,0,0-12.61-12.61H830.4a12.62,12.62,0,0,0-12.62,12.61V573.89a16.16,16.16,0,0,0,11.72,15.54l160.62,45.94a16.15,16.15,0,0,0,8.88,0l160.63-45.94a16.16,16.16,0,0,0,11.71-15.54Z");    
+    svg:hover &{
+        d: path("M1171.34,283.51a12.62,12.62,0,0,0-12.61-12.61H830.4a12.62,12.62,0,0,0-12.62,12.61V573.89a16.16,16.16,0,0,0,11.72,15.54l160.62,45.94a16.15,16.15,0,0,0,8.88,0l160.63-45.94a16.16,16.16,0,0,0,11.71-15.54Z");    
+    }
 }
 
 #base-ridge{
     transition: $badgeTrans;
-}
-
-svg:hover #base-ridge{
-    d: path("M1155,297.21a9.92,9.92,0,0,0-9.92-9.92H844.09a9.92,9.92,0,0,0-9.92,9.92V564.76a11.34,11.34,0,0,0,8.22,10.9L991.44,618.3a11.41,11.41,0,0,0,6.24,0l149.05-42.64a11.33,11.33,0,0,0,8.22-10.9Z");    
+    svg:hover &{
+        d: path("M1155,297.21a9.92,9.92,0,0,0-9.92-9.92H844.09a9.92,9.92,0,0,0-9.92,9.92V564.76a11.34,11.34,0,0,0,8.22,10.9L991.44,618.3a11.41,11.41,0,0,0,6.24,0l149.05-42.64a11.33,11.33,0,0,0,8.22-10.9Z");    
+    }
 }
 
 #more-info-tag{
     transition: $badgeTrans;
-}
-
-svg:hover #more-info-tag{
-    transform: translate(72px, 0);
+    svg:hover &{
+        transform: translate(72px, 0);
+    }
 }
 
 #more-info-back{
     transition: $badgeTrans;
-}
-
-svg:hover #more-info-back{
-    d: path("M241.56,0H350.94a16.25,16.25,0,0,1,16.25,16.25V41.87a0,0,0,0,1,0,0H241.56a20.94,20.94,0,0,1-20.94-20.94v0A20.94,20.94,0,0,1,241.56,0Z");    
-    transform: translate(-133px, 0);
+    svg:hover &{
+        d: path("M241.56,0H350.94a16.25,16.25,0,0,1,16.25,16.25V41.87a0,0,0,0,1,0,0H241.56a20.94,20.94,0,0,1-20.94-20.94v0A20.94,20.94,0,0,1,241.56,0Z");    
+        transform: translate(-133px, 0);
+    }
 }
 
 #info-symb{
     transition: $badgeTrans;
-}
-
-svg:hover #info-symb{
-    transform: translate(-72px, 0);
+    svg:hover &{
+        transform: translate(-72px, 0);
+    }
 }
 
 #lang-badge{
     transition: $badgeTrans;
-}
-
-svg:hover #lang-badge{
-    d: path("M988,661l-58.63-30.16a3.08,3.08,0,0,1,0-5.32L990,594.36a10,10,0,0,1,9.23,0l60.55,31.14a3.07,3.07,0,0,1,0,5.32L1001.1,661A14.19,14.19,0,0,1,988,661Z");
+    svg:hover &{
+        d: path("M988,661l-58.63-30.16a3.08,3.08,0,0,1,0-5.32L990,594.36a10,10,0,0,1,9.23,0l60.55,31.14a3.07,3.07,0,0,1,0,5.32L1001.1,661A14.19,14.19,0,0,1,988,661Z");
+    }
 }
 
 #right-edge{
     transition: $badgeTrans;
+    svg:hover &{
+        d: path("M1171.34,600V491.11l8.84,7a12.25,12.25,0,0,1,4.45,9.59v85.34a4.26,4.26,0,0,1-3.11,4.1Z");
+    }
 }
 
-svg:hover #right-edge{
-    d: path("M1171.34,600V491.11l8.84,7a12.25,12.25,0,0,1,4.45,9.59v85.34a4.26,4.26,0,0,1-3.11,4.1Z");
-}
+
 
 #right-b-edge{
     transition: $badgeTrans;
@@ -86,40 +89,36 @@ svg:hover #right-edge-curve{
 
 #right-b-curve{
     transition: $badgeTrans;
-}
-
-svg:hover #right-b-curve{
-    d: path("M1061.27,617.56s-14.91.76-25.83-4.33l15.45,8.37Z");
+    svg:hover &{
+        d: path("M1061.27,617.56s-14.91.76-25.83-4.33l15.45,8.37Z");
+    }
 }
 
 #left-edge{
     transition: $badgeTrans;
-}
-
-svg:hover #left-edge{
-    d: path("M817.78,600V491.11l-8.84,7a12.24,12.24,0,0,0-4.44,9.59v85.34a4.26,4.26,0,0,0,3.11,4.1Z");
+    svg:hover &{
+        d: path("M817.78,600V491.11l-8.84,7a12.24,12.24,0,0,0-4.44,9.59v85.34a4.26,4.26,0,0,0,3.11,4.1Z");
+    }
 }
 
 #left-b-edge{
     transition: $badgeTrans;
-}
-
-svg:hover #left-b-edge{
-    d: path("M954.72,624.36,816.93,586l-.07,13.77,131.5,36.77a2.84,2.84,0,0,0,3.49-2Z");
+    svg:hover &{
+        d: path("M954.72,624.36,816.93,586l-.07,13.77,131.5,36.77a2.84,2.84,0,0,0,3.49-2Z");
+    } 
 }
 
 #left-edge-curve{
     transition: $badgeTrans;
-}
-
-svg:hover #left-edge-curve{
-    d: path("M817.28,564.58s1.74,20,12.47,25l-12.85-2.79Z");
+    svg:hover &{
+        d: path("M817.28,564.58s1.74,20,12.47,25l-12.85-2.79Z");
+    }
 }
 
 #left-b-curve{
-    transition: $badgeTrans;
+    transition: $badgeTrans;  
+    svg:hover &{
+        d: path("M927.86,617.56s14.9.77,25.82-4.33l-15.45,8.37Z");
+    }
 }
 
-svg:hover #left-b-curve{
-    d: path("M927.86,617.56s14.9.77,25.82-4.33l-15.45,8.37Z");
-}
