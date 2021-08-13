@@ -12,25 +12,6 @@
     z-index: 1;
 }
 
-.sc{
-    color: $sideColor;
-}
-
-.mc{
-    color: $mainColor;
-}
-
-.hidden_link{
-    font-weight: 600;
-    color: $mainColor;
-    animation: glow 3.5s ease infinite;
-}
-
-#my_name{
-    font-size: 5vw;
-    margin: 0vw;
-    color: $mainColor;
-}
 
 #title_box {
     position: relative;
@@ -48,6 +29,26 @@
     margin-top: 2vw;
     
     text-align: center;
+
+    .sc{
+        color: $sideColor;
+    }
+    
+    .mc{
+        color: $mainColor;
+    }
+
+    .hidden_link{
+        font-weight: 600;
+        color: $mainColor;
+        animation: glow 3.5s ease infinite;
+    }
+    
+    #my_name{
+        font-size: 5vw;
+        margin: 0vw;
+        color: $mainColor;
+    }
 }
 
 /* ------- Projects -------*/
@@ -65,19 +66,52 @@
 #aboutMe{
     position: relative;
     top: 65vw;
-}
 
-#aboutMe-label{
-    position: absolute;
-    font-size: 3vw;
-    left: 61vw;
-    top: 0vw;
-    color: $sideColor
+    #aboutMe-label{
+        position: absolute;
+        font-size: 3vw;
+        left: 61vw;
+        top: 0vw;
+        color: $sideColor
+    }
 }
-
 
 /* ------- Animation  -------*/
 @keyframes glow{
     0%, 100%{ color: $mainColor;}
     50%{ color: #abc4f8;}
+}
+
+
+@media screen and (max-width: $phoneWidth) {
+    #head_logo{
+        position: absolute;
+        top: 3vw;
+        left: -12.1vw;
+        z-index: 1;
+    }
+    
+    
+    #title_box {        
+        width: 79vw; 
+        height: 25vw;
+        top: 30vw;
+        left: 49.5vw;
+        
+        border-radius: 5vw;
+        box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
+        padding: 3vw;    
+        
+        h2{
+            font-size: 2.2vw;
+        }
+        .hidden_link{
+            font-weight: 600;
+        }
+        
+        #my_name{
+            font-size: 8vw;
+            margin: 0vw;
+        }
+    }
 }

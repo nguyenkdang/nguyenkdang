@@ -3,7 +3,7 @@ import React from 'react'
 const Mylogo = ({ width }) => {
     return (
         <div>
-            <svg id="logo_svg" data-name="Logo SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800.42 383.66" width={width}>
+            <svg className="my_logo" data-name="Logo SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800.42 383.66" width={width}>
                 <defs><style>
                 {'.logo-1,.logo-2{fill:#fff;}'}
                 {'.logo-1{opacity:0.2;}'}
