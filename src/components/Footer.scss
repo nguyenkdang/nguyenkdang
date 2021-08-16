@@ -12,6 +12,26 @@
         width: 8vw;
         top: -5vw;
         left: 28.2vw;
+        .n_back{
+            position: absolute;
+            top: 4vw;
+            left: 18vw;
+            width: 1vw;
+            height: 1vw;
+            background-color: $mainColor;
+            z-index: -1;
+        }
+
+        .d_back{
+            position: absolute;
+            top: 4vw;
+            left: 23vw;
+            width: 1vw;
+            height: 1vw;
+            border-top-right-radius: 1vw;
+            background-color: $mainColor;
+            z-index: -1;
+        }
     }
 
     #foot-links{
@@ -52,6 +72,21 @@
                 height: 20vw;
                 width: 20vw;
             }
+            .n_back{
+                top: 11vw;
+                left: 26vw;
+                width: 1vw;
+                height: 1vw;
+            }
+    
+            .d_back{
+                top: 11vw;
+                left: 33vw;
+                width: 1vw;
+                height: 1vw;
+                border-top-right-radius: 1vw;
+            }
+           
         }
     
         #foot-links{

@@ -50,6 +50,6 @@
 }
 
 @keyframes flip-para{
-    0%, 50%{ font-size: 0vw;}
-    51%, 100%{ font-size: 1.5vw;}
+    0%, 50%{ visibility: hidden;}
+    51%, 100%{ visibility: visible;}
 }

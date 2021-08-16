@@ -8,11 +8,21 @@ import { useState } from "react";
 
 
 const Home = () => {
-    const [isFront, setFront] = useState({left: true, right: false});
+    const [isFront, setFront] = useState({first:true, left: true, right: false});
+    
     const handleFlip = (lr) => {
         if(isFront[lr] === false){
-            setFront({left: !isFront["left"], right: !isFront["right"]});
+            if(lr === "right" && isFront["first"] === true){
+                setFront({first: !isFront["first"], left: !isFront["left"], right: !isFront["right"]});
+            }
+            else{
+                setFront({first:isFront["first"], left: !isFront["left"], right: !isFront["right"]});
+            }
+           
+        
+        
         }
+
         
     };
     return (

@@ -7,6 +7,8 @@ const Footer = () => {
         <div className="foot">
             <div id="foot_logo">
                 <Mylogo width="14vw"/>
+                <div className="n_back"></div>
+                <div className="d_back"></div>
             </div>
             <div id="foot-links">
                 <Link className="foot-link" to="/"> home</Link>

@@ -21,7 +21,7 @@
     left: 49.5vw;
     
     border-radius: 4vw;
-    background: #E1EBF9;
+    background: #e8f0fa;
     box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
     padding: 2vw;
     transform: translate(-50%, -50%);
@@ -74,17 +74,10 @@
     }
 }
 
-/* ------- Animation  -------*/
-@keyframes glow{
-    0%, 100%{ color: $mainColor;}
-    50%{ color: #abc4f8;}
-}
-
-
 @media screen and (max-width: $phoneWidth) {
     #head_logo{
         position: absolute;
-        top: -4vw;
+        top: -4.5vw;
         left: -21.25vw;
         z-index: 1;
         .my_logo{
@@ -110,11 +103,11 @@
             margin-bottom: 1vw;
         }
         .my_title{
-            margin-top: 1vw;
+            margin-top: 1.5vw;
         }
 
         h2{
-            font-size: 2.8vw;
+            font-size: 3vw;
         }
 
         .hidden_link{
@@ -142,4 +135,10 @@
             top: 0vw;
         }
     }
+}
+
+/* ------- Animation  -------*/
+@keyframes glow{
+    0%, 100%{ color: $mainColor;}
+    50%{ color: #abc4f8;}
 }
