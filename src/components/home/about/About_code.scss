@@ -391,7 +391,7 @@
 @media screen and (max-width: $phoneWidth) {
     #me-left{
         top: 2.5vw;
-        left: 10vw;
+        left: 5vw;
         width: 45vw;
         height: 28vw;
         &.back{
@@ -619,8 +619,8 @@
         }
 
         #mlBack{
-            width: 50vw;
-            height: 32vw;    
+            width: 55vw;
+            height: 35vw;    
             #shadow-container{
                 #ml-shadow{
                     filter: blur(0.5vw);
@@ -639,14 +639,14 @@
             }
     
             #mlt2{
-                font-size: 4vw;
-                width: 40vw;
+                font-size: 4.5vw;
+                width: 45vw;
                 margin-left: 5vw;
                 margin-bottom: 0vw;
             }
          
             #mleft-para{
-                font-size: 2vw;
+                font-size: 2.2vw;
                 margin-top: 2vw;
                 margin-left: 8vw;
                 width: 40vw;

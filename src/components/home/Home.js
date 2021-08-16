@@ -18,9 +18,6 @@ const Home = () => {
             else{
                 setFront({first:isFront["first"], left: !isFront["left"], right: !isFront["right"]});
             }
-           
-        
-        
         }
 
         
