@@ -389,7 +389,7 @@
 @media screen and (max-width: $phoneWidth) {
     #me-left{
         top: 2.5vw;
-        left: 7vw;
+        left: 6vw;
         width: 45vw;
         height: 28vw;
         &.back{
@@ -448,7 +448,7 @@
                 transform: scale(0.95, 0.95);
                 #shadow-container{
                     #ml-shadow{
-                        width: 22.25vw;
+                        width: 23.25vw;
                         height: 28.5vw;
                     }
                 }
