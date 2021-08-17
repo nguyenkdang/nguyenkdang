@@ -34,11 +34,15 @@
             }
 
             #circuit{
+                #mlCrc1, #mlCrc3{
+                    width: 2.2vw;
+                    height: 2.2vw;
+                }
+
                 #mlCrc1{
                     top: -24.25vw;
                     left: -1.3vw;
-                    width: 2.2vw;
-                    height: 2.2vw;
+                    
                 }
 
                 #mlCrc2{
@@ -48,8 +52,6 @@
 
                 #mlCrc3{
                     right: -43vw;
-                    width: 2.2vw;
-                    height: 2.2vw;
                 }
                 
                 #mlBar1{
@@ -96,14 +98,17 @@
 
             #mlCrc1, #mlCrc2, #mlCrc3{
                 background: $mainColor;
+            }
+
+            #mlCrc1, #mlCrc3{
+                width: 2vw;
+                height: 2vw;
                 border:0.60vw solid $sideColor;
             }
 
             #mlCrc1{
                 top: -23vw;
-                left: -1.2vw;
-                width: 2vw;
-                height: 2vw;
+                left: -1.2vw; 
             }
 
             #mlCrc2{
@@ -117,9 +122,7 @@
 
             #mlCrc3{
                 bottom: -2vw;
-                right: -42vw;
-                width: 2vw;
-                height: 2vw;         
+                right: -42vw;     
             }
 
             #mlBar1{
@@ -137,7 +140,6 @@
     &.front{
         z-index: 1;
         #mlBack{
-            
             &.firstTime{
                 animation: flip-bg 0s ease;
                 animation-fill-mode: forwards;
@@ -251,14 +253,20 @@
                 }
             }
 
+            #mlCrc1, #mlCrc3, #mlCrc2{
+                background: transparent;
+            }
+
+            #mlCrc1, #mlCrc3{
+                width: 2.4vw;
+                height: 2.4vw;
+                border:0.75vw solid white;
+
+            }
+
             #mlCrc1{
                 top: -30.50vw;
                 left: -1.5vw;
-                width: 2.4vw;
-                height: 2.4vw;
-
-                background: transparent;
-                border:0.75vw solid white;
             }
 
             #mlCrc2{
@@ -267,20 +275,13 @@
                 width: 3.5vw;
                 height: 3.5vw;
                 
-                background: transparent;
                 border:1vw solid white;
                 
             }
 
             #mlCrc3{
                 bottom: -2.1vw;
-                right: -46.2vw;
-                width: 2.4vw;
-                height: 2.4vw;
-                
-                background: transparent;
-                border:0.75vw solid white;
-                
+                right: -46.2vw;                
             }
 
             #mlBar1{
@@ -307,11 +308,8 @@
             transition: all 0.4s ease-out;
         }
 
-        #mlCrc1, #mlCrc2, #mlCrc3{
-            z-index: 1; 
-        }
-
         #mlCrc1, #mlCrc3, #mlCrc2{
+            z-index: 1; 
             border-radius: 50%;
         }
 
@@ -417,11 +415,14 @@
                 }
     
                 #circuit{
+                    #mlCrc1, #mlCrc3{
+                        width: 2.2vw;
+                        height: 2.2vw; 
+                    }
+
                     #mlCrc1{
                         top: -24.25vw;
                         left: -1.3vw;
-                        width: 2.2vw;
-                        height: 2.2vw;
                     }
     
                     #mlCrc2{
@@ -431,8 +432,6 @@
     
                     #mlCrc3{
                         right: -43vw;
-                        width: 2.2vw;
-                        height: 2.2vw;
                     }
                     
                     #mlBar1{
@@ -449,11 +448,8 @@
                 transform: scale(0.95, 0.95);
                 #shadow-container{
                     #ml-shadow{
-                        opacity: 0.6;
                         width: 22.25vw;
-                        height: 24.8vw;
-                        transition: all 0.4s ease-out, opacity 0.4s, transform 0.4s, filter 0.4s;
-                        transition-delay: 0.5s, 0s, 0s, 0s;
+                        height: 28.5vw;
                     }
                 }
                 
@@ -477,14 +473,17 @@
     
                 #mlCrc1, #mlCrc2, #mlCrc3{
                     background: $mainColor;
+                }
+                
+                #mlCrc1, #mlCrc3{
+                    width: 2vw;
+                    height: 2vw;
                     border:0.60vw solid $sideColor;
                 }
-    
+
                 #mlCrc1{
                     top: -23vw;
                     left: -1.2vw;
-                    width: 2vw;
-                    height: 2vw;
                 }
     
                 #mlCrc2{
@@ -498,9 +497,7 @@
     
                 #mlCrc3{
                     bottom: -2vw;
-                    right: -42vw;
-                    width: 2vw;
-                    height: 2vw;         
+                    right: -42vw;      
                 }
     
                 #mlBar1{
@@ -520,11 +517,8 @@
                 transform: scale(1,1);
                 #shadow-container{
                     #ml-shadow{
-                        opacity: 0;
                         width: 0vw;
-                        height: 24vw;
-                        transition: all 0s ease-out;
-                        transition-delay: 0s;
+                        height: 28.5vw;
                     }
                 }
                 
@@ -545,37 +539,33 @@
             #circuit{
                 top: 25.1vw;
                 left: 2vw;    
+                
+                #mlCrc1, #mlCrc3, #mlCrc2{
+                    background: transparent;
+                }
     
-                #mlCrc1{
-                    top: -30.50vw;
-                    left: -1.5vw;
+                #mlCrc1, #mlCrc3{
                     width: 2.4vw;
                     height: 2.4vw;
-    
-                    background: transparent;
                     border:0.75vw solid white;
+    
+                }
+
+                #mlCrc1{
+                    top: -30.50vw;
+                    left: -1.5vw;                   
                 }
     
                 #mlCrc2{
                     top: -0.2vw;
                     right:-1vw;
                     width: 3.5vw;
-                    height: 3.5vw;
-                    
-                    background: transparent;
-                    border:1vw solid white;
-                    
+                    height: 3.5vw;              
                 }
     
                 #mlCrc3{
                     bottom: -2.1vw;
-                    right: -46.2vw;
-                    width: 2.4vw;
-                    height: 2.4vw;
-                    
-                    background: transparent;
-                    border:0.75vw solid white;
-                    
+                    right: -46.2vw;   
                 }
     
                 #mlBar1{
@@ -623,7 +613,7 @@
             height: 35vw;    
             #shadow-container{
                 #ml-shadow{
-                    filter: blur(0.5vw);
+                    filter: blur(0.7vw);
                     right: -1vw;
                     bottom: -1vw;
                 }
