@@ -15,8 +15,8 @@ const Resume = () => {
                 <h3 className="contact_info"> <b>Email</b> nguyenkhdang@gmail.com</h3>
               </div>
               <div className="same_ln">
-                <h3 className="contact_info"> <b>Repository</b> <a className="link" href="https://github.com/nguyenkdang/" target="_blank">github.com/nguyenkdang</a> </h3>
-                <h3 className="contact_info"> <b>Linkedin</b> <a className="link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank"> linkedin.com/in/nguyenkdang</a> </h3>
+                <h3 className="contact_info"> <b>Repository</b> <a className="link" href="https://github.com/nguyenkdang/" target="_blank" rel="noreferrer">github.com/nguyenkdang</a> </h3>
+                <h3 className="contact_info"> <b>Linkedin</b> <a className="link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank" rel="noreferrer"> linkedin.com/in/nguyenkdang</a> </h3>
               </div>
             </div>
             <span id="education_break"></span>

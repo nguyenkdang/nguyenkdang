@@ -1,6 +1,4 @@
 import "./ProjItem.scss"
-import { useState } from "react";
-
 
 const ProjItem = ({ptitle, pdesc, ptags, git, id, isOpen, handleOpen }) => {
     return (
@@ -9,7 +7,7 @@ const ProjItem = ({ptitle, pdesc, ptags, git, id, isOpen, handleOpen }) => {
             <div className={isOpen.opn[id] ? "proj_body open" : "proj_body close"}>
                 <div className="ptags">
                     {ptags.map((tag) => (<h3 className="ptag"> {tag} </h3>))}
-                    {!git? "" :  <a className="ptag pgittag" href={git} target="_blank">Github</a>}
+                    {!git? "" :  <a className="ptag pgittag" href={git} target="_blank" rel="noreferrer">Github</a>}
                 </div>
                 <div className="pinfo">
                     <h2 className="proj_title"> {ptitle}</h2>

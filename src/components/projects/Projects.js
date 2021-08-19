@@ -63,7 +63,6 @@ const projs = [
 ]
 
 const Projects = () => {
-
     const [isOpen, setOpen] = useState(
         { 
             blur: false,
@@ -73,7 +72,7 @@ const Projects = () => {
 
     const handleOpen = (id) => {
         const future = [...isOpen.opn.slice(0, id), !isOpen.opn[id], ...isOpen.opn.slice(id+1)]
-        if(isOpen.opn.every((val) => val == false) || future.every((val) => val == false) ){
+        if(isOpen.opn.every((val) => val === false) || future.every((val) => val === false) ){
             setOpen({blur: !isOpen.blur, opn:future});
         }
     };
@@ -88,7 +87,7 @@ const Projects = () => {
     return (
         <div className="Projects">
             <div className="badge_container">
-                {projs.map((p) => (<ProjItem ptitle={p.title} pdesc={p.desc} ptags={p.tags} git={p.git} id={p.id} isOpen={isOpen} handleOpen={handleOpen}/>))}       
+                {projs.map((p) => (<ProjItem key={p.id} ptitle={p.title} pdesc={p.desc} ptags={p.tags} git={p.git} id={p.id} isOpen={isOpen} handleOpen={handleOpen}/>))}       
                 <div className={isOpen.blur ? "projCover vis" : "projCover"} onClick={reset}> </div>
             </div>
         </div>

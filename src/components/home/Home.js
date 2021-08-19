@@ -4,8 +4,7 @@ import About_dsgn from './about/About_dsgn'
 import Paint from './intro/Paint'
 import Badge from './projects/Badge'
 import Mylogo from '../../svg/Mylogo'
-import { useState } from "react";
-
+import { useState} from "react";
 
 const Home = () => {
     const [isFront, setFront] = useState({first:true, left: true, right: false});
@@ -19,9 +18,10 @@ const Home = () => {
                 setFront({first:isFront["first"], left: !isFront["left"], right: !isFront["right"]});
             }
         }
-
-        
     };
+
+    
+
     return (
         <div className="home">
             <div id="head_logo">
@@ -29,10 +29,10 @@ const Home = () => {
             </div>
             <div id="intro">
                 <div id="title_box"> 
-                    <h2 className='sc my_slogan'> <a className="hidden_link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank">in</a>tuitive 
-                        <a className="hidden_link" href="https://www.behance.net/nguyenkdang" target="_blank"> be</a>autiful 
-                        di<a className="hidden_link" href="https://github.com/nguyenkdang" target="_blank">git</a>al
-                        des<a className="hidden_link" href="https://www.instagram.com/nguwaynedang/" target="_blank">ig</a>n</h2>
+                    <h2 className='sc my_slogan'> <a className="hidden_link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank" rel="noreferrer">in</a>tuitive 
+                        <a className="hidden_link" href="https://www.behance.net/nguyenkdang" target="_blank" rel="noreferrer"> be</a>autiful 
+                        di<a className="hidden_link" href="https://github.com/nguyenkdang" target="_blank" rel="noreferrer">git</a>al
+                        des<a className="hidden_link" href="https://www.instagram.com/nguwaynedang/" target="_blank" rel="noreferrer">ig</a>n</h2>
                     <h1 id="my_name"> Nguyen K Dang </h1>
                     <h2 className='sc my_title'> Software Developer & Visual Designer </h2>
                 </div>

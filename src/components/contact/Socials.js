@@ -21,23 +21,23 @@ const Socials = () => {
         <div className="socials">
             <div id="social_box">
                 <div id="ln_logo" className="logo">
-                    <a href="https://www.linkedin.com/in/nguyenkdang/" target="_blank">
+                    <a href="https://www.linkedin.com/in/nguyenkdang/" target="_blank" rel="noreferrer">
                         <Logo_linkedin width={size} height={size}/>
                     </a>
                 </div>
                 <div id="git_logo" className="logo">
-                    <a href="https://github.com/nguyenkdang" target="_blank">
+                    <a href="https://github.com/nguyenkdang" target="_blank" rel="noreferrer">
                         <Logo_github width={size} height={size}/>
                     </a>
                 </div>
                 <div id="be_logo" className="logo">
-                    <a href="https://www.behance.net/nguyenkdang" target="_blank">
+                    <a href="https://www.behance.net/nguyenkdang" target="_blank" rel="noreferrer">
                         <Logo_behance width={size} height={size}/>
                     </a>
                 </div>
                 <div id="in_logo" className="logo">
                     <Logo_instagram width={size} height={size}/>
-                    <a href="https://www.instagram.com/nguwaynedang/" target="_blank">
+                    <a href="https://www.instagram.com/nguwaynedang/" target="_blank" rel="noreferrer">
                     </a>
                 </div>
             </div>
