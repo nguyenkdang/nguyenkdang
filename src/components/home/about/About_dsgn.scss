@@ -330,21 +330,21 @@
                 }
     
                 #mrSqr{
-                    transform: translate(0vw, -0.7vw) 
-                    scale(1.05, 1.05)
+                    transform: translate(0vw, -2vw) 
+                    scale(1.1, 1.1)
                     rotate(35deg);
                 }
     
                 #mr-CrcBr{
                     #mrCrc{
-                        transform: translate(1vw, -0.5vw) 
+                        transform: translate(1.5vw, -1vw) 
                         scale(1.1, 1.1);
                     }  
                 }
     
                 #mrTrg{
                     transform: translate(-0.5vw, 0.5vw) 
-                    scale(1.07, 1.07)
+                    scale(1.35, 1.35)
                     rotate(-38deg);
                 }
             }
@@ -354,7 +354,7 @@
                 #shadow-container{
                     #mr-shadow{
                         opacity: 0.6;
-                        width: 23.25vw;
+                        width: 24.25vw;
                         height: 28.5vw;
                     }
                 }    

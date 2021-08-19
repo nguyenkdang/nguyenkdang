@@ -1,5 +1,10 @@
 @import '../../../Variables.scss';
 
+@mixin eqSize($size) {
+    width: $size;
+    height: $size;
+}
+
 #me-left{
     position: relative;
     top: 2.5vw;
@@ -35,8 +40,7 @@
 
             #circuit{
                 #mlCrc1, #mlCrc3{
-                    width: 2.2vw;
-                    height: 2.2vw;
+                    @include eqSize(2.2vw);
                 }
 
                 #mlCrc1{
@@ -46,8 +50,7 @@
                 }
 
                 #mlCrc2{
-                    width: 4.5vw;
-                    height: 4.5vw;
+                    @include eqSize(4.5vw);
                 }
 
                 #mlCrc3{
@@ -101,8 +104,7 @@
             }
 
             #mlCrc1, #mlCrc3{
-                width: 2vw;
-                height: 2vw;
+                @include eqSize(2vw);
                 border:0.60vw solid $sideColor;
             }
 
@@ -114,8 +116,7 @@
             #mlCrc2{
                 top: 0vw;
                 right:-0.8vw;
-                width: 3.5vw;
-                height: 3.5vw;
+                @include eqSize(3.5vw);
                 
                 border:0.80vw solid $sideColor;
             }
@@ -258,8 +259,7 @@
             }
 
             #mlCrc1, #mlCrc3{
-                width: 2.4vw;
-                height: 2.4vw;
+                @include eqSize(2.4vw);
                 border:0.75vw solid white;
 
             }
@@ -272,8 +272,7 @@
             #mlCrc2{
                 top: -0.2vw;
                 right:-1vw;
-                width: 3.5vw;
-                height: 3.5vw;
+                @include eqSize(3.5vw);
                 
                 border:1vw solid white;
                 
@@ -389,7 +388,7 @@
 @media screen and (max-width: $phoneWidth) {
     #me-left{
         top: 2.5vw;
-        left: 6vw;
+        left: 7vw;
         width: 45vw;
         height: 28vw;
         &.back{
@@ -413,33 +412,31 @@
                     transition: all 0.4s ease-out;
                    }
                 }
-    
+                
                 #circuit{
                     #mlCrc1, #mlCrc3{
-                        width: 2.2vw;
-                        height: 2.2vw; 
+                        @include eqSize(3.2vw);
                     }
 
                     #mlCrc1{
-                        top: -24.25vw;
-                        left: -1.3vw;
+                        top: -32.5vw;
+                        left: -1.95vw;
                     }
     
                     #mlCrc2{
-                        width: 4.5vw;
-                        height: 4.5vw;
+                        @include eqSize(5vw);
                     }
     
                     #mlCrc3{
-                        right: -43vw;
+                        right: -46vw;
                     }
                     
                     #mlBar1{
-                        height: 21vw;
+                        height: 28vw;
                     }
     
                     #mlBar2{
-                        width: 39.5vw;
+                        width: 41vw;  
                     }
                 }
             }
@@ -448,7 +445,7 @@
                 transform: scale(0.95, 0.95);
                 #shadow-container{
                     #ml-shadow{
-                        width: 23.25vw;
+                        width: 24.25vw;
                         height: 28.5vw;
                     }
                 }
@@ -468,46 +465,40 @@
              }
     
             #circuit{
-                top: 23vw;
-                left: 4vw;
-    
-                #mlCrc1, #mlCrc2, #mlCrc3{
-                    background: $mainColor;
-                }
+                top: 30vw;
+                left: 4.5vw;
                 
                 #mlCrc1, #mlCrc3{
-                    width: 2vw;
-                    height: 2vw;
-                    border:0.60vw solid $sideColor;
+                    @include eqSize(3vw);
+                    border:0.80vw solid $sideColor;
                 }
 
                 #mlCrc1{
-                    top: -23vw;
-                    left: -1.2vw;
+                    top: -30.5vw;
+                    left: -1.8vw;
                 }
     
                 #mlCrc2{
                     top: 0vw;
                     right:-0.8vw;
-                    width: 3.5vw;
-                    height: 3.5vw;
+                    @include eqSize(4.5vw);
                     
-                    border:0.80vw solid $sideColor;
+                    border: 1vw solid $sideColor;
                 }
     
                 #mlCrc3{
-                    bottom: -2vw;
-                    right: -42vw;      
+                    bottom: -2.8vw;
+                    right: -47vw;      
                 }
     
                 #mlBar1{
                     width: 0.8vw;
-                    height: 20vw;
+                    height: 26vw;
                 }
     
                 #mlBar2{
                     height: 0.8vw;
-                    width: 38.5vw;  
+                    width: 42vw;  
                 }
             }
         }
@@ -537,47 +528,92 @@
              }
     
             #circuit{
-                top: 25.1vw;
-                left: 2vw;    
+                top: 31.3vw;
+                left: 3vw;
                 
+                &.firstTime{
+                    animation: flip-circuit-m 0s ease;
+                    #mlCrc1{
+                        animation: flip-LCir1-m 0s ease;
+                    }
+        
+                    #mlCrc2{
+                        animation: flip-LCir2-m 0s ease;
+                    }
+        
+                    #mlCrc3{    
+                        animation: flip-LCir3-m 0s ease;
+                    }
+        
+                    #mlBar1{    
+                        animation: flip-LBar1-m 0s ease;
+                    }
+        
+                    #mlBar2{
+                        animation: flip-LBar2-m 0s ease; 
+                    }
+                }
+    
+                &.nthTime{
+                    animation: flip-circuit-m 1s ease;
+                    #mlCrc1{
+                        animation: flip-LCir1-m 1s ease;
+                    }
+        
+                    #mlCrc2{
+                        animation: flip-LCir2-m 1s ease;
+                    }
+        
+                    #mlCrc3{    
+                        animation: flip-LCir3-m 1s ease;
+                    }
+        
+                    #mlBar1{    
+                        animation: flip-LBar1-m 1s ease;
+                    }
+        
+                    #mlBar2{
+                        animation: flip-LBar2-m 1s ease; 
+                    }
+                }
+
                 #mlCrc1, #mlCrc3, #mlCrc2{
                     background: transparent;
                 }
     
                 #mlCrc1, #mlCrc3{
-                    width: 2.4vw;
-                    height: 2.4vw;
-                    border:0.75vw solid white;
+                    @include eqSize(3.5vw);
+                    border:0.9vw solid white;
     
                 }
 
                 #mlCrc1{
-                    top: -30.50vw;
-                    left: -1.5vw;                   
+                    top: -38vw;
+                    left: -2.2vw;                   
                 }
     
                 #mlCrc2{
                     top: -0.2vw;
                     right:-1vw;
-                    width: 3.5vw;
-                    height: 3.5vw;              
+                    @include eqSize(5.5vw); 
+                    border:1.2vw solid white;           
                 }
     
                 #mlCrc3{
-                    bottom: -2.1vw;
-                    right: -46.2vw;   
+                    bottom: -2.7vw;
+                    right: -50.9vw;   
                 }
     
                 #mlBar1{
                     width: 1vw;
-                    height: 27vw;
+                    height: 33vw;
                     background-position: bottom;
     
                 }
     
                 #mlBar2{
                     height: 1vw;
-                    width: 42.1vw;
+                    width: 45.5vw;
                     background-position: left;
                 }
             }
@@ -620,9 +656,9 @@
             }
             
             #mlt1{
-                font-size: 6vw;
-                top: -2.5vw;
-                left: 6.5vw;
+                font-size: 7vw;
+                top: -4vw;
+                left: 7vw;
                 width: 10vw;
     
                 transition: transform 0.4s ease-out, opacity 1.5s;
@@ -631,14 +667,14 @@
             #mlt2{
                 font-size: 4.5vw;
                 width: 45vw;
-                margin-left: 5vw;
+                margin-left: 6vw;
                 margin-bottom: 0vw;
             }
          
             #mleft-para{
                 font-size: 2.2vw;
-                margin-top: 2vw;
-                margin-left: 8vw;
+                margin-top: 1.5vw;
+                margin-left: 9vw;
                 width: 40vw;
             }
         }
@@ -663,8 +699,7 @@
     0%{
         top: -24.25vw;
         left: -1.3vw;
-        width: 2.2vw;
-        height: 2.2vw;
+        @include eqSize(2.2vw);
         background: $mainColor;
         border:0.60vw solid $sideColor;
     }
@@ -677,16 +712,14 @@
     100%{
         top: -30.50vw;
         left: -1.5vw;
-        width: 2.4vw;
-        height: 2.4vw;
+        @include eqSize(2.4vw);
         border:0.75vw solid white;
     }
 }
 
 @keyframes flip-LCir2{
     0%{
-        width: 4.5vw;
-        height: 4.5vw;
+        @include eqSize(4.5vw);
         right:-0.7vw;
         background: $mainColor;
         border:0.80vw solid $sideColor;
@@ -702,8 +735,7 @@
     100%{
         right:-1vw;
         top: -0.2vw;
-        width: 3.5vw;
-        height: 3.5vw;
+        @include eqSize(3.5vw);
         border:1vw solid white;
     }
 }
@@ -712,21 +744,19 @@
     0%{
         bottom: -2vw;
         right: -43vw;
-        width: 2.2vw;
-        height: 2.2vw;
+        @include eqSize(2.2vw);
         border:0.60vw solid $sideColor;
     }
     50%{
         background: $mainColor;
     }
     75%{
-        border:0.60vw solid $sideColor;
+        border:0.70vw solid $sideColor;
     }
     100%{
         bottom: -2.1vw;
         right: -46.2vw;
-        width: 2.4vw;
-        height: 2.4vw;
+        @include eqSize(2.4vw);
         background: transparent;
         border:0.75vw solid white;
     }
@@ -766,5 +796,121 @@
     100%{
         height: 1vw;
         width: 42.1vw;
+    }
+}
+
+/* Me-left-Mobile*/
+@keyframes flip-circuit-m{
+    0%{
+        top: 30vw;
+        left: 4.5vw;
+    }
+    100%{
+        top: 31.3vw;
+        left: 3vw;
+    }
+}
+
+@keyframes flip-LCir1-m{
+    0%{
+        top: -32.5vw;
+        left: -1.95vw;
+        @include eqSize(3.2vw);
+        background: $mainColor;
+        border:0.8vw solid $sideColor;
+    }
+    50%{
+        background: transparent;
+    }
+    75%{
+        border:0.85vw solid $sideColor;
+    }
+    100%{
+        top: -38vw;
+        left: -2.2vw;
+        @include eqSize(3.5vw);
+        border:0.9vw solid white;
+    }
+}
+
+@keyframes flip-LCir2-m{
+    0%{
+        @include eqSize(5vw);
+        right:-0.8vw;
+        background: $mainColor;
+        border: 1vw solid $sideColor;
+
+    }
+    50%{
+        background: transparent;
+        border:1vw solid $sideColor;
+    }
+    60%{
+        border:1vw solid white;
+    }
+    100%{
+        right:-1vw;
+        top: -0.2vw;
+        @include eqSize(5.5vw); 
+        border:1.2vw solid white;
+    }
+}
+
+@keyframes flip-LCir3-m{
+    0%{
+        bottom: -2.8vw;
+        right: -46vw;
+        @include eqSize(3.2vw);
+        border:0.8vw solid $sideColor;
+    }
+    50%{
+        background: $mainColor;
+    }
+    75%{
+        border:0.85vw solid $sideColor;
+    }
+    100%{
+        bottom: -2.7vw;
+        right: -50.9vw;
+        @include eqSize(3.5vw);
+        background: transparent;
+        border:0.9vw solid white;
+    }
+}
+
+@keyframes flip-LBar1-m{
+    0%{
+        height: 28vw;
+        width: 0.8vw;
+        background-position: top;
+    }
+    50%{
+        background-position: top;
+    }
+    80%{
+        background-position: bottom;
+    }
+    100%{
+        height: 33vw;
+        width: 1vw;
+
+    }
+}
+
+@keyframes flip-LBar2-m{
+    0%{
+        height: 0.8vw;
+        width: 41vw;
+        background-position: right;
+    }
+    50%{
+        background-position: right;
+    }
+    80%{
+        background-position: left;
+    }
+    100%{
+        height: 1vw;
+        width: 45.5vw;
     }
 }
