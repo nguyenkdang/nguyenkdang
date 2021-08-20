@@ -23,6 +23,11 @@
         background-color: $mainColor;
         box-shadow: -0vw -0vw 1.2vw 0.5vw #E1EBF9;
         z-index: 2;
+        .projIcon{
+            position: absolute;
+            margin-left: 3vw;
+            margin-top: 4vw;
+        }
     }
     
     .proj_body{
@@ -38,36 +43,37 @@
         transition: height 0.5s ease-in-out;
 
         &.close{
-            height: 22vw;
-            .proj_more{
-                top: 20vw;
-            }
-
+            height: 23vw;
+           
             .proj_descExt{
                 visibility: hidden;
                 color: transparent;
             }
-
-            .down_icon{
-                top: 1.2vw;
+            
+            .proj_more{
+                top: 21vw;
+                .down_icon{
+                    top: 1.2vw;
+                }
             }
         }
 
         &.open{
             height: 45vw;
-            .proj_more{
-                top: 43vw;
-            }
-
+            
             .proj_descExt{
                 visibility: visible;
                 color: black;
             }
 
-            .down_icon{
-                top: 0.90vw;
-                transform: rotate(180deg);
+            .proj_more{
+                top: 43vw;
+                .down_icon{
+                    top: 0.90vw;
+                    transform: rotate(180deg);
+                }
             }
+            
         }
 
         .ptags{
@@ -99,7 +105,7 @@
 
         .pinfo{
             position: relative;
-            top: 7vw;
+            top: 8vw;
             .proj_title{
                 text-align: center;
                 font-weight: 700;
@@ -154,12 +160,16 @@
         }
     
         .proj_iconBack{
-            left: 4vw;
+            left: 3vw;
             border-radius: 1vw;
             height: 20vw;
             width: 18vw;
             top:-5vw;
             box-shadow: -0vw -0vw 1vw 0.2vw #E1EBF9;
+            .projIcon{
+                margin-left: 4vw;
+                margin-top: 5vw;
+            }
         }
         
         .proj_body{
@@ -173,35 +183,38 @@
     
             &.close{
                 height: 34vw;
-                .proj_more{
-                    top: 31vw;
-                }
     
                 .proj_descExt{
                     visibility: hidden;
                     color: transparent;
                 }
-    
-                .down_icon{
-                    top: 1.5vw;
+                .proj_more{
+                    top: 31vw;
+
+                    .down_icon{
+                        top: 1.5vw;
+                    }
                 }
+                
             }
     
             &.open{
                 height: 65vw;
-                .proj_more{
-                    top: 62vw;
-                }
     
                 .proj_descExt{
                     visibility: visible;
                     color: black;
                 }
-    
-                .down_icon{
-                    top: 1vw;
-                    transform: rotate(180deg);
+
+                .proj_more{
+                    top: 62vw;
+                    
+                    .down_icon{
+                        top: 1vw;
+                        transform: rotate(180deg);
+                    }
                 }
+                
             }
     
             .ptags{

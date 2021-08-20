@@ -1,13 +1,19 @@
-import "./ProjItem.scss"
+import "./ProjItem.scss";
+import Logo_github from '../../svg/Logo_github'
 
-const ProjItem = ({ptitle, pdesc, ptags, git, id, isOpen, handleOpen }) => {
+
+const ProjItem = ({ptitle, pdesc, logo, ptags, link, id, isOpen, handleOpen }) => {
     return (
         <div className={!isOpen.opn[id] && isOpen.blur ? "ProjItem blur" : "ProjItem unblur"}>
-            <div className="proj_iconBack"></div>
+            <div className="proj_iconBack">
+                <div className='projIcon'>
+                    {logo}
+                </div>
+            </div>
             <div className={isOpen.opn[id] ? "proj_body open" : "proj_body close"}>
                 <div className="ptags">
                     {ptags.map((tag) => (<h3 className="ptag"> {tag} </h3>))}
-                    {!git? "" :  <a className="ptag pgittag" href={git} target="_blank" rel="noreferrer">Github</a>}
+                    {!link.type? "" :  <a className="ptag pgittag" href={link.url} target="_blank" rel="noreferrer">{link.type}</a>}
                 </div>
                 <div className="pinfo">
                     <h2 className="proj_title"> {ptitle}</h2>
