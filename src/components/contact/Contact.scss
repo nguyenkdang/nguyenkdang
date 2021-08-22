@@ -1,5 +1,6 @@
 @import '../../Variables.scss';
 $inpFontS: 1.2vw;
+$hiColor: #6786ca;
 
 .contact{
     z-index: 0;
@@ -25,6 +26,10 @@ $inpFontS: 1.2vw;
             border-width: 0.2vw;
             border-style: solid;
             border-color: $mainColor;
+            &:focus{
+                outline: none !important;
+                border-color: $hiColor;
+            }
         }
     
         .inp_label{
@@ -32,6 +37,7 @@ $inpFontS: 1.2vw;
             margin-bottom: 0.1vw;
             margin-left: 0.4vw;
             color: $sideColor;
+           
         }
     
         #name_field{
@@ -43,8 +49,6 @@ $inpFontS: 1.2vw;
             float: left;
             left: 2vw;
         }
-    
-        
         
         #message_field{
             float:left;
@@ -59,6 +63,11 @@ $inpFontS: 1.2vw;
                 font-size: $inpFontS;
                 border-color: $mainColor;
                 resize: none;
+
+                &:focus{
+                    outline: none !important;
+                    border-color: $hiColor;
+                }
             }
         }
     
@@ -104,7 +113,7 @@ $inpFontS: 3vw;
                 border-radius: 0.7vw;
 
                 font-size: $inpFontS;
-                border-width: 0.3vw;
+                border-width: 0.4vw;
             }
         
             .inp_label{
@@ -129,7 +138,7 @@ $inpFontS: 3vw;
                     padding: 1.5vw 2vw;
                     border-radius: 0.7vw;
 
-                    border-width: 0.3vw;
+                    border-width: 0.4vw;
                     font-size: $inpFontS;
                 }
             }
