@@ -1,6 +1,19 @@
 @import '../../Variables.scss';
 
 .resume{
+
+    h2{
+        font-size: 2vw;
+    }
+
+    h3{
+        font-size: 1.3vw;
+    }
+
+    li{
+        font-size: 1.3vw;
+    }
+
     .indent{
         text-indent: 2.5vw;
     }
@@ -174,12 +187,6 @@
                     font-weight: 700;
                     font-size: 2.2vw;
                     margin-bottom: 0vw;;
-                }
-
-                .project_bullets{
-                    .projBullet{
-                        font-size: 2.2vw;
-                    }
                 }
             }
 

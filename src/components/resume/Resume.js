@@ -49,9 +49,9 @@ const Resume = () => {
                 <h3 className="project_title">“Market Simulator”, Determines Best Investment Strategy</h3>
                 <h3 className="project_tool">Tool used - Python, Yahoo Finance API, Pandas API</h3>
                 <ul className="project_bullets">
-                  <li><span className="projBullet">Used official Yahoo Finance API to retrieve historical stock market data</span></li>
-                  <li><span className="projBullet">Implement multiple investing strategies modularly to allow for ease of testing</span></li>
-                  <li><span className="projBullet">Ran short and long term simulation to verify investing strategy effectiveness</span></li>
+                  <li><span>Used official Yahoo Finance API to retrieve historical stock market data</span></li>
+                  <li><span>Implement multiple investing strategies modularly to allow for ease of testing</span></li>
+                  <li><span>Ran short and long term simulation to verify investing strategy effectiveness</span></li>
                 </ul>
               </div>
 
