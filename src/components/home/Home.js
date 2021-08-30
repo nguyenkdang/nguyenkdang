@@ -62,10 +62,16 @@ const Home = ({setprojScroll}) => {
             </div>
             <div id="intro">
                 <div id="title_box"> 
-                    <h2 className='sc my_slogan'> <a className="hidden_link" href="https://www.linkedin.com/in/nguyenkdang/" target="_blank" rel="noreferrer">in</a>tuitive 
-                        <a className="hidden_link" href="https://www.behance.net/nguyenkdang" target="_blank" rel="noreferrer"> be</a>autiful 
-                        di<a className="hidden_link" href="https://github.com/nguyenkdang" target="_blank" rel="noreferrer">git</a>al
-                        des<a className="hidden_link" href="https://www.instagram.com/nguwaynedang/" target="_blank" rel="noreferrer">ig</a>n</h2>
+                    <h2 className='sc my_slogan'> 
+                        <a className={hiddenLinks[0]? "hidden_link hide" : "hidden_link in"} onMouseEnter={() => handleHL(0)} onMouseLeave={restHL} 
+                            href="https://www.linkedin.com/in/nguyenkdang/" target="_blank" rel="noreferrer">in</a>
+                        tuitive <a className={hiddenLinks[1]? "hidden_link hide" : "hidden_link be"}   onMouseEnter={() => handleHL(1)} onMouseLeave={restHL}
+                                    href="https://www.behance.net/nguyenkdang" target="_blank" rel="noreferrer">be</a>autiful 
+                        di<a className={hiddenLinks[2]? "hidden_link hide" : "hidden_link git"}   onMouseEnter={() => handleHL(2)} onMouseLeave={restHL}
+                            href="https://github.com/nguyenkdang" target="_blank" rel="noreferrer">git</a>al
+                        des<a className={hiddenLinks[3]? "hidden_link hide" : "hidden_link ig"}   onMouseEnter={() => handleHL(3)} onMouseLeave={restHL}
+                            href="https://www.instagram.com/nguwaynedang/" target="_blank" rel="noreferrer">ig</a>n
+                    </h2>
                     <h1 id="my_name"> Nguyen K Dang </h1>
                     <h2 className='sc my_title'> Software Developer & Visual Designer </h2>
                 </div>
