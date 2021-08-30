@@ -3,52 +3,77 @@
 .foot{
     position: relative;
     width: 100vw;
-    height: 10vw;
+    height: 12vw;
     max-width: 100%;
     background-color: $mainColor;
 
     #foot_logo{
         position: relative;
-        width: 8vw;
         top: -5vw;
         left: 28.2vw;
-        .n_back{
+        width: 0;
+        
+        .n_back, .d_back{
             position: absolute;
             top: 4vw;
-            left: 18vw;
             width: 1vw;
             height: 1vw;
+
             background-color: $mainColor;
             z-index: -1;
+
+        }
+
+        .n_back{
+            left: 18vw;           
         }
 
         .d_back{
-            position: absolute;
-            top: 4vw;
             left: 23vw;
-            width: 1vw;
-            height: 1vw;
             border-top-right-radius: 1vw;
-            background-color: $mainColor;
-            z-index: -1;
         }
     }
-
+    
     #foot-links{
         position: absolute;
-        top: 4.5vw;
+        top: 5vw;
         left: 50vw;
+        transform: translateX(-50%);
         white-space: nowrap;
-        transform: translate(-50%, -50%);
-        .foot-link{
-            font-size: 1.5vw;
-            margin: 2vw;
+        font-size: 1.5vw;
+
+        .link-container{
+            margin-right: 4vw;
+            display: inline-block;
+            
+            .foot-link{
+                &:hover + .underline{
+                    width: 100%;
+                }
+            }
+
+            .underline{
+                position: relative;
+                transform: translateX(-50%);
+                left: 50%;
+                width: 0%;
+                height: 0.2vw;
+                background-color: white;
+                border-radius: 1vw;
+                
+                transition: width 0.4s ease;
+            }
         }
+
+        .last{
+            margin-right: 0;
+        } 
+               
     }
     
     #foot-copyright{
         position: absolute;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         left: 50vw;
         top: 8vw;
         
@@ -60,7 +85,6 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
-
     .foot{
         height: 17vw;
     
@@ -72,34 +96,33 @@
                 height: 20vw;
                 width: 20vw;
             }
+
             .n_back{
                 top: 11vw;
-                left: 26vw;
-                width: 1vw;
-                height: 1vw;
+                left: 26vw;    
             }
     
             .d_back{
                 top: 11vw;
-                left: 33vw;
-                width: 1vw;
-                height: 1vw;
-                border-top-right-radius: 1vw;
+                left: 33vw;    
             }
            
         }
     
         #foot-links{
-            position: absolute;
-            top: 8vw;
-            .foot-link{
-                font-size: 2.2vw;
-                margin: 1.5vw;
+            top: 7vw;
+            font-size: 2.2vw;
+            .link-container{
+                margin-right: 3vw;   
             }
+
+            .last{
+                margin-right: 0;
+            } 
         }
         
         #foot-copyright{
-            top: 12.5vw;
+            top: 12vw;
             #copyright{
                 font-size: 1.5vw;
             }
