@@ -2,205 +2,137 @@
 
 .home{
     z-index: -1;
-    overflow: hidden;
+}
 
-    #head_logo{
-        position: absolute;
-        top: 3vw;
-        left: -12.1vw;
-        z-index: 1;
-    }
-
-    #title_box {
-        position: relative;
-        
-        width: 61vw; 
-        height: 219w;
-        top: 21vw;
-        left: 49.5vw;
-        
-        border-radius: 4vw;
-        background: #e8f0fa;
-        box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
-        padding: 2vw;
-        transform: translate(-50%, -50%);
-        margin-top: 2vw;
-        
-        text-align: center;
-    
-        .sc{
-            color: $sideColor;
-        }
-        
-        .mc{
-            color: $mainColor;
-        }
-        h2{
-            font-weight: 600;
-
-        }
-    
-        .hidden_link{
-            font-weight: 600;
-            color: $mainColor;
-            width: 0;
-            padding-top:0.2vw;
-            padding-bottom:0.2vw;
-            border-radius: 0.25vw;
-            
-            transition: all 0.4s ease;
-
-            &:hover{
-                color: white;
-                margin: 0.5vw;
-                padding-left: 1vw;
-                padding-right: 1vw;
-                
-                &.in{
-                    background-color:#0a66c2;
-                }
-
-                &.be{
-                    background-color: #053eff;  
-                }
-
-                &.git{
-                    background-color: #333;    
-                }
-
-                &.ig{
-                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                }
-            }
-        }
-
-        .hide{
-            color: $sideColor;
-        }
-        
-        #my_name{
-            font-size: 5vw;
-            margin: 0vw;
-            color: $mainColor;
-        }
-    }
-    
-    /* ------- Projects -------*/
-    .myprojects{
-        position: relative;
-        margin-top: 25vw;
-        margin-bottom: 45vw;
-        #project-label{
-            text-align: center;
-            font-size: 3vw;
-            top: 23vw;
-            color: $sideColor
-        }
-    
-        .projectBadges{
-            position: absolute;
-            margin-top: -1vw;
-            transform: translateX(-50%);
-            left: 50%;
-            white-space: nowrap;
-            
-            .leftBadge{    
-                display: inline-block;
-            }
-            
-            $spacing: 8vw;
-            .middleBadge{
-                position: relative;
-                display: inline-block;
-                margin-right: $spacing;
-                margin-left: $spacing;
-                top: 3vw;
-            }
-            
-            .rightBadge{
-                display: inline-block;
-            }
-        }
-    }
-
-    /* ------- About Me -------*/
-    .aboutMe{
-        position: relative;
-        margin-top: 30vw;
-        margin-bottom: 20vw;
-        #aboutMe-label{
-            position: absolute;
-            font-size: 3vw;
-            left: 61vw;
-            top: 0vw;
-            color: $sideColor
-        }
-    }
+#head_logo{
+    position: absolute;
+    top: 3vw;
+    left: -12.1vw;
+    z-index: 1;
 }
 
 
+#title_box {
+    position: relative;
+    
+    width: 61vw; 
+    height: 219w;
+    top: 21vw;
+    left: 49.5vw;
+    
+    border-radius: 4vw;
+    background: #e8f0fa;
+    box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
+    padding: 2vw;
+    transform: translate(-50%, -50%);
+    margin-top: 2vw;
+    
+    text-align: center;
+
+    .sc{
+        color: $sideColor;
+    }
+    
+    .mc{
+        color: $mainColor;
+    }
+
+    .hidden_link{
+        font-weight: 600;
+        color: $mainColor;
+        animation: glow 3.5s ease infinite;
+    }
+    
+    #my_name{
+        font-size: 5vw;
+        margin: 0vw;
+        color: $mainColor;
+    }
+}
+
+/* ------- Projects -------*/
+#project-label{
+    position: relative;
+    text-align: center;
+    font-size: 3vw;
+    top: 23vw;
+    color: $sideColor
+}
+
+
+/* ------- About Me -------*/
+#aboutMe{
+    position: relative;
+    margin-top: 30vw;
+    margin-bottom: 20vw;
+    #aboutMe-label{
+        position: absolute;
+        font-size: 3vw;
+        left: 61vw;
+        top: 0vw;
+        color: $sideColor
+    }
+}
+
 @media screen and (max-width: $phoneWidth) {
-    .home{
-        #head_logo{
-            position: absolute;
-            top: -4.5vw;
-            left: -21.25vw;
-            z-index: 1;
+    #head_logo{
+        position: absolute;
+        top: -4.5vw;
+        left: -21.25vw;
+        z-index: 1;
+        .my_logo{
+            width: 22vw;
+            height: 22vw;
             animation: floater 4s ease infinite;
-            
-            .my_logo{
-                width: 22vw;
-                height: 22vw;
-            }
         }
+    }
+    
+    
+    #title_box {        
+        width: 77vw; 
+        height: 30vw;
+        top: 35vw;
+        left: 49.5vw;
         
+        border-radius: 5vw;
+        box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
+        padding: 3vw;    
         
-        #title_box {        
-            width: 77vw; 
-            height: 30vw;
-            top: 35vw;
-            left: 49.5vw;
-            
-            border-radius: 5vw;
-            box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
-            padding: 3vw;    
-            
-            .my_slogan{
-                margin-top:5vw;;
-                margin-bottom: 1vw;
-            }
-            .my_title{
-                margin-top: 1.5vw;
-            }
-
-            h2{
-                font-size: 3vw;
-            }
-
-            .hidden_link{
-                font-weight: 600;
-            }
-            
-            #my_name{
-                font-size: 8.5vw;
-                margin: 0vw;
-            }
+        .my_slogan{
+            margin-top:5vw;;
+            margin-bottom: 1vw;
+        }
+        .my_title{
+            margin-top: 1.5vw;
         }
 
-        #project-label{
+        h2{
+            font-size: 3vw;
+        }
+
+        .hidden_link{
+            font-weight: 600;
+        }
+        
+        #my_name{
+            font-size: 8.5vw;
+            margin: 0vw;
+        }
+    }
+
+    #project-label{
+        font-size: 4vw;
+        top: 29vw;
+    }
+    
+    /* ------- About Me -------*/
+    #aboutMe{
+        margin-top: 40vw;
+        margin-bottom: 33vw;
+        #aboutMe-label{
             font-size: 4vw;
-            top: 29vw;
-        }
-        
-        /* ------- About Me -------*/
-        .aboutMe{
-            margin-top: 40vw;
-            margin-bottom: 33vw;
-            #aboutMe-label{
-                font-size: 4vw;
-                left: 61vw;
-                top: 1vw;
-            }
+            left: 61vw;
+            top: 1vw;
         }
     }
 }
@@ -208,5 +140,5 @@
 /* ------- Animation  -------*/
 @keyframes glow{
     0%, 100%{ color: $mainColor;}
-    50%{ color: $sideColor;}
+    50%{ color: #abc4f8;}
 }
