@@ -2,7 +2,8 @@ import './Home.scss';
 import About_code from './about/About_code'
 import About_dsgn from './about/About_dsgn'
 import Paint from './intro/Paint'
-import ProjectBadge from './projects/ProjectBadge';
+
+import PythonLogo from './projects/language/PythonLogo';
 import Mylogo from '../../svg/Mylogo'
 import { useState} from "react";
 
