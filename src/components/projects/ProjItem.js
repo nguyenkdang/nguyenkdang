@@ -1,8 +1,7 @@
 import "./ProjItem.scss";
-import Logo_github from '../../svg/Logo_github'
 
 
-const ProjItem = ({ptitle, pdesc, logo, ptags, link, id, isOpen, handleOpen }) => {
+const ProjItem = ({ptitle, pdesc, logo, ptags, link, id, isOpen, handleOpen}) => {
     return (
         <div className={!isOpen.opn[id] && isOpen.blur ? "ProjItem blur" : "ProjItem unblur"}>
             <div className="proj_iconBack">

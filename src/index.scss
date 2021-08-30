@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import './Variables.scss';
 
 .resize-transition-stopper * {
     transition: none !important;
+}
+
+svg{
+    overflow: visible;
 }
 
 * {
@@ -41,7 +46,7 @@ br {
 }
 
 body {
-    background-color: #E1EBF9;
+    background-color: $backColor;
 }
 
 a {
@@ -68,3 +73,10 @@ li {
     }
 }
 
+.cls-2{
+    fill: $mainColor;
+}
+
+.cls-1{
+    fill: white;
+}
