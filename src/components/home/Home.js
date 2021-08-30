@@ -77,8 +77,24 @@ const Home = ({setprojScroll}) => {
                 </div>
                 <Paint/>
             </div>
-            <div  className="myprojects">
+            <div className="myprojects">
                 <h1 id="project-label"> My Projects </h1>
+                <div className="projectBadges">
+                    <div className='leftBadge'>
+                        <ProjectBadge title={projInfo.left.title} desc={projInfo.left.desc}
+                        langLogo={<projInfo.left.lang size="4vw"/>} pos={1} setprojScroll={setprojScroll}/>
+                    </div>
+                    
+                    <div className='middleBadge'>
+                        <ProjectBadge  title={projInfo.middle.title} desc={projInfo.middle.desc}
+                        langLogo={<projInfo.middle.lang size="4vw"/>} pos={0} setprojScroll={setprojScroll}/>
+                    </div>
+
+                    <div className='rightBadge'>
+                        <ProjectBadge  title={projInfo.right.title} desc={projInfo.right.desc}
+                        langLogo={<projInfo.right.lang size="4vw"/>} pos={2} setprojScroll={setprojScroll}/>
+                    </div>
+                </div>
             </div>
             <div className="aboutMe">
                 <h1 id="aboutMe-label"> more about me </h1>
