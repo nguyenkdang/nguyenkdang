@@ -1,7 +1,7 @@
 import './Home.scss';
-import About_code from './about/About_code'
-import About_dsgn from './about/About_dsgn'
-import Paint from './intro/Paint'
+import About_code from './about/About_code';
+import About_dsgn from './about/About_dsgn';
+import Paint from './intro/Paint';
 import ProjectBadge from './projects/ProjectBadge';
 import PythonLogo from './projects/language/PythonLogo';
 import Mylogo from '../../svg/Mylogo'
@@ -29,6 +29,7 @@ const projInfo= {
     }
 };
 
+
 const Home = ({setprojScroll}) => {
     const [isFront, setFront] = useState({first:true, left: true, right: false});
     const [hiddenLinks, sethiddenLinks] = useState([false, false, false, false])
@@ -54,7 +55,6 @@ const Home = ({setprojScroll}) => {
         sethiddenLinks([false,false,false,false])
     }
     
-
     return (
         <div className="home">
             <div id="head_logo">
