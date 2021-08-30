@@ -1,4 +1,4 @@
-import './projBadge.scss'
+import './Projbadge.scss'
 import { Link } from 'react-router-dom';
 
 const ProjectBadge = ({title, langLogo, desc,  pos, setprojScroll}) => {
