@@ -1,10 +1,16 @@
-//rafce
 import './Resume.scss'
+import DlButton from './DlButton'
+import rPDF from './resume.pdf'
 
 const Resume = () => {
     return (
         <div className="resume">
           <div id="page" className="indent">
+            <div className="dl"> 
+              <a href={rPDF} download="Nguyen Dang - Resume.pdf">
+                <DlButton size="3.5vw"/>
+              </a>
+            </div>
             <div>
               <h1 id="name">Nguyen K. Dang</h1>
               <h3 id="school">University of California Irvine Graduate</h3>
