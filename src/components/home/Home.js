@@ -7,6 +7,28 @@ import PythonLogo from './projects/language/PythonLogo';
 import Mylogo from '../../svg/Mylogo'
 import { useState} from "react";
 
+const projInfo= {
+    left:{
+        title: "Reddit Ranker",
+        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis" +
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis ",
+        lang: PythonLogo,
+
+    },
+    middle:{
+        title: "Image Translator",
+        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis" +
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis ",
+        lang: PythonLogo,
+    },
+    right:{
+        title: "Investing Simulator",
+        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis" +
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis ",
+        lang: PythonLogo,
+    }
+};
+
 const Home = () => {
     const [isFront, setFront] = useState({first:true, left: true, right: false});
     
