@@ -20,6 +20,13 @@
             position: absolute;
             margin-top: 3.5vw;
             margin-left: 58.5vw;
+            .dl_button{
+                transition: transform 0.4s ease;
+                &:hover{
+                    transform: scale(1.1,1.1)
+                }
+            }
+            
         }
         
         .same_ln{
