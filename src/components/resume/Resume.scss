@@ -1,6 +1,19 @@
 @import '../../Variables.scss';
 
 .resume{
+
+    h2{
+        font-size: 2vw;
+    }
+
+    h3{
+        font-size: 1.3vw;
+    }
+
+    li{
+        font-size: 1.3vw;
+    }
+
     .indent{
         text-indent: 2.5vw;
     }
@@ -15,12 +28,6 @@
         transform: translate(-50%);
         padding: 1vw;
         margin-bottom: 15vw;
-        
-        .dl{
-            position: absolute;
-            margin-top: 3.5vw;
-            margin-left: 58.5vw;
-        }
         
         .same_ln{
             float: left;
@@ -145,17 +152,6 @@
             margin: 0;
             top: 15vw;
             margin-bottom: 25vw;
-
-            .dl{
-                position: absolute;
-                margin-top: 5vw;
-                margin-left: 72.5vw;
-                .dl_button{
-                    width: 6vw;
-                    height: 6vw;
-                }
-            }
-
             .line{
                 width: 83vw;
                 left: 3vw;

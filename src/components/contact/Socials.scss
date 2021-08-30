@@ -24,35 +24,42 @@
 
 #email_box{
     position: absolute;
-    overflow: hidden;
+    border-top-right-radius: 1.7vw;
     top: 7vw;
-    left: 34.75vw;
+    left: 38vw;
     height: 8vw;
     background-color: $sideColor;
-    border-top-right-radius: 1.7vw;
-    
     z-index: 0;
     transition: all 0.4s ease-in-out;
     &.unext{
-        width: 10vw;
+        width: 6.5vw;
+
         #my_email{
-            left: -18vw;
-            visibility: hidden;
+            left: -16vw;
+            font-size: 1.4vw;
+        }
+
+        #em_logo{
+            left: 3vw;
         }
     }
 
     &.ext{
-        width: 30.5vw;
+        width: 28.5vw;
+
         #my_email{
-            left: 6.5vw;
-            visibility: visible;
+            left: 4vw;
+            font-size: 1.5vw;
+        }
+
+        #em_logo{
+            left: 24.5vw;
         }
     }
 
     #my_email{
         position: absolute;
         color: $mainColor;
-        font-size: 1.5vw;
         top: 0.3vw;
         transition: all 0.4s ease-in-out;
     }
@@ -60,23 +67,18 @@
     #em_logo{
         position: absolute;
         top: 1.5vw;
-        right: 1.4vw;
-        height: 2vw;
-        
         cursor: pointer;
+        height: 2vw;
         transition: all 0.4s ease-in-out;
-        
     }
+}
 
-    &:hover{
-        &.unext{
-            transform: translateX(0.65vw);
-            #em_logo{
-                transform: scale(1.05,1.05);
-                right: 1.6vw;
-            }
-        }
-    }
+.cls-2{
+    fill: $mainColor;
+}
+
+.cls-1{
+    fill: white;
 }
 
 @media screen and (max-width: $phoneWidth) {
@@ -116,9 +118,12 @@
     
             #my_email{
                 left: -33vw;
+                font-size: 2.7vw;
             }
     
-            
+            #em_logo{
+                left: 5vw;
+            }
         }
     
         &.ext{
@@ -126,19 +131,20 @@
     
             #my_email{
                 left: 4.5vw;
+                font-size: 2.7vw;
             }
     
-            
+            #em_logo{
+                left: 42vw;
+            }
         }
     
         #my_email{
             top: 1vw;
-            font-size: 2.7vw;
         }
     
         #em_logo{
             top: 3vw;
-            right: 3vw;
         }
     }
 
