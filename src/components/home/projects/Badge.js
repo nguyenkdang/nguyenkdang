@@ -1,7 +1,7 @@
 import './ProjectBadge.scss'
 import { Link } from 'react-router-dom';
 
-const ProjectBadge = ({title, langLogo, desc,  pos, setprojScroll}) => {
+const Badge = ({title, langLogo, desc,  pos, setprojScroll}) => {
     return (
         <div className='ProjectBadge'>
             <div className='badgeBack'>
@@ -29,4 +29,4 @@ const ProjectBadge = ({title, langLogo, desc,  pos, setprojScroll}) => {
     )
 }
 
-export default ProjectBadge
+export default Badge

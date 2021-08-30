@@ -1,7 +1,6 @@
 import './Resume.scss'
 import DlButton from './DlButton'
 import rPDF from './resume.pdf'
-import ProjectBadge from '../../../../../nguyenkdang/src/components/home/projects/ProjectBadge'
 
 const Resume = () => {
     return (
