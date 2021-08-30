@@ -5,7 +5,6 @@ const ProjectBadge = ({title, langLogo, desc,  pos, setprojScroll}) => {
     return (
         <div className='ProjectBadge'>
             <div className='badgeBack'>
-                <Link onClick={()=> setprojScroll(pos)} to="projects"> 
                     <div className="infoSec">
                         <div className="infoSec-back"></div>
                         <div className="infoCircle">
@@ -13,7 +12,7 @@ const ProjectBadge = ({title, langLogo, desc,  pos, setprojScroll}) => {
                         </div>
                         <h2 className='moreinfo'> more info</h2>
                     </div>
-                </Link>
+               
                 
                 <div className="insideLine">
                     <p className="bdage-title"> {title} </p>
