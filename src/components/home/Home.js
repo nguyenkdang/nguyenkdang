@@ -29,9 +29,11 @@ const projInfo= {
     }
 };
 
-const Home = () => {
+const Home = ({setprojScroll}) => {
     const [isFront, setFront] = useState({first:true, left: true, right: false});
-    
+    const [hiddenLinks, sethiddenLinks] = useState([false, false, false, false])
+
+
     const handleFlip = (lr) => {
         if(isFront[lr] === false){
             if(lr === "right" && isFront["first"] === true){
@@ -43,6 +45,14 @@ const Home = () => {
         }
     };
 
+    const handleHL = (i) => {
+        const invert = [true, true, true, true]
+        sethiddenLinks([...invert.slice(0,i), hiddenLinks[i], ...invert.slice(i+1)])        
+    }
+
+    const restHL = () => {
+        sethiddenLinks([false,false,false,false])
+    }
     
 
     return (
