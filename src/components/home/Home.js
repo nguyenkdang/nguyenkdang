@@ -77,10 +77,10 @@ const Home = ({setprojScroll}) => {
                 </div>
                 <Paint/>
             </div>
-            <div>
+            <div  className="myprojects">
                 <h1 id="project-label"> My Projects </h1>
             </div>
-            <div id="aboutMe">
+            <div className="aboutMe">
                 <h1 id="aboutMe-label"> more about me </h1>
                 <About_code handleFlip={handleFlip} isFront={isFront}/>
                 <About_dsgn handleFlip={handleFlip} isFront={isFront}/>
