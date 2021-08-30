@@ -1,4 +1,4 @@
-import './ProjectBadge.scss'
+import { Link } from 'react-router-dom';
 
 const Badge = () => {
     return (
