@@ -1,2 +1,235 @@
 @import '../../../Variables.scss';
 
+.ProjectBadge{
+    transition: all 0.5s ease;
+
+    .badgeBack{
+        width: 20vw;
+        height: 30vw;
+        background-color: white;
+        transition: all 0.5s ease;
+
+        border-radius: 1vw;
+        border-bottom-left-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        z-index: 1;
+
+        .insideLine
+        {
+            position: relative;
+            top: 1.25vw;
+            left: 1.25vw;
+            width: 17vw;
+            height: 26.5vw;
+            
+            border-style: solid;
+            border-color:  $backColor;
+            border-width: 0.3vw;
+            
+            border-radius: 0.75vw;
+            border-bottom-left-radius: 10vw;
+            border-bottom-right-radius: 10vw;
+            
+            z-index: 0;
+            transition: all 0.5s ease;
+
+            .bdage-title{
+                border-style: solid;
+                border-width: 0;
+                border-bottom-width: 0.3vw;
+                border-color: transparent;
+    
+                position: absolute;
+                background: linear-gradient(185deg, #57f, #2edd92 );
+                background-clip: text;
+                color: transparent;
+                
+                font-weight: 700;
+                white-space:normal;
+                font-size: 3vw;
+                margin-top: 8vw;
+                margin-bottom: 0vw;
+                transform: translateX(-50%);
+                margin-left: 50%;
+                text-align: center;
+                transition: all 0.5s ease;
+                line-height: 1em;
+
+            }
+
+            .bdage-desc{
+                position: absolute;
+                color: $mainColor;
+                font-size: 1.5vw;
+                width: 23vw;
+                margin-top: 10vw;
+                margin-left: 50%;
+                
+                white-space:normal;
+                text-align: center;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateX(-50%);
+                
+                transition: opacity 0.5s ease-out;
+                transition-delay: 0.2s;
+            }
+        }
+
+        .infoSec{
+            position: relative;
+            background: linear-gradient(80deg, #57f, #2edd92 );
+            top: -1.25vw;
+            right: -2vw;
+            width: 6vw;
+            height: 4vw;
+            float: right;
+            border-bottom-left-radius: 2vw;
+            border-top-left-radius: 2vw;
+            border-top-right-radius: 1vw;
+            border-bottom-right-radius: 0vw;
+
+            z-index: 1;
+            transition: width 0.5s ease;
+
+            .infoCircle{
+                position: absolute;
+                width: 2.5vw;
+                height: 2.5vw;
+                border-radius: 2vw;
+                top: 0.5vw;
+                left: 0.5vw;
+                border-width: 0.3vw;
+                border-style: solid;
+                border-color: white;
+
+                .info-symbol{
+                    font-weight: 700;
+                    font-size: 2vw;
+                    color: white;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+
+            .moreinfo{
+                visibility: hidden;
+                opacity: 0;
+                color: white;
+                margin-top: 0.5vw;
+                margin-left: 4.5vw;
+                transition: opacity 0.4s ease-out;
+                transition-delay: 0.2s;
+            }
+
+            .infoSec-back{
+                position: absolute;
+                background: linear-gradient(200deg, #57f, #2edd92 );
+                top: 4vw;
+                right: 0vw;
+                width: 2vw;
+                height: 3vw;
+                border-bottom-right-radius: 2vw;
+                
+                transition: width 0.5s ease;
+            }  
+        }
+    }
+
+    .badgeArmor{
+        position: absolute;
+        width: 19vw;
+        height: 20vw;
+        top: 10vw;
+        margin-left: 0.5vw;
+        background: linear-gradient(230deg, #57f, #2edd92 );
+        
+        border-radius: 1vw;
+        border-bottom-left-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+
+    .badgeBeak{
+        position: absolute;
+        margin-left: 10vw;
+        top: 30vw;
+
+        visibility: hidden;
+        width: 0vw;
+        height: 0vw;
+        background: linear-gradient(230deg, #3fb2c0, #38c2ae );
+        
+        transition: all 0.5s ease;
+
+        .langLogo{
+            position: relative;
+            transform: translate(-50%, -50%)
+                scale(0,0);
+            width: 4vw;
+            margin-left: 50%;
+            margin-top: 50%;
+            transition: all 0.5s ease;
+        }
+    }
+
+    &:hover{
+        transform: scale(1.11,1.11);
+        & > .badgeBack{
+            width: 30vw;
+            border-bottom-left-radius: 12vw;
+            border-bottom-right-radius: 12vw;
+
+            .infoSec{
+                width: 15vw;
+                .moreinfo{
+                visibility: visible;
+                opacity: 1;   
+                }
+            }
+    
+            .insideLine{
+                width: 27vw;
+                .bdage-title{
+                    color: $sideColor;
+                    margin-top: 3vw;
+                    font-size: 2.2vw;
+                    padding: 0.5vw;
+                    border-color: $sideColor;
+                }
+                .bdage-desc{
+                    visibility: visible;
+                    opacity: 1;
+                }
+ 
+            }
+        }
+
+        & > .badgeArmor{
+            width: 32.5vw;
+            top: 11.75vw;
+            margin-left: -1.25vw;
+
+            border-bottom-left-radius: 13.5vw;
+            border-bottom-right-radius: 13.5vw;
+        }
+
+        & > .badgeBeak{
+            width: 7vw;
+            height: 6.5vw;
+            margin-left: 12vw;
+            top: 27vw;
+            border-radius: 8vw;
+            
+            visibility: visible;
+            .langLogo{
+                transform: translate(-50%, -50%)
+                            scale(1,1);
+            }
+
+        }
+    }
+    
+}
