@@ -100,6 +100,12 @@
                 color: $mainColor;
                 font-weight: 700;
                 background-color: transparent;
+                transition: all 0.4s ease;
+
+                &:hover{
+                    color: $sideColor;
+                    border-color: $sideColor;
+                }
             }
         }
 
@@ -135,17 +141,25 @@
             border-radius: 4vw;
             width: 4vw;
             height: 4vw;
-            left: 35vw;
+            margin-left: 35vw;
             transform: translate(-50%);
             background-color: $mainColor;
             cursor: pointer;
-            transition: top 0.5s ease-in-out;
             
+            
+            transition: all 0.4s ease-in-out, top 0.5s ease-in-out;
 
             .down_icon{
                 position: absolute;
                 left: 1vw;
                 transition: all 0.4s ease-in-out;
+            }
+
+            &:hover{
+                background-color: $sideColor;
+                transform: translate(-50%)
+                    scale(1.05, 1.05);
+
             }
         }       
     }
@@ -263,5 +277,4 @@
             }       
         }
     }
-
 }
