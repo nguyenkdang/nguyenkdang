@@ -7,7 +7,7 @@ const Resume = () => {
         <div className="resume">
           <div className="indent page">
             <div className="dl"> 
-              <a clasName="dl_link" href={rPDF} download="Nguyen Dang - Resume.pdf">
+              <a href={rPDF} download="Nguyen Dang - Resume.pdf">
                 <DlButton size="3.5vw"/>
               </a>
             </div>
