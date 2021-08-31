@@ -62,7 +62,7 @@ const Home = ({setprojScroll}) => {
             </div>
             <div id="intro">
                 <div id="title_box"> 
-                    <h2 className='sc my_slogan'> 
+                    <h2 className='my_slogan'> 
                         <a className={hiddenLinks[0]? "hidden_link hide" : "hidden_link in"} onMouseEnter={() => handleHL(0)} onMouseLeave={restHL} 
                             href="https://www.linkedin.com/in/nguyenkdang/" target="_blank" rel="noreferrer">in</a>
                         tuitive <a className={hiddenLinks[1]? "hidden_link hide" : "hidden_link be"}   onMouseEnter={() => handleHL(1)} onMouseLeave={restHL}
@@ -72,8 +72,8 @@ const Home = ({setprojScroll}) => {
                         des<a className={hiddenLinks[3]? "hidden_link hide" : "hidden_link ig"}   onMouseEnter={() => handleHL(3)} onMouseLeave={restHL}
                             href="https://www.instagram.com/nguwaynedang/" target="_blank" rel="noreferrer">ig</a>n
                     </h2>
-                    <h1 id="my_name"> Nguyen K Dang </h1>
-                    <h2 className='sc my_title'> Software Developer & Visual Designer </h2>
+                    <h1 className="my_name"> Nguyen K Dang </h1>
+                    <h2 className='my_title'> Software Developer & Visual Designer </h2>
                 </div>
                 <Paint/>
             </div>

@@ -6,79 +6,67 @@
 
     #head_logo{
         position: absolute;
-        top: 3vw;
-        left: -12.1vw;
+        margin: 3vw 0 0 -12.1vw;
         z-index: 1;
     }
 
     #title_box {
         position: relative;
-        
+        margin: 23vw 0 0 50vw;
         width: 61vw; 
         height: 219w;
-        top: 21vw;
-        left: 49.5vw;
+        transform: translate(-50%, -50%);
         
         border-radius: 4vw;
         background: #e8f0fa;
         box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
         padding: 2vw;
-        transform: translate(-50%, -50%);
-        margin-top: 2vw;
         
         text-align: center;
     
-        .sc{
-            color: $sideColor;
-        }
-        
-        .mc{
-            color: $mainColor;
-        }
         h2{
             font-weight: 600;
-
         }
-    
-        .hidden_link{
-            font-weight: 600;
-            color: $mainColor;
-            width: 0;
-            padding-top:0.2vw;
-            padding-bottom:0.2vw;
-            border-radius: 0.25vw;
-            
-            transition: all 0.4s ease;
 
-            &:hover{
-                color: white;
-                margin: 0.5vw;
-                padding-left: 1vw;
-                padding-right: 1vw;
+        .hide, .my_title, .my_slogan{
+            color: $sideColor;
+        }
+
+        .my_slogan{
+            .hidden_link{
+                font-weight: 600;
+                width: 0;
+                padding: 0.2vw 0;
+                color: $mainColor;
+                border-radius: 0.25vw;
                 
-                &.in{
-                    background-color:#0a66c2;
-                }
+                transition: all 0.4s ease;
 
-                &.be{
-                    background-color: #053eff;  
-                }
+                &:hover{
+                    color: white;
+                    margin: 0 0.5vw;
+                    padding: 0 1vw;
+                    
+                    &.in{ 
+                        background-color:#0a66c2;
+                    }
 
-                &.git{
-                    background-color: #333;    
-                }
+                    &.be{
+                        background-color: #053eff;  
+                    }
 
-                &.ig{
-                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    &.git{
+                        background-color: #333;    
+                    }
+
+                    &.ig{
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    }
                 }
             }
         }
-
-        .hide{
-            color: $sideColor;
-        }
         
-        #my_name{
+        .my_name{
             font-size: 5vw;
             margin: 0vw;
             color: $mainColor;
@@ -88,37 +76,28 @@
     /* ------- Projects -------*/
     .myprojects{
         position: relative;
-        margin-top: 25vw;
         margin-bottom: 45vw;
         #project-label{
             text-align: center;
             font-size: 3vw;
-            top: 23vw;
             color: $sideColor
         }
     
         .projectBadges{
             position: absolute;
             margin-top: -1vw;
-            transform: translateX(-50%);
             left: 50%;
+            transform: translateX(-50%);
             white-space: nowrap;
             
-            .leftBadge{    
+            .leftBadge, .rightBadge, .middleBadge{   
                 display: inline-block;
             }
             
-            $spacing: 8vw;
             .middleBadge{
                 position: relative;
-                display: inline-block;
-                margin-right: $spacing;
-                margin-left: $spacing;
-                top: 3vw;
-            }
-            
-            .rightBadge{
-                display: inline-block;
+                margin: 0 8.5vw;
+                top: 4vw;
             }
         }
     }
@@ -126,13 +105,11 @@
     /* ------- About Me -------*/
     .aboutMe{
         position: relative;
-        margin-top: 30vw;
-        margin-bottom: 20vw;
+        margin: 30vw 0 20vw;
         #aboutMe-label{
             position: absolute;
+            margin-left: 61vw;
             font-size: 3vw;
-            left: 61vw;
-            top: 0vw;
             color: $sideColor
         }
     }
@@ -142,10 +119,7 @@
 @media screen and (max-width: $phoneWidth) {
     .home{
         #head_logo{
-            position: absolute;
-            top: -4.5vw;
-            left: -21.25vw;
-            z-index: 1;
+            margin: -4vw 0 0 -22.25vw;
             animation: floater 4s ease infinite;
             
             .my_logo{
@@ -155,51 +129,49 @@
         }
         
         
-        #title_box {        
+        #title_box {
+            margin-top: 36.5vw;   
             width: 77vw; 
             height: 30vw;
-            top: 35vw;
-            left: 49.5vw;
             
             border-radius: 5vw;
-            box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
             padding: 3vw;    
             
             .my_slogan{
-                margin-top:5vw;;
-                margin-bottom: 1vw;
+                margin-top: 5vw 0 1vw;
             }
+
             .my_title{
                 margin-top: 1.5vw;
+            }
+
+            .my_name{
+                font-size: 8.5vw;
             }
 
             h2{
                 font-size: 3vw;
             }
+        }
 
-            .hidden_link{
-                font-weight: 600;
-            }
+        .myprojects{
+            margin-bottom: 55vw;
             
-            #my_name{
-                font-size: 8.5vw;
-                margin: 0vw;
+            #project-label{
+                font-size: 3.5vw;
+            }
+        
+            .projectBadges{
+                margin-top: 1vw;
             }
         }
 
-        #project-label{
-            font-size: 4vw;
-            top: 29vw;
-        }
-        
         /* ------- About Me -------*/
         .aboutMe{
-            margin-top: 40vw;
-            margin-bottom: 33vw;
+            margin: 40vw 0 33vw;
             #aboutMe-label{
-                font-size: 4vw;
-                left: 61vw;
-                top: 1vw;
+                font-size: 3.5vw;
+                margin-left: 63vw;
             }
         }
     }
