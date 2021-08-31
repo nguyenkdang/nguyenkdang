@@ -3,43 +3,40 @@
 .ProjItem{
     position: relative;
     margin-bottom: 12vw;
-    transition: filter 0.2s ease-in;
     &.blur{
         filter: blur(0.25vw) brightness(0.9);
-        .proj_body{
-            .proj_more{
-                cursor: default;
-            }
+        .proj_body .proj_more{
+            cursor: default;
         }
     }
 
     .proj_iconBack{
         position: absolute;
-        border-radius: 1vw;
-        height: 18vw;
+        margin: -5vw 0 0 10vw;
         width: 16vw;
-        left: 10vw;
-        top:-5vw;
+        height: 18vw;
+        
+        border-radius: 1vw;
         background-color: $mainColor;
         box-shadow: -0vw -0vw 1.2vw 0.5vw #E1EBF9;
+        
         z-index: 2;
         .projIcon{
             position: absolute;
-            margin-left: 3vw;
-            margin-top: 4vw;
+            margin: 4vw 0 0 3vw;
         }
     }
     
     .proj_body{
         position: relative;
-        left: 18vw;
-        top: 0vw;
-        border-radius: 1vw;
-        background-color: white;
+        margin-left: 18vw;
         width: 70vw;
         
-        z-index: 1;
+        border-radius: 1vw;
+        background-color: white;
         box-shadow: 1vw 1vw 2vw 0.2vw rgba(41, 43, 65, 0.1);
+        
+        z-index: 1;
         transition: height 0.5s ease-in-out;
 
         &.close{
@@ -53,7 +50,7 @@
             .proj_more{
                 top: 21vw;
                 .down_icon{
-                    top: 1.2vw;
+                    margin-top: 1.2vw;
                 }
             }
         }
@@ -69,7 +66,7 @@
             .proj_more{
                 top: 43vw;
                 .down_icon{
-                    top: 0.90vw;
+                    margin-top: 0.90vw;
                     transform: rotate(180deg);
                 }
             }
@@ -78,28 +75,28 @@
 
         .ptags{
             position: absolute;
-            left: 10vw;
+            margin-left: 10vw;
             .ptag{
-                font-size: 1.5vw;
                 float: left;
-                color: white;
-                border-radius: 2vw;
+                margin: 1.7vw 0 0 1.1vw;
+                
+                font-size: 1.5vw;
                 background-color: $mainColor;
-                margin-left: 1.1vw;
-                padding: 0.1vw;
-                padding-left: 1vw;
-                padding-right: 1vw;
-                margin-top: 1.7vw;
+                color: white;
+                
+                padding: 0.1vw 1vw 0.1vw 1vw;
+                
                 border-style: solid;
                 border-color: $mainColor;
                 border-width: 0.3vw;
-
+                border-radius: 2vw;
             }
 
             .pgittag{
-                color: $mainColor;
                 font-weight: 700;
                 background-color: transparent;
+                color: $mainColor;
+                
                 transition: all 0.4s ease;
 
                 &:hover{
@@ -114,17 +111,15 @@
             top: 8vw;
             .proj_title{
                 text-align: center;
+                margin-bottom: 0;
                 font-weight: 700;
                 font-size: 2.2vw;
                 color: $mainColor;
-                margin-bottom: 0;
-
             }
 
             .proj_desc{
                 position: relative;
-                margin-top: 1vw;
-                left: 11vw;
+                margin: 1vw 0 0 11vw;
                 width: 50vw;
                 line-height: 2.5vw;
             }
@@ -133,38 +128,33 @@
                 transition: color 0.7s ease-in-out;
                 transition-delay: 0.2s;
             }
-            
         }
 
         .proj_more{
             position: absolute;
-            border-radius: 4vw;
+            margin-left: 35vw;
             width: 4vw;
             height: 4vw;
-            margin-left: 35vw;
+
+            border-radius: 4vw;
             transform: translate(-50%);
             background-color: $mainColor;
             cursor: pointer;
-            
-            
+        
             transition: all 0.4s ease-in-out, top 0.5s ease-in-out;
 
             .down_icon{
                 position: absolute;
-                left: 1vw;
+                margin-left: 1vw;
                 transition: all 0.4s ease-in-out;
             }
 
             &:hover{
                 background-color: $sideColor;
-                transform: translate(-50%)
-                    scale(1.05, 1.05);
-
             }
         }       
     }
 }
-
 
 @media screen and (max-width: $phoneWidth) {
     .ProjItem{
@@ -174,21 +164,19 @@
         }
     
         .proj_iconBack{
-            left: 3vw;
-            border-radius: 1vw;
-            height: 20vw;
+            margin: -5vw 0 0 3vw;
             width: 18vw;
-            top:-5vw;
+            height: 20vw;
+            
+            border-radius: 1vw;
             box-shadow: -0vw -0vw 1vw 0.2vw #E1EBF9;
             .projIcon{
-                margin-left: 4vw;
-                margin-top: 5vw;
+                margin: 5vw 0 0 4vw;
             }
         }
         
         .proj_body{
-            left: 10vw;
-            top: 0vw;
+            margin: 0 0 0 10vw;
             width: 85vw;
             border-radius: 1.5vw;
             
@@ -206,7 +194,7 @@
                     top: 31vw;
 
                     .down_icon{
-                        top: 1.5vw;
+                        margin-top: 1.5vw;
                     }
                 }
                 
@@ -224,7 +212,7 @@
                     top: 62vw;
                     
                     .down_icon{
-                        top: 1vw;
+                        margin-top: 1vw;
                         transform: rotate(180deg);
                     }
                 }
@@ -233,14 +221,12 @@
     
             .ptags{
                 position: absolute;
-                left: 13vw;
+                margin-left: 13vw;
                 .ptag{
                     font-size: 2vw;
-                    margin-left: 1.5vw;
-                    padding: 0.1vw;
-                    padding-left: 1.2vw;
-                    padding-right: 1.2vw;
-                    margin-top: 2.5vw;
+                    margin: 2.5vw 0 0 1.5vw;
+                    
+                    padding: 0.1vw 1.2vw 0.1vw 1.2vw;
                     border-width: 0.4vw;
                 }
             }
@@ -252,8 +238,7 @@
                 }
     
                 .proj_desc{
-                    margin-top: 2.2vw;
-                    left: 7vw;
+                    margin: 2.2vw 0 0 7vw;
                     width: 73vw;
                     font-size: 2.2vw;
                     line-height: 3vw;
@@ -262,17 +247,21 @@
     
             .proj_more{
                 position: absolute;
-                border-radius: 5vw;
+                margin-left: 42.5vw;
                 width: 6vw;
                 height: 6vw;
-                left: 42.5vw;
+
+                border-radius: 5vw;
                 transform: translate(-50%);
-                
     
                 .down_icon{
                     height: 3vw;
                     width: 3vw;
-                    left: 1.5vw;
+                    margin-left: 1.5vw;
+                }
+
+                &:hover{
+                    background-color: $mainColor;
                 }
             }       
         }
