@@ -2,17 +2,18 @@
 
 .navBar{
     position: absolute;
-    right: 3vw;
     top: 3vw;
-    z-index: 99;    
+    right: 3vw;
+
+    z-index: 3;    
     .navItem {
         .navLink{
             font-size: 2vw;
             font-weight: 600;
             padding: 0.8vw;
             color: $mainColor;
+
             transition: color 0.4s ease-out; 
-            
             &:hover{
                 color: $sideColor;
             }
@@ -20,17 +21,12 @@
             &.hl{
                 color: $sideColor;
                 cursor: default;
-
             }
 
             &.iv{
                 visibility: hidden;
             }
-
         }
-        
-        
-        
     }
 }
 
@@ -42,9 +38,6 @@
             .navLink{
                 font-size: 3vw;
             }
-            
         }
     }
-    
-
 }

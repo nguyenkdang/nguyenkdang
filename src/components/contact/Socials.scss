@@ -1,144 +1,142 @@
 @import '../../Variables.scss';
 
-#social_box{
-    position: absolute;
-    width: 18vw;
-    height: 10vw;
-    top: 7vw;
-    left: 22vw;
-    border-radius: 1.7vw;
-    background-color: $mainColor;
-    z-index: 1;
-
-    .logo{
-        position: relative;
-        top: 1.5vw;
-        left: 2vw;
-        float: left;
-    }
-    
-    #git_logo, #be_logo, #in_logo{
-        margin-left: 2vw;
-    }
-}
-
-#email_box{
-    position: absolute;
-    overflow: hidden;
-    top: 7vw;
-    left: 34.75vw;
-    height: 8vw;
-    background-color: $sideColor;
-    border-top-right-radius: 1.7vw;
-    
-    z-index: 0;
-    transition: all 0.4s ease-in-out;
-    &.unext{
-        width: 10vw;
-        #my_email{
-            left: -18vw;
-            visibility: hidden;
+.socials{
+    $logoTop: 1.5vw;
+    .social_box{
+        position: absolute;
+        width: 18vw;
+        height: 10vw;
+        border-radius: 1.7vw;
+        background-color: $mainColor;
+        
+        z-index: 1;
+        .logo{
+            position: relative;
+            margin: $logoTop 0 0 2vw;
+            float: left;
+        }
+        
+        .git_logo, .be_logo, .in_logo{
+            margin-left: 2vw;
         }
     }
-
-    &.ext{
-        width: 30.5vw;
-        #my_email{
-            left: 6.5vw;
-            visibility: visible;
-        }
-    }
-
-    #my_email{
+    
+    $transition: all 0.4s ease-in-out;
+    .email_box{
         position: absolute;
-        color: $mainColor;
-        font-size: 1.5vw;
-        top: 0.3vw;
-        transition: all 0.4s ease-in-out;
-    }
-
-    #em_logo{
-        position: absolute;
-        top: 1.5vw;
-        right: 1.4vw;
-        height: 2vw;
+        overflow: hidden;
+        margin-left: 12.75vw;
+        height: 10vw;
+        background-color: $sideColor;
+        border-top-right-radius: 1.7vw;
         
-        cursor: pointer;
-        transition: all 0.4s ease-in-out;
-        
-    }
-
-    &:hover{
+        z-index: 0;
+        transition: $transition;
         &.unext{
-            transform: translateX(0.65vw);
-            #em_logo{
-                transform: scale(1.05,1.05);
-                right: 1.6vw;
+            width: 10vw;
+            .my_email{
+                margin-left: -15vw;
+                visibility: hidden;
+            }
+        }
+
+        &.ext{
+            width: 30.5vw;
+            .my_email{
+                margin-left: 6.5vw;
+                visibility: visible;
+            }
+        }
+
+        .my_email{
+            position: absolute;
+            color: $mainColor;
+            font-size: 1.5vw;
+            margin-top: 1.5vw;
+
+            transition: $transition;
+        }
+
+        .em_logo{
+            position: absolute;
+            margin-top: $logoTop;
+            right: 1.4vw;
+            
+            cursor: pointer;
+            transition: $transition;
+        }
+
+        &:hover{
+            &.unext{
+                transform: translateX(0.65vw);
+                .em_logo{
+                    transform: scale(1.05,1.05);
+                    right: 1.6vw;
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: $phoneWidth) {
-    #social_box{
-        width: 35vw;
-        height: 20vw;
-        top: 15vw;
-        left: 3vw;
-        border-radius: 1.7vw;
-        .logo{
-            top: 3vw;
-            left: 4vw;
-            .contact_logo{
-                width: 4vw;
-                height: 4vw;
+    .socials{
+        $logoSize: 4vw;
+        .contact_logo{
+            width: $logoSize;
+            height: $logoSize;
+        }
+        $logoTop: 3vw;
+
+        .social_box{
+            width: 35vw;
+            height: 20vw;
+            border-radius: 1.7vw;
+            .logo{
+                margin: $logoTop 0 0 4vw;
             }
             
+            .git_logo, .be_logo, .in_logo{
+                margin-left: 4vw;
+            }
         }
         
-        #git_logo, #be_logo, #in_logo{
-            margin-left: 4vw;
-        }
-    }
-    
-    #email_box{
-        top: 15vw;
-        left: 36vw;
-        height: 15vw;
+        .email_box{
+            margin-left: 33vw;
+            height: 20vw;
 
-        .contact_logo{
-            width: 4vw;
-            height: 4vw;
-        }
+            &.unext{
+                width: 12vw;
+                .my_email{
+                    margin-left: -33vw;
+                }
+            }
+        
+            &.ext{
+                width: 49vw;
+                .my_email{
+                    margin-left: 4.5vw;
+                }        
+            }
+        
+            .my_email{
+                margin-top: 3.25vw;
+                font-size: 2.7vw;
+            }
+        
+            .em_logo{
+                margin-top: $logoTop;
+                right: 3vw;
+            }
 
-        &.unext{
-            width: 12vw;
-    
-            #my_email{
-                left: -33vw;
+            &:hover{
+                &.unext{
+                    transform: None;
+                    .em_logo{
+                        transform: None;
+                        right: 3vw;
+                    }
+                }
             }
-    
-            
-        }
-    
-        &.ext{
-            width: 49vw;
-    
-            #my_email{
-                left: 4.5vw;
-            }
-    
-            
-        }
-    
-        #my_email{
-            top: 1vw;
-            font-size: 2.7vw;
-        }
-    
-        #em_logo{
-            top: 3vw;
-            right: 3vw;
         }
     }
 

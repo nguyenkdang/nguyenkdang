@@ -23,7 +23,7 @@ function App() {
       setCurPage({...allFalse, [location.pathname]: true})
 
       if(location.pathname == '/projects'){
-        window.scrollTo(0, 525*projScroll)
+        window.scrollTo(0, 500*projScroll)
       }
       else{
         setprojScroll(0)

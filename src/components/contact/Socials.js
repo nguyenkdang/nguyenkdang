@@ -1,6 +1,4 @@
 import "./Socials.scss"
-
-
 import Logo_linkedin from "../../svg/Logo_linkedin"
 import Logo_behance from "../../svg/Logo_behance"
 import Logo_instagram from "../../svg/Logo_instagram"
@@ -19,31 +17,31 @@ const Socials = () => {
 
     return (
         <div className="socials">
-            <div id="social_box">
-                <div id="ln_logo" className="logo">
+            <div className="social_box">
+                <div className="ln_logo logo">
                     <a href="https://www.linkedin.com/in/nguyenkdang/" target="_blank" rel="noreferrer">
                         <Logo_linkedin width={size} height={size}/>
                     </a>
                 </div>
-                <div id="git_logo" className="logo">
+                <div className="git_logo logo">
                     <a href="https://github.com/nguyenkdang" target="_blank" rel="noreferrer">
                         <Logo_github width={size} height={size}/>
                     </a>
                 </div>
-                <div id="be_logo" className="logo">
+                <div className="be_logo logo">
                     <a href="https://www.behance.net/nguyenkdang" target="_blank" rel="noreferrer">
                         <Logo_behance width={size} height={size}/>
                     </a>
                 </div>
-                <div id="in_logo" className="logo">
+                <div className="in_logo logo">
                     <a href="https://www.instagram.com/nguwaynedang/" target="_blank" rel="noreferrer">
                         <Logo_instagram width={size} height={size}/>
                     </a>
                 </div>
             </div>
-            <div id="email_box" className={isActive ? "unext" : "ext"}>
-                    <h2 id="my_email">nguyenkhdang@gmail.com </h2>
-                    <span id="em_logo" onClick={handleToggle}><Logo_email width={size} height={size}/></span>
+            <div className={isActive ? "email_box unext" : "email_box ext"}>
+                    <h2 className="my_email">nguyenkhdang@gmail.com </h2>
+                    <span className="em_logo" onClick={handleToggle}><Logo_email width={size} height={size}/></span>
             </div>
         </div>
     )
