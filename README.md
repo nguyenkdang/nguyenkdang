@@ -1,0 +1,1 @@
+They say you can tell a lot about somebody from their code. If that's the case, I guess I'm fast, simple, and full of unnecessary comments.

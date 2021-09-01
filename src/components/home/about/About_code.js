@@ -9,8 +9,8 @@ const About_code = ({handleFlip, isFront}) => {
                 <div id="shadow-container"> <div id="ml-shadow"></div> </div>
                 <p id="mlt1"> Let's Talk Code</p>
                 <p id="mlt2"> Let's Talk Software</p>
-                <p id="mleft-para">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                sed diam nonummy nibh euis ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                <p id="mleft-para"> 
+                    For me, software development has always represented the great equalizer. It was novel to me that someone with only code and ingenuity could build something as game changing as the internet, AI or those self-checkout kiosk at Target. It is not servers or computers, but instead the minds behind them that are responsible for the improvement of so many lives. That is why I code.
                 </p>
             </div>
 

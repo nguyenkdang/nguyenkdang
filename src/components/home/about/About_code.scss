@@ -370,16 +370,18 @@
             width: 40vw;
             margin-left: 5vw;
             margin-bottom: 0vw;
+            margin-top: 2vw;
             color: white;
             transition: transform 0.4s ease-out, opacity 0s;
         }
      
         #mleft-para{
             position: relative;
-            font-size: 1.5vw;
             margin-top: 1vw;
             margin-left: 8vw;
-            width: 30vw;
+            width: 33vw;
+            font-size: 1.4vw;
+            line-height: 2vw;
             color: white;
         }
     }
@@ -672,10 +674,11 @@
             }
          
             #mleft-para{
-                font-size: 2.2vw;
+                font-size: 1.7vw;
                 margin-top: 1.5vw;
                 margin-left: 9vw;
-                width: 40vw;
+                line-height: 2.5vw;
+                width: 41vw;
             }
         }
     

@@ -8,8 +8,8 @@ const About_dsgn = ({handleFlip, isFront}) => {
                 <div id="shadow-container"> <div id="mr-shadow"></div> </div>
                 <p id="mrt1"> Let's Talk Design  </p>
                 <p id="mrt2"> Let's Talk Design  </p>
-                <p id="mright-para"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                sed diam nonummy nibh euis ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                <p id="mright-para"> 
+                    For me, design represents accessibility. Products should ideally be as intuitive to as many users as possible, regardless of their circumstances or identity. We must not only consider what we are displaying but also <i>who</i> we are displaying it to. That is why UI/UX research is so indispensable.
                 </p>
             </div>
 
