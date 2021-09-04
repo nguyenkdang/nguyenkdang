@@ -1,6 +1,6 @@
 @import '../../../Variables.scss';
 
-#shadow-container{
+.shadow-container{
     position: absolute;
     left: 0vw;
     top: 0vw;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
-    #shadow-container{
+    .shadow-container{
         left: 0vw;
         top: 0vw;
         width: 53vw;

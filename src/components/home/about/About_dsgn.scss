@@ -1,6 +1,6 @@
 @import '../../../Variables.scss';
 
-#me-right{
+.me-right{
     position: absolute;
     top: 8.5vw;
     left: 40vw;
@@ -13,20 +13,18 @@
     &.back{
         z-index: 0;
         &:hover{
-            #mrBack{
+            .mrBack{
                 transform: scale(1, 1);
                 transition: all 0.3s ease-out;
                 
-                #shadow-container{
-                    #mr-shadow{
+                .shadow-container .mr-shadow{
                         filter: blur(0.45vw);
                         opacity: 0.7;
                         transition: all 0.4s ease-out;
                         transform: scale(0.95, 0.92);
-                    }
                 }
 
-                #mrt1{
+                .mrt1{
                     transform: scale(1.02, 1.02);
                     transform-origin: center;
                     transform-box: fill-box;
@@ -34,80 +32,80 @@
                 }
             }
 
-            #mrSqr{
+            .mrSqr{
                 transform: translate(0vw, -0.7vw) 
                 scale(1.05, 1.05)
                 rotate(35deg);
             }
 
-            #mr-CrcBr{
-                #mrCrc{
+            .mr-CrcBr{
+                .mrCrc{
                     transform: translate(1vw, -0.5vw) 
                     scale(1.1, 1.1);
                 }  
             }
 
-            #mrTrg{
+            .mrTrg{
                 transform: translate(-0.5vw, 0.5vw) 
                 scale(1.07, 1.07)
                 rotate(-38deg);
             }
         }
 
-        #mrBack{
+        .mrBack{
             transform: scale(0.95, 0.95);
             cursor: pointer;
-            #shadow-container{
-                #mr-shadow{
+            .shadow-container{
+                .mr-shadow{
                     opacity: 0.6;
                     width: 22.25vw;
                     height: 24.8vw;
-                    transition: all 0.4s ease-out, opacity 0.4s, transform 0.4s, filter 0.4s;
-                    transition-delay: 0.5s, 0s, 0s, 0s;
+                    transition: all 0.4s ease-out, width 0.4s ease-out;
+                    transition-delay: 0s, 0.5s;                
                 }
             }
 
-            #mrt1{
+            .mrt1{
                 color: $sideColor;
                 opacity: 1;
             }
 
-            #mrt2{
+            .mrt2{
                 opacity: 0;
             }
 
-            #mright-para{
+            .mright-para{
                 visibility: hidden;
             }
         }
 
-        #mrSqr{
+        .mrSqr{
             transform: rotate(30deg);
             background: $mainColor;
             border:0.60vw solid $sideColor;
             cursor: pointer;
         }
 
-        #mr-CrcBr{
-            #mrBar{
+        .mr-CrcBr{
+            .mrBar{
                 top: 10vw;
                 height: 5vw;
                 background: $sideColor;
             }
 
-            #mrCrc{
+            .mrCrc{
                 background: $mainColor;
                 border:0.60vw solid $sideColor;
                 cursor: pointer;
             }
         }
 
-        #mrTrg{
+        .mrTrg{
             transform: rotate(-35deg);
             border-bottom: 5vw solid $sideColor;
             cursor: pointer;
 
-            #mriTrg{
+            .mriTrg{
                 border-bottom: 3vw solid $mainColor;
                 cursor: pointer;
             }
@@ -117,40 +115,39 @@
     &.front{
         z-index: 1;
 
-        #mrBack{
+        .mrBack{
             animation: flip-bg 1s ease;
             animation-fill-mode: forwards; 
             transform: scale(1,1);
             cursor: default;
-            #shadow-container{
-                #mr-shadow{
-                    opacity: 0;
-                    width: 0vw;
-                    height: 24vw;
-                    transition: all 0s ease-out;
-                    transition-delay: 0s;
-                }
+            .shadow-container .mr-shadow{
+                opacity: 0;
+                width: 0vw;
+                height: 24vw;
+                transition: all 0s ease-out;
             }
 
-            #mrt1{
+            .mrt1{
                 color: transparent;
                 opacity: 0;
 
                 animation: flip-title1 1s ease;
             }
 
-            #mrt2{
-                animation: flip-title2 1s ease;
+            .mrt2{
                 opacity: 1; 
+
+                animation: flip-title2 1s ease;
             }
 
-            #mright-para{
-                animation: flip-para 1s ease;
+            .mright-para{
                 visibility: visible;
+
+                animation: flip-para 1s ease;
             }
         }
         
-        #mrSqr{
+        .mrSqr{
             transform: translate(-5vw, -1vw) 
             scale(1.4, 1.4)
             rotate(220deg);
@@ -161,21 +158,20 @@
             animation: flip-square 1s ease;
         }
 
-        #mr-CrcBr{
+        .mr-CrcBr{
             transform-origin: right;
             transform: translate(3.2vw, 1.5vw);
 
             animation: flip-cirbar 1s ease;
-            #mrBar{
+            .mrBar{
                 top: 5.2vw;
                 height: 16vw;
                 background: white;
                 
                 animation: flip-bar 1s ease;
-            
             }
 
-            #mrCrc{
+            .mrCrc{
                 transform: scale(1.3, 1.3);
                 background: #30D7D6;
                 border:0.60vw solid white;
@@ -186,7 +182,7 @@
             
         }
 
-        #mrTrg{
+        .mrTrg{
             transform: translate(-10vw, 3vw) 
                 scale(1.3, 1.3)
                 rotate(-200deg);
@@ -195,7 +191,7 @@
             
             animation: flip-triangle 1s ease;
 
-            #mriTrg{
+            .mriTrg{
                 border-bottom: 3vw solid #50BADE;
                 cursor: default;
 
@@ -204,7 +200,7 @@
         }
     }
 
-    #mrSqr{
+    .mrSqr{
         position: absolute;
         left: 35vw;
         width: 2.5vw;
@@ -212,9 +208,9 @@
         transition: all 0.4s ease-out;      
     }
 
-    #mr-CrcBr{
+    .mr-CrcBr{
       
-        #mrBar{
+        .mrBar{
             position: absolute;
             left: 41.2vw; 
             width: 1.3vw;
@@ -222,7 +218,7 @@
             transition: all 0.4s ease-out;
         }
 
-        #mrCrc{
+        .mrCrc{
             position: absolute;
             left: 38.5vw;
             top: 9.7vw;
@@ -233,7 +229,7 @@
         }
     }
 
-    #mrTrg{
+    .mrTrg{
         position: absolute;
         left: 22vw;
         top: 23vw;
@@ -243,7 +239,7 @@
         border-right: 2.5vw solid transparent;
         transition: all 0.4s ease-out;
         
-        #mriTrg{
+        .mriTrg{
             position: relative;
             top: 1.3vw;
             right: 1.5vw;
@@ -254,24 +250,22 @@
         }
     }
 
-    #mrBack{
+    .mrBack{
         position: absolute;
         width: 45vw;
         height: 28vw;
         background: $mainColor;
         
         transition: transform 0.4s ease-out;
-        #shadow-container{
-            #mr-shadow{
-                position: absolute;
-                filter: blur(0.5vw);
-                left: -1vw;
-                top: -1vw;
-                background: $sideColor;
-            }
+        .shadow-container .mr-shadow{
+            position: absolute;
+            filter: blur(0.5vw);
+            left: -1vw;
+            top: -1vw;
+            background: $sideColor;
         }
 
-        #mrt1{
+        .mrt1{
             position: absolute;
             font-weight: 700;
             font-size: 5vw;
@@ -281,7 +275,7 @@
             transition: transform 0.4s ease-out, opacity 1.5s;
         }
 
-        #mrt2{
+        .mrt2{
             position: relative;
             font-weight: 700;
             font-size: 3vw;
@@ -292,7 +286,7 @@
             transition: transform 0.4s ease-out, opacity 0s;
         }
 
-        #mright-para{
+        .mright-para{
             position: relative;
             margin-top: 1vw;
             margin-left: 8vw;
@@ -306,7 +300,7 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
-    #me-right{
+    .me-right{
         top: 12vw;
         left: 38vw;
         width: 45vw;
@@ -314,89 +308,83 @@
         
         &.back{
             &:hover{
-                #mrBack{
+                .mrBack{
                     transform: scale(1, 1);                    
-                    #shadow-container{
-                        #mr-shadow{
+                    .shadow-container .mr-shadow{
                             filter: blur(0.45vw);
                             opacity: 0.7;
                             transform: scale(0.95, 0.92);
-                        }
                     }
     
-                    #mrt1{
+                    .mrt1{
                         transform: scale(1.02, 1.02);
                         transform-origin: center;
                         transform-box: fill-box;
                     }
                 }
     
-                #mrSqr{
+                .mrSqr{
                     transform: translate(0vw, -2vw) 
                     scale(1.1, 1.1)
                     rotate(35deg);
                 }
     
-                #mr-CrcBr{
-                    #mrCrc{
+                .mr-CrcBr{
+                    .mrCrc{
                         transform: translate(1.5vw, -1vw) 
                         scale(1.1, 1.1);
                     }  
                 }
     
-                #mrTrg{
+                .mrTrg{
                     transform: translate(-0.5vw, 0.5vw) 
                     scale(1.35, 1.35)
                     rotate(-38deg);
                 }
             }
 
-            #mrBack{
+            .mrBack{
                 transform: scale(0.95, 0.95);
-                #shadow-container{
-                    #mr-shadow{
-                        opacity: 0.6;
-                        width: 24.25vw;
-                        height: 28.5vw;
-                    }
+                .shadow-container .mr-shadow{
+                    opacity: 0.6;
+                    width: 24.25vw;
+                    height: 28.5vw;
                 }    
             }
     
-            #mrSqr{
+            .mrSqr{
                 transform: rotate(30deg);
                 border:0.8vw solid $sideColor;
             }
     
-            #mr-CrcBr{
-                #mrBar{
+            .mr-CrcBr{
+                .mrBar{
                     top: 10vw;
                     height: 11vw;
                 }
     
-                #mrCrc{
+                .mrCrc{
                     border:0.8vw solid $sideColor;
                 }
             }
     
-            #mrTrg{
+            .mrTrg{
                 transform: rotate(-35deg)
                         scale(1.2, 1.2);
             }
         }
     
         &.front{    
-            #mrBack{
+            .mrBack{
                 animation-fill-mode: forwards; 
                 transform: scale(1,1);
-                #shadow-container{
-                    #mr-shadow{
-                        width: 0vw;
-                        height: 28.5vw;
-                    }
+                .shadow-container .mr-shadow{
+                    width: 0vw;
+                    height: 28.5vw;
                 }    
             }
             
-            #mrSqr{
+            .mrSqr{
                 transform: translate(1.2vw, -1vw) 
                 scale(1.4, 1.4)
                 rotate(220deg);
@@ -405,18 +393,18 @@
                 animation: flip-square-m 1s ease;
             }
     
-            #mr-CrcBr{
+            .mr-CrcBr{
                 transform-origin: right;
                 transform: translate(2.5vw, 5vw);    
 
                 animation: flip-cirbar-m 1s ease;
-                #mrBar{
+                .mrBar{
                     top: 5vw;
                     height: 22vw;          
                     animation: flip-bar-m 1s ease;      
                 }
     
-                #mrCrc{
+                .mrCrc{
                     transform: scale(1.15, 1.15);
                     border:0.80vw solid white;
                     animation: flip-circle-m 1s ease;                 
@@ -424,7 +412,7 @@
                 
             }
     
-            #mrTrg{
+            .mrTrg{
                 transform: translate(-5vw, 4vw) 
                     scale(1.6, 1.6)
                     rotate(-230deg);
@@ -432,7 +420,7 @@
                 animation: flip-triangle-m 1s ease;
 
                     
-                #mriTrg{
+                .mriTrg{
                     border-bottom: 3vw solid #50BADE;
                     animation: flip-itriangle 1s ease;
 
@@ -440,20 +428,20 @@
             }
         }
     
-        #mrSqr{
+        .mrSqr{
             left: 40vw;
             width: 3.5vw;
             height: 3.5vw;
         }
     
-        #mr-CrcBr{
-            #mrBar{
+        .mr-CrcBr{
+            .mrBar{
                 left: 49vw; 
                 width: 1.5vw;
                 border-radius: 10vw;
             }
     
-            #mrCrc{
+            .mrCrc{
                 left: 44vw;
                 top: 10vw;
                 width: 10vw;
@@ -462,41 +450,39 @@
             }
         }
     
-        #mrTrg{
+        .mrTrg{
             left: 21vw;
             top: 30vw;
             
-            #mriTrg{
+            .mriTrg{
                 top: 1.3vw;
                 right: 1.5vw;
             }
         }
     
-        #mrBack{
+        .mrBack{
             width: 53vw;
             height: 35vw;
             
-            #shadow-container{
-                #mr-shadow{
-                    filter: blur(0.7vw);
-                }
+            .shadow-container .mr-shadow{
+                filter: blur(0.7vw);
             }
     
-            #mrt1{
+            .mrt1{
                 font-size: 7vw;
                 top: -4vw;
                 left: 25vw;
                 width: 10vw;
             }
     
-            #mrt2{
+            .mrt2{
                 font-size: 4.5vw;
                 width: 45vw;
                 margin-left: 4vw;
                 margin-bottom: 0vw;
             }
     
-            #mright-para{
+            .mright-para{
                 margin-top: 1.5vw;
                 margin-left: 7vw;
                 width: 37vw;
