@@ -4,7 +4,7 @@ const dlButton = ({size}) => {
     return (
         <div>
             <svg className="dl_button" data-name="dl button" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 321.34 321.34">
-                <defs> <style>{'.cls-3 {fill: #374e74;}'}</style> </defs>
+                <defs> <style>{'.cls-3 {fill: #2c4164;}'}</style> </defs>
                 <g>
                     <path className="cls-3" d="M1655.32,507.38A160.67,160.67,0,1,0,1816,668.05,160.68,160.68,0,0,0,1655.32,507.38Zm0,288.36A127.69,127.69,0,1,1,1783,668.05,127.68,127.68,0,0,1,1655.32,795.74Z" transform="translate(-1494.65 -507.38)"/>
                     <rect className="cls-3" x="96.61" y="221.62" width="128.12" height="34.72" rx="7.38"/>

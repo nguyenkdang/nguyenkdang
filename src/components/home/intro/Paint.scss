@@ -3,13 +3,14 @@ $blue: #00ffc9;
 $orange: #f1cf00;
 $pink: #d349ff;
 
+
 .paint{
     .paint_drip{
         position: absolute;
         width: 13vw;
         height: 34vw;
         border-radius: 20vw;
-        background: linear-gradient(20deg, $blue 0%, $orange 50%, $pink 100%);
+        background: linear-gradient(20deg, $blue 0%, $pink 50%, $orange 100%);
 
         z-index: -1;
     }
@@ -44,7 +45,7 @@ $pink: #d349ff;
         height: 6vw;
 
         border-radius: 25vw;
-        background: linear-gradient(20deg, $blue 0%, $orange 100%);
+        background: linear-gradient(20deg, $blue 0%, $pink 100%);
         
         animation: floater-slow 4s ease infinite;
     }
@@ -57,7 +58,7 @@ $pink: #d349ff;
         height: 22vw;
         
         border-radius: 20vw 8vw 25vw 10vw;
-        background: linear-gradient(20deg, $blue 0%, $orange 70%, #E7A64C 90%, #D9838E 100%);
+        background: linear-gradient(20deg, $blue 0%, $pink 70%, #E7A64C 100%);
         
         z-index: 1;
         animation: floater-slow 4s ease infinite;
@@ -71,7 +72,7 @@ $pink: #d349ff;
         height: 17vw;
 
         border-radius: 25vw 8vw 16vw 6vw;
-        background: linear-gradient(20deg, $orange 00%, $pink 100%);
+        background: linear-gradient(20deg, $pink 00%, $orange 100%);
 
         animation: floater-slow 5s ease infinite;
     }
@@ -116,7 +117,7 @@ $pink: #d349ff;
             height: 25vw;
             
             border-radius: 20vw 6vw 25vw 8vw;
-            background: linear-gradient(20deg, $blue 0%, $orange 70%, #E7A64C 90%, #E49471 100%);    
+            background: linear-gradient(20deg, $blue 0%, $pink 70%, #E7A64C 90%, #E49471 100%);    
         }
         
         .top_right_drip{
@@ -126,7 +127,7 @@ $pink: #d349ff;
             height: 31vw;
             
             border-radius: 25vw 6vw 16vw 6vw;
-            background: linear-gradient(20deg, #88E357 00%, $orange 20%, $pink 100%);
+            background: linear-gradient(20deg, #88E357 00%, $pink 20%, $orange 100%);
         }
     }
 }
