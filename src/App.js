@@ -5,7 +5,7 @@ import Projects from './components/projects/Projects'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import './App.scss'
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect} from "react";
 import { BrowserRouter as Router,Route, Switch} from 'react-router-dom';
 import { useLocation} from 'react-router-dom';
 
@@ -22,7 +22,7 @@ function App() {
       for (var k in curPage){ allFalse[k] = false }
       setCurPage({...allFalse, [location.pathname]: true})
 
-      if(location.pathname == '/projects'){
+      if(location.pathname === '/projects'){
         window.scrollTo(0, 500*projScroll)
       }
       else{

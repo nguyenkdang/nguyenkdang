@@ -1,9 +1,7 @@
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
-import { useEffect } from "react";
 
 const Navbar = ({curPage}) => {
-    console.log(curPage)
     return (
         <div className='navBar' >
             <span className="navItem"><Link className={curPage['/'] ? "navLink iv" : "navLink"}  to="/"> home</Link></span>

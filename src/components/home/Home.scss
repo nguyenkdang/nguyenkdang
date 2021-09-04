@@ -29,7 +29,7 @@
         }
 
         .hide, .my_title, .my_slogan{
-            color: $sideColor;
+            color: $mainColor;
         }
 
         .my_slogan{
@@ -37,7 +37,7 @@
                 font-weight: 600;
                 width: 0;
                 padding: 0.2vw 0;
-                color: $mainColor;
+                color: $sideColor;
                 border-radius: 0.25vw;
                 
                 transition: all 0.4s ease;
@@ -46,18 +46,10 @@
                     color: white;
                     margin: 0 0.5vw;
                     padding: 0 1vw;
-                    
-                    &.in{ 
-                        background-color:#0a66c2;
-                    }
 
-                    &.be{
-                        background-color: #053eff;  
-                    }
-
-                    &.git{
-                        background-color: #333;    
-                    }
+                    &.in{ background-color:#0a66c2; }
+                    &.be{ background-color: #053eff; }
+                    &.git{ background-color: #333; }
 
                     &.ig{
                         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -69,7 +61,7 @@
         .my_name{
             font-size: 5vw;
             margin: 0vw;
-            color: $mainColor;
+            color: $sideColor;
 
             
         }
