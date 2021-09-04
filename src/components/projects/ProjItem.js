@@ -1,7 +1,7 @@
 import "./ProjItem.scss";
 
 
-const ProjItem = ({ptitle, pdesc, logo, ptags, link, id, isOpen, handleOpen}) => {
+const ProjItem = ({ptitle, pdesc, pdext, logo, ptags, link, id, isOpen, handleOpen}) => {
     return (
         <div className={!isOpen.opn[id] && isOpen.blur ? "ProjItem blur" : "ProjItem unblur"}>
             <div className="proj_iconBack">
@@ -16,7 +16,7 @@ const ProjItem = ({ptitle, pdesc, logo, ptags, link, id, isOpen, handleOpen}) =>
                 </div>
                 <div className="pinfo">
                     <h2 className="proj_title"> {ptitle}</h2>
-                    <p className="proj_desc"> {pdesc.slice(0,200)} <span className="proj_descExt"> {pdesc.slice(200,680)} </span></p>
+                    <p className="proj_desc">{pdesc}<span className="proj_descExt">{pdext}</span></p>
                 </div>
                 <div className="proj_more" onClick={() => handleOpen(id)}> 
                     <svg className="down_icon" xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" viewBox="0 0 24 24">

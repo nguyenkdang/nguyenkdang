@@ -10,21 +10,18 @@ import { useState} from "react";
 const projInfo= {
     left:{
         title: "Reddit Ranker",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis" +
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis ",
+        desc: "Ever wanted to know what Reddit is talking about? Reddit Ranker logs, sorts and displays any subreddit's most popular terms using multiple ranking methods and Reddit's official retrieval API",
         lang: PythonLogo,
 
     },
     middle:{
         title: "Image Translator",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis" +
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis ",
+        desc: "Ever wanted to translate some text but only have an image? This python script can return a fully translated image using Google's Tesseract OCR and some math.",
         lang: PythonLogo,
     },
     right:{
         title: "Investing Simulator",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis" +
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis ",
+        desc: "Ever wanted to test which investing rule is most profitable? This modular Python script allows for the simulation and comparison of different investing strategy on real world market data.",
         lang: PythonLogo,
     }
 };
