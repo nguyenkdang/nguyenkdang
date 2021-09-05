@@ -117,7 +117,7 @@ $pink: #d349ff;
             height: 25vw;
             
             border-radius: 20vw 6vw 25vw 8vw;
-            background: linear-gradient(20deg, $blue 0%, $pink 70%, #E7A64C 90%, #E49471 100%);    
+            background: linear-gradient(20deg, $blue 0%, $pink 60%, #da8787 100%);    
         }
         
         .top_right_drip{
@@ -127,7 +127,7 @@ $pink: #d349ff;
             height: 31vw;
             
             border-radius: 25vw 6vw 16vw 6vw;
-            background: linear-gradient(20deg, #88E357 00%, $pink 20%, $orange 100%);
+            background: linear-gradient(20deg, #7e95eb 00%, $pink 20%, $orange 100%);
         }
     }
 }
