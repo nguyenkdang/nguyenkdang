@@ -83,8 +83,8 @@ const Resume = () => {
               <h2>Relevant Skills</h2>
               <div className="line"></div>
               <div className="skills"> 
-                <h3 className="info_row"> Python HTML Java CSS C++ JavaScript</h3>
-                <h3 className="info_row">Excel SQL MySQL Figma <span className="sw">Yahoo Finance API</span></h3>
+                <h3 className="info_row"> Python C++ Java HTML CSS JavaScript</h3>
+                <h3 className="info_row">Excel SQL MySQL Figma SCSS React.js</h3>
                 <h3 className="info_row"> 
                   <span className="sw">Adobe Illustrator</span> 
                   <span className="sw"> Adobe Photoshop</span> 
