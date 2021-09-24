@@ -1,7 +1,6 @@
 import './About_code.scss';
 import './About_both.scss';
 
-
 const About_code = ({handleFlip, isFront}) => {
     return (
         <div className={isFront.left ? "me-left front" : "me-left back"}  onClick= {() => handleFlip("left")} >

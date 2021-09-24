@@ -1,14 +1,18 @@
 import "./ProjItem.scss";
-
+import Atropos from 'atropos/react/atropos-react.esm';
 
 const ProjItem = ({ptitle, pdesc, pdext, logo, ptags, link, id, isOpen, handleOpen}) => {
     return (
         <div className={!isOpen.opn[id] && isOpen.blur ? "ProjItem blur" : "ProjItem unblur"}>
-            <div className="proj_iconBack">
-                <div className='projIcon'>
-                    {logo}
+            
+                <div className="proj_iconBack">  
+                    <Atropos className="my-atropos" shadow={false} >
+                        <div className='projIcon' data-atropos-offset="3">
+                            {logo}
+                        </div>
+                    </Atropos>
                 </div>
-            </div>
+            
             <div className={isOpen.opn[id] ? "proj_body open" : "proj_body close"}>
                 <div className="ptags">
                     {ptags.map((tag) => (<h3 className="ptag"> {tag} </h3>))}

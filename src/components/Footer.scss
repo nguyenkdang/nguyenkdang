@@ -6,8 +6,8 @@
     height: 12vw;
     max-width: 100%;
     background-color: $mainColor;
-
-    #foot_logo{
+    
+    .foot_logo{
         position: relative;
         top: -5vw;
         left: 28.2vw;
@@ -34,7 +34,7 @@
         }
     }
     
-    #foot-links{
+    .foot-links{
         position: absolute;
         top: 5vw;
         left: 50vw;
@@ -71,13 +71,14 @@
                
     }
     
-    #foot-copyright{
+    .foot-copyright{
         position: absolute;
         transform: translateX(-50%);
         left: 50vw;
         top: 8vw;
         
-        #copyright{
+        .copyright{
+            cursor: default;
             font-size: 1.2vw;
             color: $sideColor;
         }
@@ -88,7 +89,7 @@
     .foot{
         height: 17vw;
     
-        #foot_logo{
+        .foot_logo{
             position: relative;
             top: -12vw;
             left: 20vw;
@@ -109,7 +110,7 @@
            
         }
     
-        #foot-links{
+        .foot-links{
             top: 7vw;
             font-size: 2.2vw;
             .link-container{
@@ -121,9 +122,9 @@
             } 
         }
         
-        #foot-copyright{
+        .foot-copyright{
             top: 12vw;
-            #copyright{
+            .copyright{
                 font-size: 1.5vw;
             }
         }

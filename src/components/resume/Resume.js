@@ -6,11 +6,11 @@ const Resume = () => {
     return (
         <div className="resume">
           <div className="indent page">
-            <div className="dl"> 
-              <a href={rPDF} download="Nguyen Dang - Resume.pdf">
-                <DlButton size="3.5vw"/>
-              </a>
-            </div>
+              <div className="dl"> 
+                <a href={rPDF} download="Nguyen Dang - Resume.pdf">
+                  <DlButton size="3.5vw"/>
+                </a>
+              </div>
             <div>
               <h1 className="name">Nguyen K. Dang</h1>
               <h3 className="school">University of California Irvine Graduate</h3>

@@ -5,6 +5,7 @@ $green: #2edd92;
 
 .ProjectBadge{
     transition: all 0.5s ease;
+    
     .badgeBack{
         width: 20vw;
         height: 30vw;
@@ -33,6 +34,7 @@ $green: #2edd92;
             
             .bdage-title{
                 position: absolute;
+                cursor: default;
                 margin: 8vw 0 0 50%;
                 transform: translateX(-50%);
                 white-space:normal;
@@ -55,6 +57,7 @@ $green: #2edd92;
 
             .bdage-desc{
                 position: absolute;
+                cursor: default;
                 margin: 10vw 0 0 50%;
                 transform: translateX(-50%);
                 width: 23vw;
@@ -144,7 +147,7 @@ $green: #2edd92;
         z-index: -1;
         transition: all 0.5s ease;
     }
-
+    
     .badgeBeak{
         position: absolute;
         top: 30vw;
@@ -156,7 +159,7 @@ $green: #2edd92;
         visibility: hidden;
         
         transition: all 0.5s ease;
-
+        
         .langLogo{
             position: relative;
             margin-top: 50%;
@@ -221,6 +224,7 @@ $green: #2edd92;
             border-radius: 8vw;
             
             visibility: visible;
+
             .langLogo{
                 transform: translate(-50%, -50%)
                             scale(1,1);

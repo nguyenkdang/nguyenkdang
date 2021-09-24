@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="foot">
-            <div id="foot_logo">
+
+            <div className="foot_logo">
                 <Mylogo width="14vw"/>
                 <div className="n_back"></div>
                 <div className="d_back"></div>
             </div>
-            <div id="foot-links">
+
+            <div className="foot-links">
                 <div className="link-container">
                     <Link className="foot-link" to="/">home</Link>
                     <div className="underline"></div>
@@ -45,8 +47,8 @@ const Footer = () => {
                     <div className="underline"></div>
                 </div>
             </div>
-            <div id="foot-copyright">
-                <h2 id="copyright"> © Nguyen K. Dang 2021</h2>
+            <div className="foot-copyright">
+                <h2 className="copyright"> © Nguyen K. Dang 2021</h2>
             </div>
         </div>
     )

@@ -9,7 +9,10 @@
     background: transparent;
 
     transition: transform 0.4s ease-out;
-
+    .my-atropos{
+        width: 60vw;
+        height: 40vw;;
+    }
     &.back{
         z-index: 0;
         &:hover{

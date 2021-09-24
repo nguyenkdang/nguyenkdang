@@ -13,6 +13,7 @@ $green: #2edd92;
         }
     }
 
+
     .proj_iconBack{
         position: absolute;
         margin: -5vw 0 0 10vw;
@@ -21,13 +22,21 @@ $green: #2edd92;
         
         border-radius: 1vw;
         background: linear-gradient(135deg, $blue, $green );
-        box-shadow: -0vw -0vw 1.2vw 0.5vw #E1EBF9;
         
         z-index: 2;
-        .projIcon{
-            position: absolute;
-            margin: 4vw 0 0 3vw;
+        .my-atropos{
+            width: 16vw;
+            height: 18vw;
+            border-radius: 1vw;
+            
+            .projIcon{
+                z-index: 2;
+                position: absolute;
+                margin: 4vw 0 0 3vw;
+            }
+            
         }
+
     }
     
     .proj_body{
@@ -79,8 +88,10 @@ $green: #2edd92;
         .ptags{
             position: absolute;
             margin-left: 10vw;
+            
             .ptag{
                 float: left;
+                cursor: default;
                 margin: 1.7vw 0 0 1.1vw;
                 
                 font-size: 1.5vw;
@@ -115,6 +126,7 @@ $green: #2edd92;
 
             .proj_title{
                 position: absolute;
+                cursor: default;
                 margin: 0.5vw 0 0 50%;
                 transform: translateX(-50%);
                 
@@ -130,6 +142,7 @@ $green: #2edd92;
 
             .proj_desc{
                 color: $sideColor;
+                cursor: default;
                 position: absolute;
                 margin: 6vw 0 0 11vw;
                 width: 50vw;
@@ -184,8 +197,13 @@ $green: #2edd92;
             
             border-radius: 1vw;
             box-shadow: -0vw -0vw 1vw 0.2vw #E1EBF9;
-            .projIcon{
-                margin: 5vw 0 0 4vw;
+            .my-atropos{    
+                width: 18vw;
+                height: 20vw;
+
+                .projIcon{
+                    margin: 5vw 0 0 4vw;
+                }
             }
         }
         

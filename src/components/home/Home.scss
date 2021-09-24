@@ -29,6 +29,7 @@
         }
 
         .hide, .my_title, .my_slogan{
+            cursor: default;
             color: $mainColor;
         }
 
@@ -59,11 +60,10 @@
         }
         
         .my_name{
+            cursor: default;
             font-size: 5vw;
             margin: 0vw;
             color: $sideColor;
-
-            
         }
     }
     

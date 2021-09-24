@@ -9,8 +9,6 @@ import { useState, useEffect} from "react";
 import { BrowserRouter as Router,Route, Switch} from 'react-router-dom';
 import { useLocation} from 'react-router-dom';
 
-
-
 function App() {
   const location = useLocation();
   const [curPage, setCurPage] = useState({'/': false, '/resume': false, '/projects': false, '/contact': false })
