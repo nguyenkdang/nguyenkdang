@@ -1,7 +1,8 @@
-import './About_code.scss';
+import './aboutCode.scss';
 import './About_both.scss';
 
-const About_code = ({handleFlip, isFront}) => {
+
+export const AboutCode = ({handleFlip, isFront}) => {
     return (
         <div className={isFront.left ? "me-left front" : "me-left back"}  onClick= {() => handleFlip("left")} >
             <div className={isFront.first ? "mlBack firstTime" : "mlBack nthTime"}>
@@ -23,5 +24,3 @@ const About_code = ({handleFlip, isFront}) => {
         </div>
     )
 }
-
-export default About_code

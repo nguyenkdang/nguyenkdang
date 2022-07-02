@@ -1,0 +1,41 @@
+@import '../../../Variables.scss';
+
+.title-box {
+    position: relative;
+    margin: 23vw 0 0 50vw;
+    width: 61vw; 
+    height: 219w;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 4vw;
+    background: #e8f0fa;
+    box-shadow: 3vw 3vw 3vw 0.1vw rgba(41, 43, 65, 0.1);
+    padding: 2vw;
+    
+    text-align: center;
+
+    h2{
+        font-weight: 600;
+    }
+
+    .hide, .my-title, .my-slogan{
+        cursor: default;
+        color: $mainColor;
+    }
+
+    .my-slogan{
+        .in{ background-color:#0a66c2; }
+        .be{ background-color: #053eff; }
+        .git{ background-color: #333; }
+        .ig{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+    }
+    
+    .my-name{
+        cursor: default;
+        font-size: 5vw;
+        margin: 0vw;
+        color: $sideColor;
+    }
+}

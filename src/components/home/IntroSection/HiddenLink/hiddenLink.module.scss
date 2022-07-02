@@ -1,0 +1,17 @@
+@import '../../../../Variables.scss';
+
+.hidden-link{
+    font-weight: 600;
+    width: 0;
+    padding: 0.2vw 0;
+    color: $sideColor;
+    border-radius: 0.25vw;
+    
+    transition: all 0.4s ease;
+
+    &:hover{
+        color: white;
+        margin: 0 0.5vw;
+        padding: 0 1vw;
+    }
+}
