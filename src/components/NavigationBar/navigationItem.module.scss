@@ -1,0 +1,28 @@
+@import '../../Variables.scss';
+
+.container {
+    .nav-link{
+        font-size: 2vw;
+        font-weight: 600;
+        padding: 1vw;
+        color: $mainColor;
+
+        transition: color 0.4s ease-out; 
+        &:hover{
+            color: $sideColor;
+        }
+
+        &.highlighted{
+            color: $sideColor;
+            cursor: default;
+        }
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .container {
+        .nav-link{
+            font-size: 2vw;
+        }
+    }
+}

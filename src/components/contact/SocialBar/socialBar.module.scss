@@ -1,8 +1,7 @@
-@import '../../Variables.scss';
+@import '../../../Variables.scss';
 
-.socials{
-    $logoTop: 1.5vw;
-    .social_box{
+.container{
+    .social-box{
         position: absolute;
         width: 18vw;
         height: 10vw;
@@ -10,19 +9,14 @@
         background-color: $mainColor;
 
         z-index: 1;
-        .logo{
-            position: relative;
-            margin: $logoTop 0 0 2vw;
-            float: left;
-        }
         
-        .git_logo, .be_logo, .in_logo{
+        .git-logo, .be-logo, .in-logo{
             margin-left: 2vw;
         }
     }
     
     $transition: all 0.4s ease-in-out;
-    .email_box{
+    .email-box{
         position: absolute;
         overflow: hidden;
         margin-left: 12.75vw;
@@ -32,9 +26,10 @@
         
         z-index: 0;
         transition: $transition;
+
         &.unext{
             width: 10vw;
-            .my_email{
+            .my-email{
                 margin-left: -15vw;
                 visibility: hidden;
             }
@@ -42,13 +37,13 @@
 
         &.ext{
             width: 30.5vw;
-            .my_email{
+            .my-email{
                 margin-left: 6.5vw;
                 visibility: visible;
             }
         }
 
-        .my_email{
+        .my-email{
             position: absolute;
             color: $mainColor;
             font-size: 1.5vw;
@@ -57,9 +52,9 @@
             transition: $transition;
         }
 
-        .em_logo{
+        .em-logo{
             position: absolute;
-            margin-top: $logoTop;
+            margin-top: 1.5vw;
             right: 1.4vw;
             
             cursor: pointer;
@@ -69,7 +64,7 @@
         &:hover{
             &.unext{
                 transform: translateX(0.65vw);
-                .em_logo{
+                .em-logo{
                     transform: scale(1.05,1.05);
                     right: 1.6vw;
                 }
@@ -79,59 +74,56 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
-    .socials{
+    .container{
         $logoSize: 4vw;
+        
         .contact_logo{
             width: $logoSize;
             height: $logoSize;
         }
-        $logoTop: 3vw;
 
-        .social_box{
+        .social-box{
             width: 35vw;
             height: 20vw;
             border-radius: 1.7vw;
-            .logo{
-                margin: $logoTop 0 0 4vw;
-            }
             
-            .git_logo, .be_logo, .in_logo{
+            .git-logo, .be-logo, .in-logo{
                 margin-left: 4vw;
             }
         }
         
-        .email_box{
+        .email-box{
             margin-left: 33vw;
             height: 20vw;
 
             &.unext{
                 width: 12vw;
-                .my_email{
+                .my-email{
                     margin-left: -33vw;
                 }
             }
         
             &.ext{
                 width: 49vw;
-                .my_email{
+                .my-email{
                     margin-left: 4.5vw;
                 }        
             }
         
-            .my_email{
+            .my-email{
                 margin-top: 3.25vw;
                 font-size: 2.7vw;
             }
         
-            .em_logo{
-                margin-top: $logoTop;
+            .em-logo{
+                margin-top: 3vw;
                 right: 3vw;
             }
 
             &:hover{
                 &.unext{
                     transform: None;
-                    .em_logo{
+                    .em-logo{
                         transform: None;
                         right: 3vw;
                     }
