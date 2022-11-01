@@ -1,0 +1,19 @@
+@import '../../Variables.scss';
+
+
+$header-font-size: 2vw;
+$header-font-weight: 700;
+
+.resume{
+    margin: 13vw auto 10vw auto;
+    width: 75%;
+    padding: 4vw;
+    background-color: white;
+    border-radius: 1vw;
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .resume{
+        width: 85%;
+    }
+}

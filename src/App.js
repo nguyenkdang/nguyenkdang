@@ -1,5 +1,5 @@
 import Home from './components/home/Home';
-import Resume from './components/resume/Resume';
+import { Resume } from './components/resume/Resume';
 import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
 import { NavigationBar } from './components/NavigationBar/NavigationBar';
