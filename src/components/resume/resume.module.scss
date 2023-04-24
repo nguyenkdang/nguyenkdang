@@ -1,19 +1,17 @@
 @import '../../Variables.scss';
 
+.resume {
+  margin: 10rem auto 7rem auto;
+  width: calc(min(70rem, 70vw));
+  padding: 5rem;
+  background-color: white;
+  border-radius: 1vw;
+}
 
-$header-font-size: 2vw;
-$header-font-weight: 700;
-
-.resume{
-    margin: 13vw auto 10vw auto;
-    width: 75%;
-    padding: 4vw;
-    background-color: white;
-    border-radius: 1vw;
+.header {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: $phoneWidth) {
-    .resume{
-        width: 85%;
-    }
 }

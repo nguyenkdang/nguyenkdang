@@ -1,34 +1,32 @@
 @import '../../../../Variables.scss';
 
-.container{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    margin: 0 0 2vw 1vw;
+.container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin: 0 0 2rem 1rem;
 
-    .year{
-        font-size: 1.5vw;
+  .year {
+    font-size: 1.25rem;
+  }
+
+  .project {
+    .project-title {
+      font-weight: 700;
+      font-size: 1.25rem;
     }
 
-    .project{
-        .project-title{
-            margin-bottom: 0vw;;
-            font-weight: 700;
-            font-size: 1.4vw;
-        }
+    .project-tool {
+      font-weight: 500;
+      position: relative;
+      margin: 0.5rem 0 0.5rem 1.5rem;
+      font-size: 1rem;
 
-        .project-tool{
-            font-weight: 500;
-            position: relative;
-            margin: 0.3vw 0 1.5vw 1vw;
-            font-size: 1.25vw;
-
-            .tool{
-                margin-left: 1vw;
-            }
-        }
+      .tool {
+        margin-left: 1vw;
+      }
     }
+  }
 }
 
 @media screen and (max-width: $phoneWidth) {
-    
 }

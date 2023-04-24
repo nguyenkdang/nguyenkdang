@@ -1,32 +1,27 @@
 @import '../../../Variables.scss';
 @import '../resume.module.scss';
 
-.container{
-    margin-bottom: 2vw;
+.container {
+  margin-bottom: 2rem;
 
-    .year{
-        margin-right: 4vw;
+  .year {
+    margin-right: 2rem;
+  }
+
+  .education {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+
+    .college {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-right: 0.75rem;
     }
 
-    .header{
-        font-size: $header-font-size;
-        font-weight: $header-font-weight;
+    .major {
+      font-size: 0.75rem;
     }
-
-    .education{
-        font-size: 1.5vw;
-        margin-left: 1vw;
-
-        .college{
-            font-size: 1.75vw;
-            font-weight: 500;
-            margin-right: 0.75vw;
-        }
-
-        .major{
-            font-size: 1.25vw;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: $phoneWidth) {

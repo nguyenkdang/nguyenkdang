@@ -3,81 +3,70 @@
 @import '../node_modules/atropos/atropos.scss';
 
 .resize-transition-stopper * {
-    transition: none !important;
+  transition: none !important;
 }
 
-svg{
-    overflow: visible;
+svg {
+  overflow: visible;
 }
 
 * {
-    font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* GENERAL */
-body{
-    top: 0vw;
-    margin: 0 auto;
+body {
+  top: 0vw;
+  margin: 0 auto;
 }
 
-
 h1 {
-    font-weight: 700;
-    font-size: 4vw;
+  font-weight: 700;
+  font-size: 4vw;
 }
 
 h2 {
-    font-weight: 500;
-    font-size: 2vw;
+  font-weight: 500;
+  font-size: 2vw;
 }
 
 h3 {
-    font-weight: 500;
-    font-size: 1.3vw;
+  font-weight: 500;
+  font-size: 1.3vw;
 }
 
-p{
-    font-weight: 500;
-    font-size: 1.5vw;
+p {
+  font-weight: 500;
+  font-size: 1.5vw;
 }
 
 br {
-    line-height: 0px;
-    margin: 0px;
+  line-height: 0px;
+  margin: 0px;
 }
 
 body {
-    background-color: $backColor;
+  background-color: $backColor;
 }
 
 a {
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-}
-
-ul{
-    padding-left: 6vw;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
 }
 
 li {
-    font-weight: 500;
-    font-size: 1.3vw;
-    margin-top: 0.3vw;
-    list-style-type: disc;
-    list-style-position: inside;
-    text-indent: -2.5vw;
-    padding-left: 1vw;
-    span{
-        position: relative;
-        left: -0.5vw;
-    }
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+  list-style-position: inside;
+  text-indent: -1.5rem;
 }
 
-.cls-2{
-    fill: $mainColor;
+.cls-2 {
+  fill: $mainColor;
 }
 
-.cls-1{
-    fill: white;
+.cls-1 {
+  fill: white;
 }

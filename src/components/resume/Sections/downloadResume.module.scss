@@ -1,19 +1,14 @@
 @import '../../../Variables.scss';
 
-.container{
-    text-indent: 0;
-    margin: auto 0 auto auto;
+.container {
+  text-indent: 0;
+  margin: auto 0 auto auto;
 
-    transition: transform 0.4s ease;
-    &:hover{
-        transform: scale(1.1,1.1)
-    }
+  transition: transform 0.4s ease;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 
 @media screen and (max-width: $phoneWidth) {
-    .container{
-        &:hover{
-            transform: none
-        }
-    }
 }

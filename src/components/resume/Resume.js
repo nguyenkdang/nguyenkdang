@@ -8,17 +8,17 @@ import { CourseSection } from './Sections/CourseSection';
 import { ExperienceSection } from './Sections/ExperienceSection/ExperienceSection';
 
 export const Resume = () => {
-    return (
-        <div className={styles['container']}>
-            <div className={styles['resume']}>
-                <HeaderSection />
-                <ContactSection />
-                <ExperienceSection />
-                <ProjectSection />
-                <SkillSection />
-                <EducationSection />
-                <CourseSection />
-            </div>
-        </div>
-    );
+  return (
+    <div className={styles['container']}>
+      <div className={styles['resume']}>
+        <HeaderSection />
+        <ContactSection />
+        <ExperienceSection />
+        <ProjectSection />
+        <SkillSection />
+        <EducationSection />
+        <CourseSection />
+      </div>
+    </div>
+  );
 };

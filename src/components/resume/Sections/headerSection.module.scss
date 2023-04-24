@@ -1,33 +1,21 @@
 @import '../../../Variables.scss';
 
-.container{
-    display: grid;
-    grid-template-columns: 90% 10%;
+.container {
+  display: grid;
+  grid-template-columns: 90% 10%;
 
-    .header{
-        .name{
-            font-size: 4vw;
-            font-weight: 700;
-        }
-
-        .school{
-            font-size: 1.5vw;
-            font-weight: 500;
-        }
+  .header {
+    .name {
+      font-size: 3rem;
+      font-weight: 700;
     }
+
+    .school {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+  }
 }
 
 @media screen and (max-width: $phoneWidth) {
-    .container{
-        
-        .header{
-            .name{
-                font-size: 6vw;
-            }
-
-            .school{
-                font-size: 2vw;
-            }  
-        }
-    }
 }

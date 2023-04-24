@@ -1,28 +1,17 @@
 @import '../../../Variables.scss';
 @import '../resume.module.scss';
 
-.header{
-    font-size: $header-font-size;
-    font-weight: $header-font-weight;
-}
+.courses {
+  margin: auto;
+  width: max-content;
+  line-height: 2rem;
 
-.courses{
-    margin: auto;
-    margin-bottom: 1vw;
-    width: 70%;
-    line-height: 2.5vw;
-    
-    .course{
-        font-weight: 500;
-        font-size: 1.25vw;
-        margin-left: 2.5vw;
-    }
+  .course {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (max-width: $phoneWidth) {
-    .courses{
-        .course{
-            font-size: 1.5vw;
-        }
-    }
 }
