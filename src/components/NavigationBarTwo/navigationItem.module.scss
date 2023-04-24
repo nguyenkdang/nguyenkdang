@@ -1,0 +1,40 @@
+@import '../../Variables.scss';
+
+.container {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+
+  &:hover {
+    .line {
+      width: 100%;
+    }
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+
+    &.light-contrasted {
+      color: $sideColor;
+    }
+  }
+
+  .line {
+    margin: auto;
+    background-color: white;
+    height: 0.15rem;
+    width: 0%;
+    border-radius: 1rem;
+    transition: width 0.25s ease;
+
+    &.light-contrasted {
+      background-color: $sideColor;
+    }
+
+    &.highlighted {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+}

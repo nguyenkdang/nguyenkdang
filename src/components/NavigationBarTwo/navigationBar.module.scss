@@ -1,0 +1,28 @@
+@import '../../Variables.scss';
+
+.container {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  z-index: 3;
+  width: min-content;
+  top: -4.5rem;
+  margin-left: auto;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  transition: top 0.4s ease-out;
+  border-radius: 0 0 0 2rem;
+
+  &.light-contrasted {
+    .line {
+      background-color: red;
+    }
+  }
+
+  &.show {
+    top: 0rem;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+}
