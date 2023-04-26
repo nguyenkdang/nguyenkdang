@@ -1,0 +1,19 @@
+.container{
+    cursor: pointer;
+    height: 100%;
+    width: 30%;
+    border-radius: 1rem;
+    background-color: red;
+    overflow: hidden;
+    transition: width 0.3s ease-out, transform 0.3s ease-out;
+
+    .image{
+        object-fit: cover;
+    }
+
+    
+
+    &.pressed{
+        transform:scale(80%);
+    }
+}
