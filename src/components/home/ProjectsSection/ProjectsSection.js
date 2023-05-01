@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styles from './projectsSection.module.scss';
 import { PROJECTS_DATA } from './const';
-import { ProjectNode } from './ProjectNode';
+import { ProjectsNavigator } from './ProjectsNavigator';
 import { Tag } from './Tag';
 
 export const ProjectsSection = () => {
-    const [selectedProject, setSelectedProject] = useState(0);
+    const [selectedProject, setSelectedProject] = useState(2);
     const { name, description, tags, image } = PROJECTS_DATA.find(
         ({ id }) => id === selectedProject
     );
@@ -14,19 +14,10 @@ export const ProjectsSection = () => {
         <div className={styles['container']}>
             <div className={styles['visual-section']}>
                 <img src={image} alt={'project'} className={styles['image']} />
-                <div className={styles['nav-bar']}>
-                    {PROJECTS_DATA.map(({ image, id }) => {
-                        return (
-                            <ProjectNode
-                                selectedProject={selectedProject}
-                                setSelectedProject={setSelectedProject}
-                                key={id}
-                                id={id}
-                                image={image}
-                            />
-                        );
-                    })}
-                </div>
+                <ProjectsNavigator
+                    selectedProject={selectedProject}
+                    setSelectedProject={setSelectedProject}
+                />
             </div>
             <div className={styles['info-section']}>
                 <div className={styles['details']}>
